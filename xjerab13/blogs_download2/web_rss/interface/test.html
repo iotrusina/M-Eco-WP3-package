@@ -1,0 +1,101 @@
+<%include file="blocks/header.html"/>
+<%include file="blocks/menu.html"/>
+<div class="container float_win">
+	<h1> stranka pro navrh novych stranek (zatim) </h1>
+	<form class="well form-inline" id="f_feed">
+		<legend>
+			Add Feed
+		</legend>
+		<div class="control-group">
+			<label class="control-label" for="f_name">Name</label>
+			<div class="controls">
+				<input type="text" class="input-xlarge" id="f_name">
+				<p class="help-block">
+					Edit feed name
+				</p>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="f_url">URL</label>
+			<div class="controls">
+				<input type="text" class="input-xlarge" id="f_url">
+				<p class="help-block">
+					Edit feed url
+				</p>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="f_ftype">Feed type</label>
+			<div class="controls">
+				<input type="text" class="input-xlarge" id="f_ftype" >
+				<select class="input-medium">
+					<option value="volvo">Build-in function</option>
+					<option value="saab">Static content</option>
+					<option value="mercedes">User function</option>
+					
+				</select>
+				<p class="help-block">
+					Edit feed type
+				</p>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="f_utime">update time every</label>
+			<div class="controls">
+				<input type="time" class="input-mini inline" id="f_utime">
+				:
+				<input type="text" class="input-mini inline" id="f_utime" >
+				<p class="help-block">
+					Interval between downloads in HH:MM format
+				</p>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="f_login">Authentization</label>
+			<div class="controls">
+				<input type="text" class="input-xlarge" id="f_login">
+				<p class="help-block">
+					Login for HTTP authentization
+				</p>
+				<input type="text" class="input-xlarge" id="f_passwd">
+				<p class="help-block">
+					Password for HTTP authentization
+				</p>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="optionsCheckbox">Checkbox</label>
+			<div class="controls">
+				<label class="checkbox">
+					<input type="checkbox" id="f_enable" value="option1">
+					Enable download </label>
+			</div>
+		</div>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary">
+				Save feed
+			</button>
+			<button class="btn">
+				Cancel
+			</button>
+		</div>
+	</form>
+</div>
+<a class="btn" data-toggle="modal" href="#myModal">Launch modal</a>
+<div class="modal fade" id="myModal">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">x</a>
+		<h3>Modal header</h3>
+	</div>
+	<div class="modal-body">
+		<p>
+			One fine body..
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn btn-primary">Save changes</a>
+		<a href="#" class="btn">Close</a>
+	</div>
+</div>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+<%include file="blocks/footer.html"/> 

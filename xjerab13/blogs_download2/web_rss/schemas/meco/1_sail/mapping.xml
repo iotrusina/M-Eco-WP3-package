@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <update_feed><![CDATA[pass]]></update_feed>
+    <func>
+        <item for="item/lang">
+            <text functype="buildin" args="item.iso_language">getItemFromFeedItem</text>
+        </item>
+        <item for="item/pubDate">
+            <text functype="buildin" args="item.updated_parsed">getIsoDateTime</text>
+        </item>
+        <item for="item/author/name">
+            <text functype="static" args="" />
+        </item>
+        <item for="item/text">
+            <text functype="userfunc" args=""><![CDATA[link = self.getItemFromFeedItem("item.xmllink")
+xml_file = getDataFrom(urlparse.urljoin(self.dbfeed.url, urlparse.urlparse(link).path), self.dbfeed.logon, self.dbfeed.password)
+#writeToFile(xml_file, link.split("/")[-1], os.path.join("rss_backup","sail","xmls"), ".xml", timestamp=True)
+tree = ElementTree.fromstring(xml_file)
+text = ""
+for node in tree.getiterator('word'):
+    if node.text is not None:
+        text += "".join([a+" " for a in node.text.split()])
+text = text.replace(" .",".")
+text = " ".join(text.split())
+return text]]></text>
+        </item>
+        <item for="item/section">
+            <text functype="userfunc" args=""><![CDATA[return urlparse.urlparse(self.dbfeed.url).netloc.split(".")[-2]]]></text>
+        </item>
+        <item for="item/title">
+            <text functype="buildin" args="item.title">getItemFromFeedItem</text>
+        </item>
+        <item for="item/source">
+            <text functype="userfunc" args=""><![CDATA[return self.dbfeed.url]]></text>
+        </item>
+        <item for="item/link">
+            <text functype="buildin" args="item.link">getItemFromFeedItem</text>
+        </item>
+        <item for="item/timestamp">
+            <text functype="buildin" args="">getIsoDateTime</text>
+        </item>
+        <item for="item/guid">
+            <text functype="userfunc" args=""><![CDATA[return "TV:" + self.getItemFromFeedItem("item.guid")]]></text>
+        </item>
+    </func>
+</root>

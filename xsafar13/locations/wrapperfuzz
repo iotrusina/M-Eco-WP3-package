@@ -1,0 +1,56 @@
+#!/bin/sh
+
+#############################################################
+#Priprava dat ze souboru allCountries.txt
+#############################################################
+python filter_allc > 0
+echo "1"
+cat 0 | sed "s/\( ([0-9]*)\)//g" | sed "s/\(([0-9]*) \)//g" | sed "s/\(([0-9]*)\)//g" | sed "s/\( ([Hh]istorical)\)//g" | sed "s/\( \[[Hh]istorical\]\)//g" | sed "s/\([()]\)//g" | sed "s/Landkreis //g" | sed "s/Bezirk //g" | sed "s/Kreis //g" | sed "s/-Kreis//g" | sed "s/\`//g" > 0.6
+echo "dokonceno filtrovani puvodni databaze"
+#############################################################
+# Rozdeleni souboru po radcich
+# soubor 1.5 -> nazev + informace
+# soubor 1.1 -> pouze nazev
+#############################################################
+tr '[:upper:]' '[:lower:]' < 0.6 > 0.7 
+python filter 0.7  > 0.9
+echo "2"
+##############nasledujici radek odkomentuj a ten po nem zakomentuj pokud nechces stoplist
+#cat 0.9 > 1 
+python stopList_martin > 1
+cat 1 | grep "^[^	]*-" > pomlcky
+echo "3"
+python filter_pomlcky > pomlsmaz
+echo "4"
+cat 1 pomlsmaz | grep -v "^ " > 1.4
+echo "5"
+
+python snapec_filter 1 1.1
+uniq 1.1 > samplepom
+python sample_filter samplepom | grep "." | sort > sample
+cat sample | cut -d "	" -f 1 | sort | uniq > duplikaty
+
+sort 1.4 | uniq > 1.5
+echo "dokonceni rozdeleni souboru po radcich"
+#!!!!!!!!pridat stoplist sem!!!!!!!!!!#
+
+###########################################################
+# Serazeni souboru a odstraneni radku s duplikatnim nazvem
+# lokace
+############################################################
+python snapec_filter 1.5 2
+python filter2 2 > 3
+echo "7"
+cat 3 | grep "." | grep -v "^[0-9][0-9]*	" | grep -v "^                " | sed '1d' > 5
+echo "9"
+cat 5 | cut -d "	" -f 1 > 5.2
+############################################################
+# KONEC PRIPRAVY DAT
+# volani skriptu sorter, ktery zpracuje data, vytvori 
+# automat a mapu  pro vyhledavani pomoci nastroje ner3
+##############################################################
+echo "dokonceni odstraneni duplikatu"
+echo "zacina vytvareni automatu atd"
+./sorter 5.2 5
+
+

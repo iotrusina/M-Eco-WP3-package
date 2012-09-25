@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <update_feed><![CDATA[new_entries = []
+#print feed["entries"]
+
+timestamp = self.dbfeed.cache_data
+
+
+for e in raw_feed["entries"]:
+    if timestamp >= time.mktime(e.updated_parsed):
+        continue 
+    time.sleep(1)
+    #print e["link"]
+    page = getDataFrom(e["link"], self.dbfeed.logon, self.dbfeed.password)
+    if page is None:
+        continue
+    soup = BeautifulSoup(page)
+    div = soup.find(id = 'page')
+    strongs = div.findAll("strong")
+    content = []
+    for c in strongs:
+        title = c.next
+        text = c.next.next.next
+        content.append([title,text])
+
+    c = 0
+    guid = e.id
+    for item in content:
+        title, text = item
+        new_item = None
+        new_item = copy.deepcopy(e)
+        new_item["id"] = str(c)+":"+ guid
+        new_item["title"] = title
+        new_item["description"] = text
+        new_entries.append(new_item)
+        c +=1
+        if "<br/>" in text:
+            print "found!!!"
+            return
+    
+raw_feed["entries"] = new_entries]]></update_feed>
+    <func>
+        <item for="item/lang">
+            <text functype="userfunc" args=""><![CDATA[return self.getItemFromFeedItem("feed.language").split("-")[0]]]></text>
+        </item>
+        <item for="item/pubDate">
+            <text functype="buildin" args="item.updated_parsed">getIsoDateTime</text>
+        </item>
+        <item for="item/author/name">
+            <text functype="buildin" args="item.author">getItemFromFeedItem</text>
+        </item>
+        <item for="item/text">
+            <text functype="buildin" args="item.description">getItemFromFeedItem</text>
+        </item>
+        <item for="item/section">
+            <text functype="userfunc" args=""><![CDATA[return urlparse.urlparse(self.dbfeed.url).netloc.split(".")[-2]]]></text>
+        </item>
+        <item for="item/title">
+            <text functype="buildin" args="item.title">getItemFromFeedItem</text>
+        </item>
+        <item for="item/source">
+            <text functype="buildin" args="feed.link">getItemFromFeedItem</text>
+        </item>
+        <item for="item/link">
+            <text functype="buildin" args="item.link">getItemFromFeedItem</text>
+        </item>
+        <item for="item/timestamp">
+            <text functype="buildin" args="">getIsoDateTime</text>
+        </item>
+        <item for="item/guid">
+            <text functype="userfunc" args=""><![CDATA[return "drfruehwein:" + self.getItemFromFeedItem("item.guid")]]></text>
+        </item>
+    </func>
+</root>

@@ -1,0 +1,40 @@
+#!usr/bin/python
+
+import sys
+import re
+import os
+
+fd = open(sys.argv[1],'r')
+dict = {}
+line = fd.readline()
+split = line.split('\n')
+words = split[0].split('\t')
+last = words[0]
+pom = []
+pom.append(words)
+printed = 0
+while True:
+  line = fd.readline()
+  if line == "":
+    break;
+  split = line.split('\n')
+  words = split[0].split('\t')
+  if words[0] == last:
+    pom.append(words)
+  else:
+    for i in pom:
+      if i != ['']:
+        if float(i[8]) > 0.5:
+          print i[0]+"\t"+i[1]+"\t"+i[2]+"\t"+i[3]+"\t"+i[4]+"\t"+i[5]+"\t"+i[6]+"\t"+i[7]+"\t"+i[8]
+          printed = i[8]
+    if printed == 0:
+      if i != ['']:
+        for i in pom:
+          print i[0]+"\t"+i[1]+"\t"+i[2]+"\t"+i[3]+"\t"+i[4]+"\t"+i[5]+"\t"+i[6]+"\t"+i[7]+"\t"+i[8]
+    pom = []
+    pom.append(words)
+    last = words[0]  
+    printed = 0  
+  
+    
+

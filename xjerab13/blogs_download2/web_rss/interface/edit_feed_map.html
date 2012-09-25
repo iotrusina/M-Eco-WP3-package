@@ -1,0 +1,215 @@
+<%include file="blocks/header.html"/>
+<%include file="blocks/menu.html" args="pgname='db'"/>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="tabbable tabs-left">
+                <div style="padding: 8px 0;" class="well">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">
+                            Edit menu
+                        </li>
+                        <li>
+                            <a href="/db/edit_feed/${item.id}">Edit feed</a>
+                        </li>
+                        <li class="active">
+                            <a href="/db/edit_feed_map/${item.id}">Edit mapping</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="span10">
+            <h1>Edit Feed Mapping</h1>
+            <form class="well form-inline" id="f_feed" method="get" action="/db/edit_feed_map/${item.id}">
+            <input type="hidden" id="feed_db_id" value="${item.id}">
+            <label class="control-text">Output scheme:</label>     
+            <select class="span2" name="schema">
+                <option value="meco" ${"selected" if item.output_scheme == "meco" else ''}>M-Eco</option>
+            </select>
+            <button type="submit" class="btn btn-primary" id="f_load_scheme">
+                    Load scheme
+            </button>
+            </form>
+            %if flz:
+            <dl class="dl-horizontal">
+                <dt>Feed channel contains following data:</dt> <dd>${", ".join(flz.feed.keys())}</dd>
+                <dt>Each item should contains following data:</dt><dd>${", ".join(flz.item.keys())}</dd> 
+            </dl>
+
+            <datalist id="feed_data">
+                %for a in flz.feed.keys():
+                    <option value="feed.${a}"></option>
+                %endfor
+                %for a in flz.item.keys():
+                    <option value="item.${a}"></option>
+                %endfor
+            </datalist>
+            %endif
+            
+            %if item.output_scheme != None:
+            
+            <form class="well form-horizontal" id="f_xml_spec">
+                <fieldset>
+                    <legend>
+                        XML root and container nodes specification
+                    </legend>
+                    <div class="control-group">
+                        <label class="control-label" for="f_xml_root">Root node</label>
+                        <div class="controls">
+                            <input type="text" class="input-medium" id="f_xml_root" value="${mapper.schema_root.tag}" disabled>
+                            <p class="help-block">
+                                Output xml root tag name
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f_xml_cont">Container node</label>
+                        <div class="controls">
+                            <input type="text" class="input-medium" id="f_xml_cont" value="${mapper.schema_container.tag}" disabled>
+                            <p class="help-block">
+                                Output xml container tag name
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            
+            <form class="well form" id="f_xml_spec">
+                <fieldset>
+                    <legend>
+                        Update feed function
+                    </legend>
+                        <div class="controls">
+                            <textarea class="span8" rows="15" id="f_update_func">${mapper.func_update if mapper.func_update else ''}</textarea>
+                        </div>
+                </fieldset>
+            </form>
+            
+            <% cnt = 0 %>
+            %for o in mapper.schema:
+            <% cnt = cnt + 1%>
+            %if mapper.funcs.has_key(o.xpath):
+            <form class="well tag_form" id="f_tagform_${cnt}">
+                <input type="checkbox" class="close" id="f_check_enabled_${cnt}" checked/>
+                <input type="hidden" class="form_tag_id" value="${cnt}" />
+                <fieldset>
+                    <legend>
+                            ${o.desc}
+                    </legend>
+                    <div class="control-group">
+                        <label class="control-label" for="f_tag_${o.tag}">Node</label>
+                        <div class="controls">
+                            name:
+                            <input type="text" class="input-small" id="tag_name_${cnt}" value="${o.tag}" disabled>
+                            xpath:
+                            <input type="text" class="input-large" id="tag_xpath_${cnt}" value="${o.xpath}" disabled="">
+                        </div>
+                    </div>
+                    %if mapper.funcs[o.xpath].text:
+                    <div class="control-group">
+                        <label class="control-label" for="">Node text</label>
+                        <div class="controls">
+                            get from: 
+                            <select class="input-medium func_type" id="text_func_type_${cnt}">
+                                <option value="buildin" ${"selected" if mapper.funcs[o.xpath].text.functype == "buildin" else ''}>Build-in function</option>
+                                <option value="static" ${"selected" if mapper.funcs[o.xpath].text.functype == "static" else ''}>Static content</option>
+                                <option value="userfunc" ${"selected" if mapper.funcs[o.xpath].text.functype == "userfunc" else ''}>User function</option>
+                            </select>
+                            %if mapper.funcs[o.xpath].text.functype == "buildin" :
+                            <select class="input-large" id = "text_func_name_${cnt}">
+                                <option value="getItemFromFeedItem" ${"selected" if mapper.funcs[o.xpath].text.func_name == "getItemFromFeedItem" else ''}>getItemFromFeedItem</option>
+                                <option value="getIsoDateTime" ${"selected" if mapper.funcs[o.xpath].text.func_name == "getIsoDateTime" else ''}>getIsoDateTime</option>
+                            </select>
+                            <strong>(</strong>
+                            <input type="text" class="input-large" id="text_args_${cnt}" value="${mapper.funcs[o.xpath].text.args}" list="feed_data">
+                            <strong>)</strong>
+                            %elif mapper.funcs[o.xpath].text.functype == "static" :
+                                <input type="text" class="input-medium" id="text_args_${cnt}" value="${mapper.funcs[o.xpath].text.args}"/>
+                            %elif mapper.funcs[o.xpath].text.functype == "userfunc" :
+                                <textarea class="span8" id="text_func_content_${cnt}" rows="10">${mapper.funcs[o.xpath].text.func_name.strip() if mapper.funcs[o.xpath].text.func_name else ''}</textarea>
+                            %endif
+                            
+                            %if flz:
+                                %if mapper.funcs[o.xpath].text.functype=="buildin" and not mapper.funcs[o.xpath].text.found:
+                                    <div class="alert">
+                                    <strong>Warning!</strong> ${mapper.funcs[o.xpath].text.args} has not been found in parsed feed. User specification requied!
+                                    </div>
+                                %endif
+                            %endif
+                            <p class="help-block">
+                               
+                            </p>
+                        </div>
+                    </div>
+                    %endif
+                    %if mapper.funcs[o.xpath].attr:
+                    <div class="control-group">
+                        <label class="control-label" for="f_name">Node atributes</label>
+                        
+                        <div class="controls">
+                            <%cnt_attr = 0%>
+                            %for atr in mapper.funcs[o.xpath].attr:
+                            <%cnt_attr = cnt_attr + 1%>
+                            name
+                            <input type="hidden" class="form_attr_id" value="${cnt_attr}" />
+                            
+                            <input type="text" class="input-small attr_name" id="attr_name_${cnt}_${cnt_attr}" value="${atr.name}" disabled>
+                            <select class="input-medium func_type" id="attr_func_type_${cnt}_${cnt_attr}">
+                                 <option value="buildin" ${"selected" if atr.functype == "buildin" else ''}>Build-in function</option>
+                                <option value="static" ${"selected" if atr.functype == "static" else ''}>Static content</option>
+                                <option value="userfunc" ${"selected" if atr.functype == "userfunc" else ''}>User function</option>
+                            </select>
+                            
+                            %if atr.functype == "buildin" :
+                            <select class="input-medium" id="attr_func_name_${cnt}_${cnt_attr}">
+                                <option value="getItemFromFeedItem" ${"selected" if atr.func_name == "getItemFromFeedItem" else ''}>getItemFromFeedItem</option>
+                                <option value="getIsoDateTime" ${"selected" if atr.func_name == "getIsoDateTime" else ''}>getIsoDateTime</option>
+                            </select>
+                            <strong>(</strong>
+                            <input type="text" class="input-large" id="attr_args_${cnt}_${cnt_attr}" value="${atr.args}" list="feed_data">
+                            <strong>)</strong>
+                            %elif atr.functype == "static" :
+                                <input type="text" class="input-medium" id="attr_args_${cnt}_${cnt_attr}" value="${atr.args}"/>
+                            %elif atr.functype == "userfunc" :
+                                <textarea class="span8" rows="10" id="attr_func_content_${cnt}_${cnt_attr}">${atr.func_name.strip() if atr.func_name else ''}</textarea>
+                            %endif
+                            
+                        %if flz:
+                        %if atr.functype=="buildin" and not atr.found:
+                        <div class="alert">
+                        
+                        <strong>Warning!</strong> ${atr.args} has not been found in parsed feed. User specification requied!
+                        </div>
+                        %endif
+                        %endif
+                            <p class="help-block">
+                               
+                            </p>
+                            %endfor
+                        </div>
+                    </div>
+                %endif
+                </fieldset>
+            </form>
+            %endif
+            %endfor
+            <form>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary" id="f_submit_btn">
+                    Save changes
+                </button>
+                <button class="btn">
+                    Return
+                </button>
+                <input type="checkbox" id="f_testdownload" /> Try download and parse feed.
+            </div>
+            </form>
+            %endif
+            <div id="qq" class="well"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/XMLWriter.js"></script>
+<script type="text/javascript" src="/static/js/edit_feed_map.js"></script>
+<%include file="blocks/footer.html"/> 

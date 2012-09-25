@@ -1,0 +1,23 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a  class="brand" href="/">WebRSS</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li ${'class="active"' if pgname=="main" else ''}>
+                        <a href="/">Home</a>
+                    </li>
+                    <li ${'class="active"' if pgname=="analyze" else ''}>
+                        <a href="/analyze">Analyze</a>
+                    </li>
+                    <li ${'class="active"' if pgname=="jobs" else ''}>
+                        <a href="/jobs">PAGE TEST</a>
+                    </li>
+                    <li ${'class="active"' if pgname=="db" else ''}>
+                        <a href="/db">Setting</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

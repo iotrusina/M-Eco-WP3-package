@@ -1,0 +1,209 @@
+<%include file="blocks/header.html"/>
+<%include file="blocks/menu.html"/>
+
+        <div class="container">
+            <h1>Program manual</h1>
+            <h2>Menu description</h2>
+            <p>
+                On top of page is static menu, which contains this links:
+            </p>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <p>
+                    Main page - contains a table of currently enabled feeds and their status.
+                </p>
+                <li>
+                    Analyze
+                </li>
+                <p>
+                    Page for url analysis and feed search.
+                </p>
+                <li>
+                    Settings
+                </li>
+                <p>
+                    Page for editing settings of rss feeds in database.
+                </p>
+                <li>
+                    Help
+                </li>
+                <p>
+                    This page.
+                </p>
+            </ul>
+            <h2>How to add new RSS feed.</h2>
+            <ul>
+                <li>
+                    Enter url for analysis and click submit. Url will be send to server for analysis. Results will be displayed in block <b>(2.)</b> and <b>(3.)</b>
+                </li>
+                <li>
+                    &lt;link&gt; tag <b>(2.)</b> table includes items in html &lt;head&gt;.
+                </li>
+                <li>
+                    &lt;a&gt; tag <b>(3.)</b> table includes items from html &lt;body&gt;.
+                </li>
+                <li>
+                    Selected feeds may be added into database by clicking add button <b>(4.)</b>.
+                </li>
+            </ul>
+            <img src="/static/img/analyze.jpg"></img>
+            <div>
+                <img src="/static/img/add_feed.jpg" style="float:right;"></img>
+                <p>
+                    After clicking Add button, you can edit some basic feed information.
+                </p>
+                <ul>
+                    <li>
+                        Name and feed type -  requied, but not important, they are used for information only.
+                    </li>
+                    <li>
+                        Url - url addres of specific feed.
+                    </li>
+                    <li>
+                        Update time - its specify interval between downloads
+                    </li>
+                    <li>
+                        Authentization - login and password for simple http authentization.
+                    </li>
+                </ul>
+                <p>
+                    After customize this information, click on Add feed button and feed will be added to database. Next step is create rules for converting data from RSS xml to output xml scheme.
+                </p>
+            </div>
+            <h2 style="clear:both;">Settings page</h2>
+            <p>
+                On this page you can see actual settings for all feeds in database.
+            </p>
+            <img src="/static/img/settings.jpg" />
+            <ul>
+                <li>
+                    With checkbox <b>(1.)</b> you can enable or disable feed for download. <b>Its recomended enabled only feeds with defined output_scheme and map_rules! Without them, the program have no idea, how to parse RSS xml to output scheme!</b>
+                    If selected feed is currently downloaded, the download is finished and then the feed item will be disabled.
+                </li>
+                <li>
+                    Trash icon <i class="icon-trash"></i><b>(2.)</b> delete feed from database. If selected feed is currently downloaded, the download is finished and then the feed item will be deleted from database.
+                </li>
+                <li>
+                    Pencil icon <i class="icon-pencil"></i><b>(2.)</b> refers to the page for feed settings editing.
+                </li>
+            </ul>
+            <h2>Edit Feed Settings.</h2>
+            <p>
+                On this page you can edit feed settings and feed output mapping.
+            </p>
+            <h3>Edit feed</h3>
+            This page contais basic information about feed. For more information, read section <b>How to add new RSS feed</b>. <h3>Edit mapping</h3>
+            <p>
+                On this page you can specify, which information from RSS xml will be used to generate output xml file.
+                If the feed does not have a output mapping, only a <b>Output scheme</b> form for will be displayed. Otherwise program load and display the saved settings for editing.
+            </p>
+            <h4>First time editing</h4>
+            <p>
+                For creating new mapping, select name of output scheme and click <b>Load scheme</b>.Program then:
+            </p>
+            <ol>
+                <li>
+                    Load scheme from file, and load default mapping for this scheme.
+                </li>
+                <li>
+                    Download and analyse feed. Try apply default mapping for downloaded feed.
+                </li>
+                <li>
+                    Create form based on output scheme and default mapping.
+                </li>
+                <li>
+                    If any of default rules can not be used, warning message is displayed.
+                </li>
+                <div class="alert">
+                    This is a warning example.
+                </div>
+            </ol>
+            <h4>Mapping building blocks</h4>
+            <p>
+                For editing rss mapping is created a block of several forms based on output xml scheme. User then can specify how data is obtained for a given item.
+            </p>
+            <strong>XML root and container nodes specification</strong>
+            <br />
+            <p>
+                This form is currently for information purporse only.
+            </p>
+            <strong>Update feed function</strong></br>
+            <p>
+                Block for user function. It can be used for prepocessing parsed RSS feed data.
+            </p>
+            <img src="/static/img/tag_bin.jpg" style="float:right;"/>
+            <strong>Tag form description</strong>
+            <br/>
+            <p>
+                Every form corresponds to one tag in output xml file. The form is described by:
+            </p>
+            <ol>
+                <li>
+                    tag descirption - describes what data is contained in this tag
+                </li>
+                <li>
+                    is XML tag name and xpath to this tag. Currently for information only.
+                </li>
+            </ol>
+            <p>
+                on bottom of every tag are several input fields to clarify source for node text or/and node attributes. User can choose between three options - <b>build in function</b>, <b>Static content</b> and <b>user function</b>.
+            </p>
+            <h1 style="clear:both;"></h1>
+            <strong>Build in function</strong>
+            <br/>
+            <p>
+                Build in functions are several function, which user can use for extractig or creating data for output xml. All build in function can be used from user fucntion with <b>self.</b> prefix.
+            </p>
+            <ul>
+                <li>
+                    getItemFromFeedItem
+                    <p>
+                        this function extract information from parsed RSS feed. As argument require key to specifid data.  List of available keys is on top of edit mapping page. 
+                        If browser support html5 forms, the list of available keys are displayed under text field.  
+                    </p>
+                </li>
+                <li>
+                    getIsoDateTime
+                    <p>
+                        This function create timestamp in ISO format. Can be used for generating timestamp, or convert parsed dates from feed to ISO format. If you want parse date from feed, pass path as argument to this function.  
+                    </p>
+                </li>
+            </ul>
+            <strong>Static content</strong>
+            <br/>
+            <p>
+                This option defines simply static content which shall be saved as textnode/argument value to the tag.
+            </p>
+            <img src="/static/img/tag_static.jpg"/>
+            <br/>
+            <strong>User function</strong>
+            <br/>
+            <p>
+                This options give user full control of how data will be extracted from parsed feed. User have available build in funcions, preddefined imports from python library, parsed feed and information about feed from database.
+            </p>
+            <strong>Build in methods and imported libraries</strong>
+            <ul>
+                <li>self.getItemFromFeedItem("path")</li> - method for extracting data from feed.
+                <li>self.getIsoDateTime</li> - method for generating ISO timestamp.
+                <li>self.unescape</li> - escape special characters in text
+                <li>writeToFile</li> - function for saving data to disk
+                <li>getDataFrom</li> - method for downloading data from internet
+                <li>BeautifulSoup</li> - module for parsing html 
+                <li>ElementTree</li> - module for parsing xml
+                <li>re, hashlib, urlparse, time</li> - imported python modules
+            </ul>
+            <p>Feed data can be accessed via <b>self.feed</b>, actualy parsed item via <b>self.item</b>.
+            The feed information form database are stored in <b>self.dbfeed</b>.
+            </p>
+            <img src="/static/img/tag_ufunc.jpg"/>
+            <p>After finishing, save these information with Save changes button. Then:</p>
+            <ul>
+                <li>The form will be convert to xml file and send to server.</li>
+                <li>Program generate download class based on data from uploaded xml.</li>
+                <li>Program will try compilse new class to avoiding syntactic error.</li>
+                <li>If selected, program download feed and parse it by new generated class. Results will be displayed.</li>
+            </ul>
+        </div>
+<%include file="blocks/footer.html"/> 

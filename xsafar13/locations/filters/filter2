@@ -1,0 +1,29 @@
+#!/usr/bin/python
+import re
+import time
+import shutil
+import sys
+
+s = open(sys.argv[1],'r')
+a = s.readline()
+if a == '':
+   s.close()
+else:
+   r = re.search('^(?P<name>[^\t]*)\t(?P<rest>[^$]*)',a)
+   name1 = r.group('name')
+   rest1 = r.group('rest')
+   print "%(name1)s	%(rest1)s" %locals()
+   while True:
+     a = s.readline()
+     if a == '':
+        s.close()
+        break
+     r = re.search('^(?P<name>[^\t]*)\t(?P<rest>[^$]*)',a)
+     name = r.group('name')
+     rest = r.group('rest')
+
+     if name1 == name:
+        continue	
+     print "%(name)s	%(rest)s" %locals()
+     name1 = name
+  

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <item>
+        <lang>Language</lang>
+        <pubDate>Publication Date</pubDate>
+        <author>
+            <name>Author Name</name>
+        </author>
+        <text>Document text</text>
+        <section>Section name</section>
+        <title>Document title</title>
+        <source>Source URL</source>
+        <link>Document URL</link>
+        <timestamp>Timestamp</timestamp>
+        <guid>Universal global indentificator</guid>
+    </item>
+</results>

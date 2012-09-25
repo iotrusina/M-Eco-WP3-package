@@ -1,0 +1,39 @@
+Skript pro ziskavani informaci m-eco databaze pro source = twitter a language = de
+
+Použití:
+
+
+usage: meco_dump [-h] [-f YYYY-MM-DD] [-t YYYY-MM-DD] [-a] [-y] [-o FILENAME]
+
+meco database dump
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f YYYY-MM-DD, --from YYYY-MM-DD
+                        start date
+  -t YYYY-MM-DD, --to YYYY-MM-DD
+                        stop date
+  -a, --all             make dump of whole db
+  -y                    make dump all events from yestreday
+  -o FILENAME, --output FILENAME
+                        force default filename
+
+
+priklady
+
+Ulozeni vsech zaznamu 
+
+	meco_dump.py -a 	
+
+ulozeni zaznamu pro urcity den
+	meco_dump.py -f YYYY-MM-DD
+	meco_dump.py -f 2010-02-05
+
+ulozeni zaznamu z rozsahu
+	meco_dump.py -f YYYY-MM-DD -t YYYY-MM-DD
+	meco_dump.py -f 2010-02-05 -t 2011-05-22
+
+
+
+
+

@@ -1,0 +1,26 @@
+#!/usr/bin/python
+import re
+import time
+import shutil
+import sys
+
+s = open(sys.argv[1],'r')
+while True:
+  a = s.readline()
+  if a == '':
+     s.close()
+     break
+  r = re.search('^(?P<name>[^\t]*)\t(?P<ASCII>[^\t]*)\t(?P<alt>[^\t]*)\t(?P<else>[^\t]*\t[^\t]*\t[^\t]*\t[^\t]*\t[^\t]*\t[0-9][0-9]*)',a)
+# ID \t name \t asciname \t altnames \t lat \t lon
+  alt = r.group('alt')
+  name = r.group('name')
+  ASCIIname = r.group('ASCII')
+  rest = r.group('else')
+  altsplit = alt.split(',')
+  print "%(name)s	%(ASCIIname)s	%(rest)s" %locals()
+  print "%(ASCIIname)s	%(ASCIIname)s	%(rest)s" %locals()
+  for i in altsplit:
+     if i != '':
+        print "%(i)s	%(ASCIIname)s	%(rest)s" %locals() 
+  
+  continue

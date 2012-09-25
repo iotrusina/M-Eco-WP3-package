@@ -1,0 +1,20 @@
+#!/usr/bin/python
+import re
+import time
+import shutil
+
+f = open("0.9","r")
+s = open("stop_fin","r")
+found=0
+file = f.readlines()
+stop = s.readlines()
+for line in file:
+  prep=line.split("\t")
+  for test in stop:
+    pom = test[:-1]
+    if pom == prep[0]:
+      found=1
+      break
+  if found!=1:
+    print line,
+  found=0

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fucn>
+    <item for="item/lang">
+        <text functype="buildin" args="feed.language">getItemFromFeedItem</text>
+    </item>
+    <item for="item/pubDate">
+        <text functype="buildin" args="item.updated_parsed">getIsoDateTime</text>
+    </item>
+    <item for="item/author/name">
+        <text functype="static" args=""></text>
+    </item>
+    <item for="item/section">
+        <text functype="static" args="sail-labs"></text>
+    </item>
+    <item for="item/text">
+        <text functype="userfunc" args="">
+           <![CDATA[
+text = ""
+for d in data:
+    output  = re.compile('<code>(.*?)</code>', re.DOTALL |  re.IGNORECASE).findall(d.value)
+    for t in output:
+        text += self.unescape(t.replace("&amp;", "&"))
+  
+return text      
+           ]]> 
+        </text>
+    </item>
+    <item for="item/title">
+        <text functype="buildin" args="item.title">getItemFromFeedItem</text>
+    </item>
+    <item for="item/source">
+        <text functype="buildin" args="feed.link">getItemFromFeedItem</text>
+    </item>
+    <item for="item/link">
+        <text functype="buildin" args="item.link">getItemFromFeedItem</text>
+    </item>
+    <item for="item/timestamp">
+        <text functype="buildin" args="">getIsoDateTime</text>
+    </item>
+    <item for="item/guid">
+        <text functype="userfunc" args="">
+<![CDATA[
+return "rsoeedis:" + str(sha224(self.text_writer(x).encode("utf-8")).hexdigest())
+]]>
+        </text>
+    </item>
+    <item for="item/georss">
+        <attr name="lon" functype="userfunc" args="">
+<![CDATA[
+return self.getItemFromFeedItem("item.georss_point").split(" ")[1]
+]]>
+        </attr>
+        <attr name="lat" functype="userfunc" args="">
+<![CDATA[
+return self.getItemFromFeedItem("item.georss_point").split(" ")[0]
+]]>
+        </attr>
+    </item>
+</fucn>

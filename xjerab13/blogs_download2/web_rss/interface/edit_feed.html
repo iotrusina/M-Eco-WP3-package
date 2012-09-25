@@ -1,0 +1,116 @@
+<%include file="blocks/header.html"/>
+<%include file="blocks/menu.html" args="pgname='db'"/>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <div class="tabbable tabs-left">
+                <div style="padding: 8px 0;" class="well">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">
+                            Edit menu
+                        </li>
+                        <li ${'class="active"' if pgname=="edit_feed" else ''}>
+                            <a href="/db/edit_feed/${item.id}">Edit feed</a>
+                        </li>
+                        <li ${'class="active"' if pgname=="edit_feed_map" else ''}>
+                            <a href="/db/edit_feed_map/${item.id}">Edit mapping</a>
+                        </li>
+                        <li>
+                            <a href="#">Something</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="span10">
+            <h1>Edit Feed Settings</h1>
+            <form class="well" id="f_feed">
+                <input type="hidden" id="f_id", value="${item.id}" />
+                <fieldset>
+                    <legend>
+                        edit Feed
+                    </legend>
+                    <div class="control-group">
+                        <label class="control-label" for="f_name">Name</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="f_name" value="${item.name}">
+                            <p class="help-block">
+                                Edit feed name
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f_url">URL</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="f_url" value="${item.url}">
+                            <p class="help-block">
+                                Edit feed url
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f_ftype">Feed type</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="f_ftype" value="${item.type}">
+                            <p class="help-block">
+                                Edit feed type
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f_utime">update time every</label>
+                        <div class="controls">
+                            <%
+                            hours = item.update_time/3600
+                            left = item.update_time - 3600*hours
+                            minutes = left/60
+                            %>
+                            <input type="text" class="input-mini inline" id="f_utime_h" value="${hours if hours > 9 else '0'+str(hours)}">
+                            :
+                            <input type="text" class="input-mini inline" id="f_utime_m" value="${minutes if minutes > 9 else '0'+str(minutes)}">
+                            <p class="help-block">
+                                Interval between downloads in HH:MM format
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="f_login">Authentization</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="f_login" value="${item.logon if item.logon else ''}">
+                            <p class="help-block">
+                                Login for HTTP authentization
+                            </p>
+                            <input type="text" class="input-xlarge" id="f_passwd" value="${item.password if item.password else ''}">
+                            <p class="help-block">
+                                Password for HTTP authentization
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="optionsCheckbox">Checkbox</label>
+                        <div class="controls">
+                            <label class="checkbox"> 
+                                %if item.enable:
+                                <input type="checkbox" id="f_enable" value="0" checked="">
+                                %else:
+                                <input type="checkbox" id="f_enable" value="1" >
+                                %endif
+                                Enable download </label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" id="f_submit_btn">
+                            Save changes
+                        </button>
+                        <button class="btn">
+                            Return
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/db_update.js"></script>
+<%include file="blocks/footer.html"/> 

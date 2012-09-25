@@ -1,0 +1,44 @@
+<% import time, datetime
+
+def maketime(job):
+
+    sec = job.update_time+job.last_update-time.time()
+   
+    if sec > 0:
+        return str(datetime.timedelta(seconds=int(sec)))
+    else:
+        return "-"
+%>
+
+
+<%include file="header.html"/>
+<%include file="menu.html"/>
+<div class="container">
+    <h1>Download status</h1>
+    <table class="table table-striped">
+    	<thead>
+    		<tr>
+    			<th>Name</th> 
+    			<th>Url</th>
+    			<th>Status</th>
+    			<th>Next update in</th>
+    			<th>Last update</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		%for job in jobs:
+    			<tr>
+    				<td>${job.name}</td>
+    				<td>${job.url}</td>
+    				<td>${job.status}</td>
+    				<td>${maketime(job)}</td>
+    				<td>${time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(job.last_update))}</td>
+    			</tr>
+    		%endfor
+    	</tbody>
+    </table>
+
+   
+
+</div>
+<%include file="footer.html"/>

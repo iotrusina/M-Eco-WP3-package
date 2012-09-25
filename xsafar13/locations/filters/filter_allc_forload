@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+
+f1 = open("allCountries","r")
+while True:
+  line = f1.readline()
+  if line == '':
+    f1.close()
+    break
+  sp = line.split("	")
+  if (sp[6] == "P"):
+    print sp[2] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  
+  if (sp[6] == "L") and (sp[7] == "RGN"):
+    print  sp[2] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  
+  if (sp[6] == "A"):
+    print  sp[2] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]

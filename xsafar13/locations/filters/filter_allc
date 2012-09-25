@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+
+f1 = open("allCountries","r")
+while True:
+  line = f1.readline()
+  if line == '':
+    f1.close()
+    break
+  sp = line.split("	")
+  if sp[8] == 'DE' :
+    if (sp[6] == "P"):
+      print sp[1] +"\t" +  sp[2] + "\t" + sp[3] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  
+    if (sp[6] == "L") and (sp[7] == "RGN"):
+      print sp[1] +"\t" +  sp[2] + "\t" + sp[3] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  
+    if (sp[6] == "A"):
+      print sp[1] +"\t" +  sp[2] + "\t" + sp[3] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  else: 
+    if sp[6] == "P" and ( sp[7] != 'PPL' and sp[7] != 'PPLL' and sp[7] != 'PPLX' and sp[7] != 'PPLS' and sp[7] != 'PPLQ' and sp[7] != 'PPLF' and sp[7] != 'PPLW' and sp[7] != 'PPLR'):
+      print sp[1] +"\t" +  sp[2] + "\t" + sp[3] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  
+    if (sp[6] == "L") and (sp[7] == "RGN"):
+      print sp[1] +"\t" +  sp[2] + "\t" + sp[3] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+  
+    if (sp[6] == "A"):
+      print sp[1] +"\t" +  sp[2] + "\t" + sp[3] + "\t" + sp[4] + "\t" + sp[5] + "\t" + sp[0] + "\t" + sp[7] + "\t" + sp[8] + "\t" + sp[14]
+    

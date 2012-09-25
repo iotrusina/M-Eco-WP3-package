@@ -1,0 +1,67 @@
+#!usr/bin/python
+
+import sys
+import re
+import os
+
+fd = open('duplicates','r')
+context = 0
+while True:
+  line = fd.readline()
+  
+  if line == "":
+    break;
+  split = line.split('\n')
+  words = split[0].split('\t')
+  fcode = words[5]
+  state = words[6]
+  popul = int(words[7])
+  if fcode == 'ADM1' or fcode == 'ADM2' or fcode == 'ADM3' or fcode == 'ADM4':
+    popul /= 10
+  if state == 'DE':
+    context += 1
+  elif state == 'GB' or state == 'ES' or  state == 'CH' or state == 'AT' or state == 'FR' :
+    context += 0.6
+  elif state == 'US' or state == 'CA' or state == 'IT' or state == 'PL' or state == 'CZ' or state == 'SK' or state == 'BE' or state == 'NL' or state == 'LU' or state == 'EG' or state == 'PT' or state == 'FI' or state == 'SE' or state == 'NO': 
+    context += 0.3
+ 
+  if popul < 50000:
+     context += 0.08
+  elif popul < 100000:
+     context += 0.16
+  elif popul < 200000:
+    context += 0.24
+  elif popul < 400000:
+     context += 0.32
+  elif popul < 600000:
+    context += 0.4
+  elif popul < 800000:
+    context += 0.48
+  elif popul < 1000000:
+    context += 0.56
+  elif popul < 2000000:
+     context += 0.64
+  elif popul < 3000000:
+     context += 0.72
+  elif popul < 5000000:
+    context += 0.8
+  elif popul < 10000000:
+     context += 0.88
+  elif popul > 10000000:
+     context += 1
+
+  if fcode == 'PPLC' or fcode == 'PCLI':
+    context += 1;
+  elif fcode == 'RGN' or fcode == 'ADM1' or fcode == 'PPLA':
+    context += 0.8
+  elif fcode == 'ADMD' or fcode == 'ADM2' or fcode == 'PPLA2':
+    context += 0.6
+  elif fcode == 'ADM3' or fcode == 'PPLA3':
+    context += 0.4
+  elif fcode == 'ADM4' or fcode == 'PPLA4':
+    context += 0.2
+  if fcode == 'PPL' and (state != 'DE' and  state != 'GB' and state != 'ES' and state != 'CH' and state != 'AT' and state != 'FR'):
+    context = 0
+  print split[0]+'\t'+str(context)
+  context = 0
+

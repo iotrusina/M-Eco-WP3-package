@@ -1,0 +1,21 @@
+#/bin/bash
+export LC_ALL="C"
+cat $1 | sort -u | uniq > asorted
+cat $2 | sort -u | uniq > bsorted
+fsa/./fsa_build -N < asorted > automaton.fsa
+fsa/./fsa_hash -N -d automaton.fsa < asorted > local_hash
+cat local_hash | sed "s/^\(.*\): \(.*\)$/\2	\1/" > local_hash_unsorted
+sort -g local_hash_unsorted > local_sorted
+cat local_sorted | sed "s/^[0-9][0-9]*	\(.*\)$/\1/" > list
+#cat local_hash_unsorted | sed "s/^\([0-9][0-9]*\).*/\1 /" > local_hash_numb
+paste local_hash_unsorted bsorted > allc_final_hash
+sort -g allc_final_hash > allc_final_hashsorted
+cat allc_final_hashsorted | sed "s/^[0-9][0-9]*[	]\(.*\)/\1/" > allc_list
+# cat allc_final_map | sed "s/^	//" > mapovani
+./map_list.sh allc_list  mapa.map
+rm asorted bsorted
+rm local_sorted
+rm local_hash_unsorted
+rm allc_final_hash
+rm allc_final_hashsorted
+rm local_hash

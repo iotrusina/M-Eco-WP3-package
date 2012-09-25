@@ -1,0 +1,28 @@
+#!/usr/bin/python
+import re
+import subprocess
+import sys
+import os
+import nltk
+from nltk.stem import PorterStemmer
+import Stemmer
+
+from nltk.stem.wordnet import WordNetLemmatizer
+lemm = WordNetLemmatizer()
+
+s= Stemmer.Stemmer('german')
+file = open('fromDb','r')
+while True:
+  b = file.readline()
+  if b == '':
+    exit()
+  b = b.split('\n')
+  str = b[0].replace('-',' ')
+  split = str.split('\t')
+  jaj = split[0].split()
+  a = ''
+  for i in jaj:
+    a += lemm.lemmatize(i) + ' '
+  a = a[:-1]
+  a = a + '\t' + split[1] + '\t' + split[2] + '\t' + split[3] + '\t' + split[4]
+  print a 

@@ -1,0 +1,10 @@
+Strucny navod...
+
+Pouzitie :
+	figav03 -d ../lists/figeo.fsa -l ../lists/myListFc.lst -m ../lists/myListFc.map < example_input
+	
+Prepinac -d specifikuje nazov/cestu k fsa, -l cestu k zoznamu geografickych nazvov
+a -m je mapa k danemu zoznamu, teda subor kde su na riadkoch odpovedajucim cislam
+hashe zadane adresy zaciatku riadkov s odpovedajucou polozkou v zozname. Je to len
+kvoli "rychlejsiemu" pristupu k polozkam, zatial som nevymyslel jak na zaznamy, ktore su
+duplovane, ale aj to bude coskoro.

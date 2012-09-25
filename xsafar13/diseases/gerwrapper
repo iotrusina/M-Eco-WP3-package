@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sort -d -u diseas | sort > dda
+python filter dda > ddd
+cut -d '	' -f 1 ddd > listo
+
+############################################################
+# KONEC PRIPRAVY DAT
+# volani skriptu sorter, ktery zpracuje data, vytvori 
+# automat a mapu  pro vyhledavani pomoci nastroje ner3
+##############################################################
+echo "zacina vytvareni automatu atd"
+soft/./gersorter listo ddd

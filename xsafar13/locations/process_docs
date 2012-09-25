@@ -1,0 +1,48 @@
+#!/usr/bin/python
+import sys
+import os
+import psycopg2
+import re
+import NER
+import subprocess
+
+
+a = NER.states()
+b = NER.dupli()
+c = NER.readFile()
+
+args = []
+args.insert(0,a)
+args.insert(1,b)
+args.insert(2,c)
+conn = psycopg2.connect("dbname=meco user=xsafar13 password=meco host=meco.l3s.uni-hannover.de")
+cursor = conn.cursor()
+cursor.execute("begin; set autocommit = on; commit;")
+conn.commit()
+dict = {}
+while True:
+  #cursor.execute("select id,language,text,pubdate from documents where pubdate > '2012-02-01' and source_id != 8794 and source_id != 8815 and ner_process is not true and (language = 'en' or language = 'de') order by pubdate limit 2000;")
+  cursor.execute("select id,language,text,pubdate from documents where _analyzed is true and ner_process is not true order by pubdate desc limit 500;")
+  #cursor.execute("select id,language,text,pubdate from documents where _analyzed is true and  source_id = 1 order by pubdate limit 20;")
+  cur = cursor.fetchall()
+  inst = []
+  for i in cur:
+    o = NER.find(i[2]+'\n',i[1],args)
+    print i[0]
+    cursor.execute("delete from instances where item_id = %s and entity_id not in (select id from only entities);",(i[0],) )
+    cursor.execute("update documents set ner_process = 't' where id= %s",(i[0],))
+    for loc in o.keys():
+      for k in o[loc]:
+        print 'Document:',i[0],';','exact:',k[2],'begin:',k[0],'lenght:',k[1],'geoid:',k[6],'confidence: ',k[10],
+        if k[6] not in dict.keys():
+          pom = int(k[6]) 
+          cursor.execute("select id from entities_loc where geonames_id = %s",(pom,))
+          cur2 = cursor.fetchone()
+          print cur2[0]
+	  dict[k[6]] = cur2[0]
+ 	  entity_id = cur2[0]
+        else:
+  	  entity_id = dict[k[6]]
+	  print entity_id
+        cursor.execute("insert into instances (entity_id,item_id,exact,offset_,length,confidence) values (%s,%s,%s,%s,%s,%s)",(entity_id,i[0],k[2],k[0],k[1],k[10],))
+    conn.commit() 

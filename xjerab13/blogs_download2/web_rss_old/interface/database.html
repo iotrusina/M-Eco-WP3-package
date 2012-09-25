@@ -1,0 +1,49 @@
+<%import time,datetime%>
+<%include file="header.html"/>
+
+
+<%include file="menu.html"/> 
+
+<div class="container">
+
+<h1> Feeds settings </h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            %for name in items[0].__class__.db_columns: 
+                <th>${name}</th>
+            %endfor
+            <th></th>
+            <th></th>   
+        </tr>
+    </thead>
+    <tbody>
+        %for elem in items:
+        <tr>
+            %for c in items[0].__class__.db_columns:
+                %if c == "password" : 
+                    <td>******</td>
+                %elif c == "update_time":
+                    <td>${str(datetime.timedelta(seconds=int(getattr(elem,c))))}</td>
+                %elif c == "last_update":
+                    <td>${time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(getattr(elem,c)))}</td>
+                %else:
+                    <td> ${getattr(elem,c)} </td>
+                %endif
+            %endfor
+            <td><i class="edit icon-pencil"></i></td>
+            <td><i class="del icon-trash"></i></td>
+        </tr>
+        % endfor
+    </tbody>
+</table>
+
+<script type="text/javascript" src="/static/js/db_ajax.js"></script>
+
+<div>
+    <h1>Download settings</h1>
+    *add app settings
+</div>
+
+</div>
+<%include file="footer.html"/>

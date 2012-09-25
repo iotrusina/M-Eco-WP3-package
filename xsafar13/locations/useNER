@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+import re
+import sys
+import NER
+import subprocess
+
+a = NER.states()
+b = NER.dupli()
+c = NER.readFile()
+
+args = []
+args.insert(0,a)
+args.insert(1,b)
+args.insert(2,c)
+file=open(sys.argv[1],'r')
+input = file.read()
+a = NER.find(input,'en',args)
+#print a

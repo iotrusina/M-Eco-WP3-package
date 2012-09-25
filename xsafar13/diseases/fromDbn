@@ -1,0 +1,2447 @@
+acute hepatitis	en	1142	disease	0
+acute virus hepatitis	en	1143	disease	1
+anthrax	en	1145	disease	2
+atypical bacteria - coxiella burnetti	en	1146	disease	3
+bacillus anthracis	en	1147	disease	4
+borrelia recurrentis	en	1148	disease	5
+botulism	en	1149	disease	6
+brucella sp.	en	1150	disease	7
+brucella spinal abscess	en	1151	disease	8
+campylobacter sp.	en	1152	disease	9
+campylobacter	en	1153	disease	10
+clostridium botulinum	en	1154	disease	11
+corynebacterium diphtheriae	en	1155	disease	12
+coxiella burnetii	en	1156	disease	13
+cryptosporidium parvum	en	1157	disease	14
+diphtheria	en	1158	disease	15
+ebola virus	en	1161	disease	16
+ebolavirus	en	1162	disease	17
+ehec	en	1163	disease	18
+francisella tularensis	en	1164	disease	19
+fsme-virus	en	1165	disease	20
+giardia lamblia	en	1166	disease	21
+haemophilus influenzae	en	1167	disease	22
+hanta virus	en	1168	disease	23
+hantavirus pulmonary syndrome	en	1169	disease	24
+hemolytic-uremic syndrome	en	1171	disease	25
+hepatitis a virus	en	1172	disease	26
+hepatitis a	en	1173	disease	27
+hepatitis b virus	en	1174	disease	28
+hepatitis b	en	1175	disease	29
+hepatitis c	en	1177	disease	30
+hepatitis d virus	en	1178	disease	31
+hepatitis d	en	1179	disease	32
+hepatitis e virus	en	1180	disease	33
+hepatitis e	en	1181	disease	34
+human spongiform enzephalopathy	en	1182	disease	35
+chlamydia psittaci	en	1183	disease	36
+influenza virus	en	1185	disease	37
+lassa fever	en	1186	disease	38
+lassa virus	en	1187	disease	39
+legionella sp.	en	1188	disease	40
+legionella	en	1189	disease	41
+leptospira interrogans	en	1190	disease	42
+listeria monocytogenes	en	1191	disease	43
+marburg virus	en	1193	disease	44
+measles virus	en	1194	disease	45
+measles	en	1195	disease	46
+meningococcal disease	en	1196	disease	47
+mycobacterium tuberculosis	en	1197	disease	48
+neisseria meningitidis	en	1198	disease	49
+norwalk-like virus	en	1199	disease	50
+other pathogens of hemorrhagic fever	en	1200	disease	51
+paratyphoid fever	en	1201	disease	52
+plague	en	1202	disease	53
+poliovirus	en	1204	disease	54
+rabies	en	1205	disease	55
+rabiesvirus	en	1206	disease	56
+rickettsia prowazekii	en	1207	disease	57
+rickettsia	en	1208	disease	58
+rotavirus	en	1209	disease	59
+salmonella paratyphi	en	1210	disease	60
+salmonella typhi	en	1211	disease	61
+shigella infection	en	1213	disease	62
+shigella sp.	en	1214	disease	63
+shigella	en	1215	disease	64
+spongiform encephalopathy	en	1216	disease	65
+trichinella spiralis infection	en	1217	disease	66
+trichinella spiralis	en	1218	disease	67
+tuberculosis	en	1219	disease	68
+typhoid and paratyphoid fever	en	1221	disease	69
+vibrio cholerae o 1 and o 139	en	1222	disease	70
+viral hemorrhagic fever	en	1223	disease	71
+yellow fever virus	en	1224	disease	72
+yersinia enterocolitica	en	1225	disease	73
+yersinia pestis	en	1226	disease	74
+yersinia	en	1227	disease	75
+adenovirus keratitis	en	1229	disease	76
+avian influenza	en	1231	disease	77
+aviäre influenza	de	1232	disease	78
+botulismus	de	1233	disease	79
+brucellosis	en	1234	disease	80
+brucellose	de	1235	disease	81
+campylobacter enteritis	en	1236	disease	82
+campylobacter-enteritis	de	1237	disease	83
+creutzfeldt-jakob disease	en	1239	disease	84
+creutzfeldt-jakob-krankheit	de	1240	disease	85
+dengue fever	en	1241	disease	86
+denguefieber	de	1242	disease	87
+diphtherie	de	1243	disease	88
+escherichia coli	en	1244	disease	89
+e.-coli-enteritis	de	1245	disease	90
+ebola fever	en	1246	disease	91
+ebolafieber	de	1247	disease	92
+enterohemorrhagic e. coli	en	1248	disease	93
+ehec-erkrankung	de	1249	disease	94
+typhus	en	1250	disease	95
+fleckfieber	de	1251	disease	96
+early summer meningoencephalitis	en	1252	disease	97
+frühsommer-meningoenzephalitis	de	1253	disease	98
+yellow fever	en	1254	disease	99
+gelbfieber	de	1255	disease	100
+haemophilia influenza	en	1257	disease	101
+haemophilus-influenzae	de	1258	disease	102
+hantavirus	en	1259	disease	103
+hantavirus-erkrankung	de	1260	disease	104
+influenza	en	1262	disease	105
+cryptosporidiosis	en	1264	disease	106
+kryptosporidiose	de	1265	disease	107
+lassafieber	de	1266	disease	108
+relapsing fever	en	1267	disease	109
+läuserückfallfieber	de	1268	disease	110
+legionellosis	en	1269	disease	111
+legionellose	de	1270	disease	112
+leprosy	en	1271	disease	113
+lepra	de	1272	disease	114
+leptospirosis	en	1273	disease	115
+leptospirose	de	1274	disease	116
+listeriosis	en	1275	disease	117
+listeriose	de	1276	disease	118
+marburgfieber	de	1277	disease	119
+masern	de	1278	disease	120
+milzbrand	de	1280	disease	121
+new variant of creutzfeldt-jakob disease	en	1281	disease	122
+neue variante creutzfeldt-jakob-krankheit	de	1282	disease	123
+norovirus	en	1283	disease	124
+norovirus-gastroenteritis	de	1284	disease	125
+ornithosis	en	1285	disease	126
+ornithose	de	1286	disease	127
+paratyphoid	en	1287	disease	128
+paratyphus	de	1288	disease	129
+bubonic plaque	en	1289	disease	130
+pest	de	1290	disease	131
+smallpox	en	1291	disease	132
+pocken	de	1292	disease	133
+q fever	en	1293	disease	134
+q-fieber	de	1294	disease	135
+rotavirus-erkrankung	de	1295	disease	136
+salmonellosis	en	1296	disease	137
+salmonellose	de	1297	disease	138
+swine flu	en	2068	disease	139
+sars	de	1299	disease	140
+shigellosis	en	1300	disease	141
+wechselfieber	de	2069	disease	142
+shigellose	de	1301	disease	143
+tollwut	de	1302	disease	144
+trichinosis	en	1303	disease	145
+trichinellose	de	1304	disease	146
+tuberkulose	de	1305	disease	147
+tularaemia	en	1306	disease	148
+tularämie	de	1307	disease	149
+enteric fever	en	1308	disease	150
+typhus abdominalis	de	1309	disease	151
+viral haemorrhagic fever	en	1310	disease	152
+virushepatitis a	de	1312	disease	153
+virushepatitis b	de	1313	disease	154
+virushepatitis c	de	1314	disease	155
+virushepatitis d	de	1315	disease	156
+virushepatitis e	de	1316	disease	157
+hepatitis	en	1317	disease	158
+virushepatitis non a-e	de	1318	disease	159
+gastroenteritis	en	1319	disease	160
+yersiniosis	en	1321	disease	161
+yersiniose	de	1322	disease	162
+echinococcosis	en	1323	disease	163
+echinokokkose	de	1324	disease	164
+hiv infection	en	1325	disease	165
+hiv-infektion	de	1326	disease	166
+congenital rubella syndrome	en	1328	disease	167
+congenital toxoplasmosis	en	1331	disease	168
+methicillin-resistant staphylococcus aureus	en	1333	disease	169
+mrsa	de	1334	disease	170
+adenovirus infection	en	1335	disease	171
+adenovirus	en	1144	disease	172
+amebiasis	en	1336	disease	173
+amoebiasis	de	1337	disease	174
+borreliosis	en	1338	disease	175
+borreliose	de	1339	disease	176
+gas gangrene	en	1340	disease	177
+gasbrand	de	1341	disease	178
+whooping cough	en	1342	disease	179
+keuchhusten	de	1343	disease	180
+meningoencephalitis	en	1344	disease	181
+pneumococcus	en	1347	disease	182
+rubella	en	1349	disease	183
+scarlet fever	en	1351	disease	184
+scharlach	de	1352	disease	185
+suspected rabies exposures	en	1354	disease	186
+tollwutexpositionsverdacht	de	1355	disease	187
+toxoplasmosis	en	1356	disease	188
+chickenpox	en	1358	disease	189
+windpocken	de	1359	disease	190
+cholera	en	1184	disease	191
+clostridium difficile	en	1238	disease	192
+giardiasis	en	1256	disease	193
+poliomyelitis	en	1203	disease	194
+malaria	en	1327	disease	195
+syphilis	en	1330	disease	196
+mumps	en	1346	disease	197
+tetanus	en	1353	disease	198
+schweinegrippe	de	1443	disease	199
+infektionsabteilung	de	1444	disease	200
+noroviren	de	1445	disease	201
+rotaviren	de	1446	disease	202
+hus	de	1261	disease	203
+enteropathisch	de	1447	disease	204
+darminfektionen	de	1448	disease	205
+diahrrö	de	1450	disease	206
+diahrröe	de	1451	disease	207
+diarrhoe	de	1452	disease	208
+durchfall	de	1453	disease	209
+flitzekacke	de	1455	disease	210
+flotterotto	de	1456	disease	211
+dünnpfiff	de	1457	disease	212
+abgeschlagenheit	de	1458	disease	213
+abortive pest	de	1459	disease	214
+absonderung von farbloser flüssigkeit	de	1460	disease	215
+abstehende ohrläppchen	de	1461	disease	216
+acquired immunodeficiency syndrome	de	1462	disease	217
+aids	de	1463	disease	218
+andere erreger	de	1464	disease	219
+angeborene toxoplasmose	de	1465	disease	220
+angeborene zytomegalie	de	1466	disease	221
+angstzustände	de	1467	disease	222
+anthrax hautmilzbrand	de	1468	disease	223
+appetitlosigkeit	de	1469	disease	224
+asymptomatisch	de	1470	disease	225
+asymptomatischer verlauf	de	1471	disease	226
+atemnot	de	1472	disease	227
+atemwegsbeschwerden gliederschmerzen	de	1473	disease	228
+atemwegserkrankung	de	1474	disease	229
+ausschlag	de	1475	disease	230
+bakterielle gastroenteritis magen-darm	de	1476	disease	231
+bakterienruhr	de	1477	disease	232
+balkan-grippe	de	1478	disease	233
+bauchbeschwerden	de	1479	disease	234
+bauchschmerzen	de	1480	disease	235
+bauchtyphus typhoid fever	de	1481	disease	236
+bauschschmerzen erbrechen	de	1482	disease	237
+bazillenruhr	de	1483	disease	238
+beinschmerzen	de	1484	disease	239
+beulenpest	de	1485	disease	240
+bewegungsstörungen	de	1486	disease	241
+bewusstlosigkeit	de	1487	disease	242
+bewusstseinsminderung	de	1488	disease	243
+bewusstseinsstörungen	de	1489	disease	244
+biberfieber lambliasis	de	1490	disease	245
+bilharziose	de	1491	disease	246
+bindehautentzündung konjunktivitis	de	1492	disease	247
+bindehautentzündung kopfschmerzen	de	1493	disease	248
+blähungen	de	1494	disease	249
+bläschen	de	1495	disease	250
+blattern	de	1496	disease	251
+blutdruckabfall schock	de	1497	disease	252
+blutiger stuhl	de	1498	disease	253
+blutig-schleimig-eitriger durchfall fieber	de	1499	disease	254
+blut im stuhl	de	1500	disease	255
+blutungen	de	1501	disease	256
+blutvergiftung	de	1502	disease	257
+brechuhr	de	1504	disease	258
+campylobacter-enteritis magen-darm	de	1505	disease	259
+campylobacter-infektion	de	1506	disease	260
+campylobacteriose	de	1507	disease	261
+cjk	de	1508	disease	262
+clostridiale myonekrose malignes ödem	de	1509	disease	263
+clostridien-infektion	de	1510	disease	264
+clostridium-myositis und -zellulitis	de	1511	disease	265
+dandy-fieber	de	1512	disease	266
+darmblutung darmkrämpfe	de	1513	disease	267
+darmentzündung	de	1514	disease	268
+darminfektion	de	1515	disease	269
+dauerfieber entzündungserscheinungen im rachen	de	1516	disease	270
+delta agens	de	1517	disease	271
+dengue-fieber	de	1519	disease	272
+denguetrias	de	1520	disease	273
+depressive verstimmung	de	1521	disease	274
+diarrhö bauchschmerzen	de	1522	disease	275
+dicke lymphknoten	de	1523	disease	276
+dunkler urin	de	1525	disease	277
+dünndarminfektion	de	1526	disease	278
+ebola	de	1530	disease	279
+eitrige bläschen	de	1531	disease	280
+enterisches fieber	de	1532	disease	281
+enterohämorrhagisches escherichia coli	de	1533	disease	282
+entzündliche erkrankungen	de	1534	disease	283
+entzündung der atmungsorgane	de	1535	disease	284
+entzündung der lymphknoten	de	1536	disease	285
+entzündung der mandeln und rachen	de	1537	disease	286
+erbrechen	de	1538	disease	287
+erkältung	de	1539	disease	288
+erkrankung der atemwege fieber	de	1540	disease	289
+erworbenes immundefizienzsyndrom	de	1541	disease	290
+euboea-fieber	de	1542	disease	291
+exanthem	de	1543	disease	292
+fad-süssliche mundgeruch	de	1544	disease	293
+faulfieber	de	1545	disease	294
+febris undulans	de	1546	disease	295
+fehlbildungen	de	1547	disease	296
+fieber	de	1548	disease	297
+fieberschübe	de	1549	disease	298
+fleckiger ausschlag bauchschmerzen	de	1550	disease	299
+flecktyphus typhus exanthematicus	de	1551	disease	300
+flüssigkeitsverlust	de	1552	disease	301
+fremdkörpergefühl im auge	de	1553	disease	302
+frühsommer-hirnhautentzündung	de	1554	disease	303
+frühsommer-meningo-enzephalitis	de	1555	disease	304
+furunkel	de	1556	disease	305
+gallenbrechdurchfall	de	1557	disease	306
+gasödem gasphlegmone	de	1558	disease	307
+gasser-syndrom	de	1559	disease	308
+gelbsucht	de	1560	disease	309
+gelenkschmerzen	de	1561	disease	310
+geschwächte immunabwehr	de	1562	disease	311
+geschwollene	de	1563	disease	312
+geschwür	de	1564	disease	313
+geschwüre	de	1565	disease	314
+gewebsnekrose	de	1566	disease	315
+gewichtsverlust	de	1567	disease	316
+gliederschmerzen	de	1568	disease	317
+gliederzittern	de	1569	disease	318
+grippe	de	1570	disease	319
+grippeähnliche symptome fieber	de	1571	disease	320
+grippeähnliche symptome rachenbeschwerden	de	1572	disease	321
+gürtelrose	de	1573	disease	322
+haemophilus-influenzae-meningitis oder -sepsis	de	1574	disease	323
+halluzination	de	1575	disease	324
+halsschmerzen	de	1576	disease	325
+hämolytisch-urämisches syndrom	de	1577	disease	326
+hämophilus influenzae-infektion	de	1578	disease	327
+hämorrhagisches fieber	de	1579	disease	328
+hasenpest	de	1580	disease	329
+hautauschlag	de	1581	disease	330
+hautblutungen	de	1582	disease	331
+hautreaktion	de	1583	disease	332
+hautveränderung	de	1584	disease	333
+heine-medin-krankheit	de	1585	disease	334
+hepatitis epidemica	de	1586	disease	335
+herpes zoster	de	1587	disease	336
+hirnhautentzündung	de	1588	disease	337
+hiv	de	1589	disease	338
+hohes fieber	de	1590	disease	339
+hus hämorrhagisch-urämischen syndrom	de	1591	disease	340
+hüsteln schwäche	de	1592	disease	341
+husten	de	1593	disease	342
+hustenattacken mit herausgestreckter zunge	de	1594	disease	343
+h1n1	de	1595	disease	344
+innere leishmaniose	de	1596	disease	345
+innere unruhe	de	1597	disease	346
+jauchzen	de	1598	disease	347
+je nach erreger	de	1599	disease	348
+juckenden hautausschlag	de	1600	disease	349
+kalte füsse und hände	de	1601	disease	350
+kehlkopfdiphterie	de	1602	disease	351
+keuchen fieber	de	1603	disease	352
+keuchhusten stickhusten 100-tage-husten	de	1604	disease	353
+kinderlähmung	de	1605	disease	354
+knochenbrecherfieber	de	1606	disease	355
+kopfschmerzen	de	1607	disease	356
+kopf-und gliederschmerzen	de	1608	disease	357
+kotzen	de	1609	disease	358
+krampfartige bauchschmerzen	de	1610	disease	359
+krämpfe übelkeit	de	1611	disease	360
+krankheitsgefühl	de	1612	disease	361
+lamblienruhr	de	1613	disease	362
+länderverordnung	de	1614	disease	363
+läusefieber läusefleckfieber	de	1615	disease	364
+lebensmittelvergiftung	de	1616	disease	365
+leberentzündung	de	1617	disease	366
+leber-und milzvergrsserung	de	1618	disease	367
+legionärskrankheit	de	1619	disease	368
+leichtes fieber effloreszenzen	de	1620	disease	369
+leichtes fieber leichte schwindelanfälle	de	1621	disease	370
+leishmaniose	de	1622	disease	371
+lues	de	1623	disease	372
+lues venerea	de	1624	disease	373
+lungenentzündung	de	1625	disease	374
+lungenmilzbrand darmmilzbrand	de	1626	disease	375
+lungenpest	de	1627	disease	376
+lymphknotenschwellung	de	1628	disease	377
+lymphknotenschwellungen dunkelroter fleck	de	1629	disease	378
+lyssa	de	1630	disease	379
+magen-darm	de	1631	disease	380
+magen-darm-entzündung	de	1632	disease	381
+magenkrämpfe	de	1633	disease	382
+mangelernährung bauchschmerzen	de	1634	disease	383
+mattigkeit	de	1635	disease	384
+meningitis	de	1636	disease	385
+meningokokken-infektion	de	1637	disease	386
+menschliches immundefekt-virus	de	1638	disease	387
+menschliches immunschwäche-virus	de	1639	disease	388
+mittelmeerfieber	de	1640	disease	389
+morbus koch die motten	de	1641	disease	390
+müde	de	1642	disease	391
+müdigkeit	de	1643	disease	392
+multiresistenter staphylokokkus aureus	de	1644	disease	393
+muskellehmung	de	1645	disease	394
+muskelschmerzen	de	1646	disease	395
+muskelschmerzen reizhusten	de	1647	disease	396
+muskel - und gelenkschmerzen	de	1648	disease	397
+nackensteifheit fieber	de	1649	disease	398
+nahrungsmittelvergiftung	de	1650	disease	399
+nach der geburt erworbene toxoplasmose	de	1651	disease	400
+nachtschweiss	de	1652	disease	401
+nasendiphterie	de	1653	disease	402
+neue grippe fieber	de	1654	disease	403
+norovirus-infektion	de	1655	disease	404
+ober- und unterlidschwellung	de	1656	disease	405
+ochropyra	de	1657	disease	406
+otitis fieber	de	1658	disease	407
+papeln	de	1659	disease	408
+parotitis epidemica salivitis epidemica ziegenpeter tölpel	de	1660	disease	409
+persönlichkeitsveränderung	de	1661	disease	410
+pertussis	de	1662	disease	411
+pestsepsis	de	1663	disease	412
+petechien	de	1664	disease	413
+pharyngitis	de	1665	disease	414
+pneumokokken-infektion	de	1666	disease	415
+polio	de	1667	disease	416
+pontiac-fieber	de	1668	disease	417
+psychische auffälligkeiten	de	1669	disease	418
+queensland-fieber	de	1670	disease	419
+query-fieber	de	1671	disease	420
+rachenentzündung	de	1673	disease	421
+ringförmige rötung	de	1674	disease	422
+rote flecken	de	1675	disease	423
+röteln	de	1676	disease	424
+rötung des auges	de	1678	disease	425
+rötung um den stich geschwür	de	1679	disease	426
+rubeola rubella	de	1680	disease	427
+rubula	de	1681	disease	428
+rückenschmerzen fieber	de	1682	disease	429
+salmonellen-infektion	de	1683	disease	430
+scarlatina	de	1684	disease	431
+severe acute respiratory syndrome	de	1685	disease	432
+sexuell übertragbare erkrankung	de	1686	disease	433
+shigellendysenterie shigellenruhr	de	1687	disease	434
+schistosomiasis	de	1688	disease	435
+schleimhautgeschwüre	de	1689	disease	436
+schluckbeschwerden	de	1690	disease	437
+schluckschmerzen	de	1691	disease	438
+schmerzen beim kauen	de	1692	disease	439
+schmerzen der wundregion	de	1693	disease	440
+schmerzhafte beulen schwellung der lymphknoten	de	1694	disease	441
+schnupfen	de	1695	disease	442
+schüttelforst	de	1696	disease	443
+schüttelfrost	de	1697	disease	444
+schwarzer tod	de	1698	disease	445
+schwarzes erbrechen	de	1699	disease	446
+schwellung der halslymphknoten	de	1700	disease	447
+schwellung der lymphknoten	de	1701	disease	448
+schwellung der wundregion	de	1702	disease	449
+schwellungen der ohrspeicheldrüsen	de	1703	disease	450
+schwere akute respiratorische syndrom	de	1704	disease	451
+schwer wässriger durchfall	de	1705	disease	452
+schwindelgefühl	de	1706	disease	453
+siehe erreger	de	1707	disease	454
+siehe windpocken	de	1708	disease	455
+starke kopfschmerzen	de	1709	disease	456
+starker juckreiz	de	1710	disease	457
+sternenhimmel	de	1711	disease	458
+stickhusten	de	1712	disease	459
+sumpffieber wechselfieber	de	1713	disease	460
+tbc schwindsucht	de	1714	disease	461
+toxoplasmose	de	1715	disease	462
+trachom	de	1716	disease	463
+trockener reizhusten	de	1717	disease	464
+übelkeit	de	1718	disease	465
+untypischen lungenentzündung	de	1719	disease	466
+unwohlsein	de	1720	disease	467
+uta oder espundia	de	1721	disease	468
+variola	de	1722	disease	469
+varizellen	de	1723	disease	470
+verfärbung der wundregion	de	1724	disease	471
+verkrampfung der muskulatur lähmung trink-und schluckbeschwerden	de	1725	disease	472
+verwirrtheit	de	1726	disease	473
+veteranenkrankheit	de	1727	disease	474
+vhf	de	1728	disease	475
+virale hämorrhagische fieber	de	1729	disease	476
+vogelgrippe	de	1730	disease	477
+wahnvorstellungen	de	1731	disease	478
+wachstumsverzögerungen	de	1732	disease	479
+wässriges wundsekret eiter	de	1733	disease	480
+wellenförmig fieber	de	1734	disease	481
+wundinfektion	de	1735	disease	482
+wundstarrkrampf	de	1736	disease	483
+wutkrankheit	de	1737	disease	484
+ziegengrippe	de	1738	disease	485
+zytomegalie	de	1739	disease	486
+frühsommer-meningo-enzephalitis (fsme)	en	2070	disease	487
+e.coli	en	2071	disease	488
+febris undulans	en	2072	disease	489
+pertussis	en	2073	disease	490
+severe acute respiratory syndrome	en	1298	disease	491
+hasenpest	en	2074	disease	492
+krim-kongo-fieber (cchf)	de	2075	disease	493
+pain	en	2167	disease	494
+meningokokken	de	1743	disease	495
+sick	en	2168	disease	496
+balkangrippe	en	2076	disease	497
+argentinisches hämorrhagisches fieber (junin)	de	2077	disease	498
+anthrax 	en	2078	disease	499
+legionellose	en	2079	disease	500
+balkan-grippe	en	2080	disease	501
+krankenhausinfektionen	en	2081	disease	502
+gehirnentzündung	de	2082	disease	503
+meningoenzephalitis	en	2083	disease	504
+pestsepsis	en	2084	disease	505
+mrsa	en	2085	disease	506
+dandy-fieber	en	2086	disease	507
+chinococcus 	en	2087	disease	508
+salmonellosis	de	2088	disease	509
+aviäre influenza	en	2089	disease	510
+venezolanisches hämorrhagisches fieber (guanarito)	de	2090	disease	511
+veteranenkrankheit	en	2091	disease	512
+multiresistenter staphylokokkus aureus	en	2092	disease	513
+creutzfeldt-jakob-krankheit	en	2093	disease	514
+schweres akutes respiratorische syndrom	de	2094	disease	515
+lungentuberkulose	en	2095	disease	516
+menschliches immunschwäche-virus	en	2096	disease	517
+meningomyelitis	en	2097	disease	518
+influenza  	de	2098	disease	519
+biberfieber lambliasis	en	2099	disease	520
+shigellenruhr	en	2100	disease	521
+lungenmilzbrand 	en	2101	disease	522
+sommergrippe	en	2102	disease	523
+atemwegserkrankung	en	2103	disease	524
+sexuell übertragbare erkrankung	en	2104	disease	525
+gasödem 	de	2105	disease	526
+frühsommer-hirnhautentzündung	en	2106	disease	527
+enteropathisch	en	2107	disease	528
+virushepatitis b	en	2108	disease	529
+sumpffieber 	en	2109	disease	530
+brasilianisches hämorrhagisches fieber (sabia)	en	2110	disease	531
+virushepatitis e	en	2111	disease	532
+yersinia 	en	2112	disease	533
+bazillenruhr	en	2113	disease	534
+faulfieber	en	2114	disease	535
+rubeola rubella	en	2115	disease	536
+erythema migrans	en	2116	disease	537
+kryptosporidiose	en	2117	disease	538
+salmonellen	de	2118	disease	539
+bauchtyphus typhoid fever	en	2119	disease	540
+erkrankung der atemwege fieber	en	2120	disease	541
+meningitis	en	2121	disease	542
+nasendiphterie	en	2122	disease	543
+bilharziose	en	2123	disease	544
+hämorrhagisches syndrom	de	2124	disease	545
+magen-darm-grippe	de	2125	disease	546
+hepatitis epidemica	en	2126	disease	547
+entzündung des gehirns	de	2127	disease	548
+borrelia 	en	2128	disease	549
+lymphknotenschwellung	en	2129	disease	550
+brucella 	en	2130	disease	551
+kinderkrankheiten 	de	2131	disease	552
+chikungunyafieber	en	2132	disease	553
+shigellendysenterie 	de	2133	disease	554
+schwellung der lymphknoten	en	2134	disease	555
+erythema migrans	de	1960	disease	556
+ehec	de	1961	disease	557
+trichinella spiralis	de	1962	disease	558
+hepatitis a	de	1963	disease	559
+hepatitis b	de	1964	disease	560
+bauchtyphus 	de	1965	disease	561
+rubellavirus 	de	1966	disease	562
+hautmilzbrand	de	1967	disease	563
+biberfieber 	de	1968	disease	564
+bindehautentzündung 	de	1969	disease	565
+streptococcus 	de	1970	disease	566
+läuse	de	1971	disease	567
+magen darm	de	1972	disease	568
+yersinia 	de	1973	disease	569
+borrelia 	de	1974	disease	570
+shigella 	de	1975	disease	571
+giardiasis	de	1976	disease	572
+neue grippe 	de	1977	disease	573
+borkenflechte	de	1978	disease	574
+krätze	de	1979	disease	575
+brucella 	de	1980	disease	576
+campylobacter	de	1981	disease	577
+tbc 	de	1982	disease	578
+chinococcus 	de	1983	disease	579
+corynebacterium 	de	1984	disease	580
+hautdiphtherie	de	1985	disease	581
+cholera	de	1986	disease	582
+meningoenzephalitis	de	1987	disease	583
+mumps	de	1988	disease	584
+virushepatitis 	de	1989	disease	585
+listeria 	de	1990	disease	586
+lungentuberkulose	de	1991	disease	587
+creutzfeldt jakob krankheit	de	1992	disease	588
+dengue fieber	de	1993	disease	589
+gastroenteritis 	de	1994	disease	590
+otitis 	de	1995	disease	591
+influenza 	de	1996	disease	592
+giardia lamblia	de	1997	disease	593
+tuberkulose 	de	1998	disease	594
+haemophilus 	de	1999	disease	595
+norovirus	de	2000	disease	596
+yersinia pestis	de	2001	disease	597
+rickettsia prowazekii	de	2002	disease	598
+francisella tularensis	de	2003	disease	599
+fsme	de	2004	disease	600
+hämorrhagisch-urämischen syndrom	de	2005	disease	601
+vibrio cholerae	de	2006	disease	602
+rabiesvirus	de	2007	disease	603
+malaria	de	2008	disease	604
+rabiesviren	de	2009	disease	605
+adenoviren	de	2010	disease	606
+varizellen 	de	2011	disease	607
+hepatitis e	de	2012	disease	608
+keuchhusten 	de	2013	disease	609
+frühsommer meningo enzephalitis	de	2014	disease	610
+lungenmilzbrand 	de	2015	disease	611
+bacillus anthracis	de	2016	disease	612
+shigellenruhr	de	2017	disease	613
+tetanus	de	2018	disease	614
+plasmodium 	de	2019	disease	615
+haemophilus influenzae 	de	2020	disease	616
+clostridien	de	2021	disease	617
+rotavirus	de	2022	disease	618
+cryptosporidium 	de	2023	disease	619
+leptospira 	de	2024	disease	620
+shigellen	de	2025	disease	621
+tölpel	de	2026	disease	622
+poliomyelitis	de	2027	disease	623
+salmonella	de	2028	disease	624
+typhus 	de	2029	disease	625
+menschliches immundefekt virus	de	2030	disease	626
+dengue 	de	2031	disease	627
+escherichia coli	de	2032	disease	628
+hantavirus	de	2033	disease	629
+heine medin krankheit	de	2034	disease	630
+meningomyelitis	de	2035	disease	631
+neisseria meningitidis	de	2036	disease	632
+morbus koch 	de	2037	disease	633
+legionella 	de	2038	disease	634
+e.coli	de	2039	disease	635
+toxoplasma 	de	2040	disease	636
+mycobacterium 	de	2041	disease	637
+fuchsbandwurm	de	2042	disease	638
+pneumokokken	de	2043	disease	639
+ziegenpeter	de	2044	disease	640
+impetigo contagiosa	de	2045	disease	641
+clostridium 	de	2046	disease	642
+dandy-fieber 	de	2047	disease	643
+granulomatosis infantiseptica	de	2048	disease	644
+treponema pallidum	de	2049	disease	645
+syphillis	de	2050	disease	646
+sumpffieber 	de	2051	disease	647
+hepatitis d	de	2052	disease	648
+läusefieber 	de	2053	disease	649
+konjunktivitis	de	2054	disease	650
+hepatitis c	de	2055	disease	651
+hepatitis  	de	2056	disease	652
+hantaviren	de	2057	disease	653
+magendarm	de	2058	disease	654
+enterohämorrhagische e. coli 	de	2059	disease	655
+vojta 	cs	2060	disease	656
+balkangrippe	de	2061	disease	657
+neue variante creutzfeldt jakob krankheit	de	2062	disease	658
+yersinia enterocolitica	de	2063	disease	659
+adenovirus	de	2064	disease	660
+läusefleckfieber	de	2065	disease	661
+pneumonie	de	2066	disease	662
+chlamydia 	de	2067	disease	663
+hepatitis	de	2135	disease	664
+mycobacterium 	en	2136	disease	665
+schweinegrippe	en	2137	disease	666
+flu	en	2138	disease	667
+cjk	en	2139	disease	668
+schwarzer tod	en	2140	disease	669
+rift-valley-fieber (rvf)	de	2141	disease	670
+ehec/hus	de	2142	disease	671
+bolivianisches hämorrhagisches fieber (machupo)	de	2143	disease	672
+virushepatitis d	en	2144	disease	673
+shigellen	en	2145	disease	674
+virushepatitis a	en	2146	disease	675
+rubula	en	2147	disease	676
+ochropyra	en	2148	disease	677
+biberfieber 	en	2149	disease	678
+menschliches immundefekt virus	en	2150	disease	679
+enzephalitis	de	2151	disease	680
+corynebacterium 	en	2152	disease	681
+grippe 	de	2153	disease	682
+mittelmeerfieber	en	2154	disease	683
+varizellen 	en	2155	disease	684
+typhus	de	2156	disease	685
+omsker fieber (ohf)	de	2157	disease	686
+kyasanur-forest-krankheit	de	2158	disease	687
+hiv-infektion	en	2159	disease	688
+methicillin-resistenter staphylokokkus aureus	en	2160	disease	689
+legionärskrankheit	en	2161	disease	690
+clostridien-infektion	en	2162	disease	691
+clostridien	en	2163	disease	692
+sommergrippe	de	2164	disease	693
+krankenhausinfektionen	de	2165	disease	694
+frühsommer-meningo-enzephalitis (fsme)	de	2166	disease	695
+ataxie	de	808	symptom	696
+sputum	en	458	symptom	697
+aches	en	25	symptom	698
+throat ulcer	en	508	symptom	699
+thumb rash	en	509	symptom	700
+thyroid enlargement	en	510	symptom	701
+tingling	en	511	symptom	702
+tiredness	en	512	symptom	703
+toe rash	en	513	symptom	704
+tongue ulcers	en	514	symptom	705
+tracheal stenosis	en	515	symptom	706
+travellers diarrhoea	en	516	symptom	707
+trismus	en	517	symptom	708
+trunk rash	en	518	symptom	709
+ulcer	en	519	symptom	710
+underarm rash	en	520	symptom	711
+unequal motor movement	en	521	symptom	712
+upper arm rash	en	522	symptom	713
+urethral discharge	en	523	symptom	714
+urogenital triangle rash	en	524	symptom	715
+urosepsis	en	525	symptom	716
+vaginal rash	en	526	symptom	717
+vertebral blister	en	527	symptom	718
+vertebral itch	en	528	symptom	719
+vertebral rash	en	529	symptom	720
+vertebral spasm	en	530	symptom	721
+visible bleeding	en	531	symptom	722
+vision changes	en	532	symptom	723
+vocal cord paralysis	en	533	symptom	724
+voicebox deformity	en	534	symptom	725
+voicebox infection	en	535	symptom	726
+voicebox lump	en	536	symptom	727
+voicebox redness	en	537	symptom	728
+voicebox ulcer	en	538	symptom	729
+voice symptoms	en	539	symptom	730
+vomiting	en	540	symptom	731
+vomiting in children	en	541	symptom	732
+vulval area rash	en	542	symptom	733
+vulva rash	en	543	symptom	734
+watery diarrhea	en	544	symptom	735
+watery stool	en	545	symptom	736
+weakness	en	546	symptom	737
+weight loss	en	547	symptom	738
+wet cough	en	548	symptom	739
+wheezing in children	en	549	symptom	740
+wrist pain	en	550	symptom	741
+wrist rash	en	551	symptom	742
+wrist swelling	en	552	symptom	743
+rötung der bindehaut	de	553	symptom	744
+lebensmittelbedingter botulismus	de	561	symptom	745
+säuglingsbotulismus	de	571	symptom	746
+gedeihstörung	de	573	symptom	747
+trinkschwäche	de	574	symptom	748
+muskelschwäche	de	576	symptom	749
+wundbotulismus	de	578	symptom	750
+hirnnervenstörung	de	579	symptom	751
+ptosis	de	580	symptom	752
+sehstörung	de	581	symptom	753
+schluckstörung	de	582	symptom	754
+nachtschweiß	de	593	symptom	755
+chirurgischer eingriff	de	600	symptom	756
+als direkte todesursache	de	601	symptom	757
+als zum tode beitragende erkrankung	de	602	symptom	758
+myoklonie	de	604	symptom	759
+akinetischer mutismus	de	605	symptom	760
+14-3-3-protein im liquor	de	606	symptom	761
+dengue-fieber	de	607	symptom	762
+dengue-schock-syndrom	de	609	symptom	763
+dengue hämorrhagisches fieber	de	611	symptom	764
+rachendiphtherie	de	618	symptom	765
+hautdiphtherie	de	621	symptom	766
+zns-symptomatik	de	643	symptom	767
+bindegewebsentzündung	de	660	symptom	768
+zellulitis	de	662	symptom	769
+epiglottitis	de	664	symptom	770
+lungeninfiltrate	de	693	symptom	771
+myopie	de	694	symptom	772
+zusätzlich	de	700	symptom	773
+akuter krankheitsbeginn	de	706	symptom	774
+borderline lepra	de	723	symptom	775
+indeterminierte lepra	de	725	symptom	776
+lepromatöse lepra	de	726	symptom	777
+tuberkuloide lepra	de	727	symptom	778
+periphere hautnerven verdickt	de	728	symptom	779
+subkonjunktivale blutungen	de	739	symptom	780
+listeriose des neugeborenen	de	741	symptom	781
+bindehautläsion	de	743	symptom	782
+granulomatosis infantiseptica	de	744	symptom	783
+schwangerschafts-listeriose	de	750	symptom	784
+frühgeburt	de	753	symptom	785
+infektion eines anderen organs	de	762	symptom	786
+katarrh	de	774	symptom	787
+kopliksche flecken	de	776	symptom	788
+hautveränderungen	de	778	symptom	789
+ekchymosen	de	779	symptom	790
+makulopapulöses exanthem	de	780	symptom	791
+petechien	de	781	symptom	792
+waterhouse-friderichsen-syndrom	de	793	symptom	793
+hautmilzbrand	de	794	symptom	794
+milzbrandkarbunkel	de	795	symptom	795
+lungenmilzbrand	de	796	symptom	796
+darmmilzbrand	de	799	symptom	797
+milzbrandsepsis	de	804	symptom	798
+frühe psychiatrische symptome	de	806	symptom	799
+anhaltende schmerzhafte empfindungsstörungen	de	807	symptom	800
+fortschreitende neuropsychiatrische erkrankung	de	810	symptom	801
+kein hinweis auf eine iatrogene vcjk	de	811	symptom	802
+keine alternative diagnose	de	812	symptom	803
+nachweis von pathologischem prionprotein	de	813	symptom	804
+signalanhebungen im posterioren thalamus	de	814	symptom	805
+symptomatik	de	816	symptom	806
+klinische zeichen	de	817	symptom	807
+biopsiebefund	de	818	symptom	808
+parese	de	838	symptom	809
+atypische pneumonie	de	842	symptom	810
+atemwegserkrankung	de	848	symptom	811
+kurzatmigkeit	de	851	symptom	812
+angstzustände	de	855	symptom	813
+delirium	de	856	symptom	814
+hydrophobie	de	857	symptom	815
+eosinophilie	de	861	symptom	816
+behandlung eingeleitet	de	866	symptom	817
+obstipation	de	884	symptom	818
+gelenkschmerzen	de	886	symptom	819
+hämorrhagischer verlauf	de	887	symptom	820
+bluthusten oder melaena	de	889	symptom	821
+positiver tourniquet-test	de	890	symptom	822
+erhöhte gefäßdurchlässigkeit	de	891	symptom	823
+anzeichen für plasmaaustritt	de	892	symptom	824
+oberbauchbeschwerden	de	910	symptom	825
+abszess	de	912	symptom	826
+anämie	de	913	symptom	827
+apathie	de	914	symptom	828
+appetit- oder gewichtsverlust	de	915	symptom	829
+dyspnoe	de	916	symptom	830
+bewusstseinsstörung	de	917	symptom	831
+koma	de	918	symptom	832
+somnolenz	de	919	symptom	833
+karditis	de	920	symptom	834
+fehlgeburt	de	924	symptom	835
+gastrointestinale beschwerden	de	926	symptom	836
+gelenkbeschwerden	de	927	symptom	837
+grippeähnliche beschwerden	de	928	symptom	838
+hämorrhagien	de	930	symptom	839
+hämoptoe	de	933	symptom	840
+hämorrhagie	de	934	symptom	841
+hautausschlag	de	935	symptom	842
+hautgeschwür	de	936	symptom	843
+hautläsion	de	937	symptom	844
+husten	de	939	symptom	845
+ikterus	de	940	symptom	846
+konjunktivitis	de	942	symptom	847
+lähmung	de	944	symptom	848
+neurologische symptome	de	947	symptom	849
+myelitis	de	950	symptom	850
+nierenfunktionsstörung	de	952	symptom	851
+blähungen	de	954	symptom	852
+ödem	de	956	symptom	853
+phlegmone	de	957	symptom	854
+purpura fulminans	de	958	symptom	855
+pyelonephritis	de	959	symptom	856
+schleimhautläsion	de	960	symptom	857
+schmerzen	de	961	symptom	858
+muskelschmerzen	de	963	symptom	859
+rückenschmerzen	de	964	symptom	860
+schnupfen	de	965	symptom	861
+stomatitis	de	967	symptom	862
+tonsillitis	de	968	symptom	863
+totgeburt	de	970	symptom	864
+krampfartige bauchschmerzen	de	975	symptom	865
+tenesmen	de	978	symptom	866
+invasiver zugang z.b. liquor-shunt	de	981	symptom	867
+neurochirurgischer eingriff	de	982	symptom	868
+trauma	de	983	symptom	869
+mrsa-infektionen	de	985	symptom	870
+des abdomens	de	987	symptom	871
+des respirationstraktes	de	988	symptom	872
+der haut- und weichteile	de	989	symptom	873
+der knochen und gelenke	de	990	symptom	874
+fokus unbekannt	de	992	symptom	875
+meningoenzephalitis	de	996	symptom	876
+meningomyelitis	de	997	symptom	877
+karunkelschwellung	de	998	symptom	878
+präaurikuläre lymphknotenschwellung	de	999	symptom	879
+typische hornhautdefekte	de	1000	symptom	880
+starke rötung und schwellung der bindehaut	de	1001	symptom	881
+intestinale manifestation	de	1002	symptom	882
+kolitis	de	1003	symptom	883
+extraintestinale manifestation	de	1004	symptom	884
+extraintestinale abszesse	de	1005	symptom	885
+erythema migrans	de	1007	symptom	886
+akute neuroborreliose	de	1008	symptom	887
+akute lähmung von hirnnerven	de	1009	symptom	888
+akute schmerzhafte radikuloneuritis	de	1011	symptom	889
+lyme-arthritis	de	1012	symptom	890
+erstmalig auftretende mono- oder oligoarthritis	de	1013	symptom	891
+ausschluss von arthritiden anderer genese	de	1014	symptom	892
+andere symptome	de	1015	symptom	893
+starker wundschmerz	de	1016	symptom	894
+tachykardie	de	1017	symptom	895
+endogener gasbrand	de	1018	symptom	896
+exogener gasbrand	de	1019	symptom	897
+anfallsweise auftretender husten	de	1020	symptom	898
+apnoe	de	1021	symptom	899
+erbrechen nach den hustenanfällen	de	1022	symptom	900
+husten von mehr als 14 tagen dauer	de	1023	symptom	901
+inspiratorisches stridor	de	1024	symptom	902
+übelkeit	de	1029	symptom	903
+geschwollene speicheldrüse	de	1030	symptom	904
+otitis media	de	1031	symptom	905
+peritonitis	de	1032	symptom	906
+empyem	de	1033	symptom	907
+fieber	de	1034	symptom	908
+hirndruckzeichen	de	1035	symptom	909
+aufgetriebene fontanelle	de	1036	symptom	910
+erbrechen	de	1037	symptom	911
+hus	de	1038	symptom	912
+meningitis	de	1039	symptom	913
+pneumonie	de	1040	symptom	914
+mastoiditis	de	1041	symptom	915
+meningeale zeichen	de	1042	symptom	916
+kopfschmerzen	de	1043	symptom	917
+nackensteifigkeit	de	1044	symptom	918
+veränderte bewusstseinslage	de	1045	symptom	919
+osteomyelitis	de	1046	symptom	920
+abdominal cramps	en	1	symptom	921
+abdominal distension	en	2	symptom	922
+abdominal pain	en	3	symptom	923
+abdominal wall blister	en	4	symptom	924
+abdominal wall numbness	en	5	symptom	925
+abdominal wall rash	en	6	symptom	926
+abdominal wall redness	en	7	symptom	927
+abdominal wall tingling	en	8	symptom	928
+abrupt watery diarrhoea	en	9	symptom	929
+absent abdominal reflexes	en	10	symptom	930
+absenteeism in children	en	11	symptom	931
+acanthosis nigricans	en	12	symptom	932
+sinusitis	de	1049	symptom	933
+arthritis	de	1050	symptom	934
+endokarditis	de	1051	symptom	935
+myokarditis	de	1052	symptom	936
+perikarditis	de	1053	symptom	937
+generalisierter ausschlag	de	1055	symptom	938
+lymphadenopathie	de	1056	symptom	939
+feinfleckiges exanthem	de	1057	symptom	940
+fleckiges enanthem am weichen gaumen	de	1058	symptom	941
+himbeer- oder erdbeerzunge	de	1059	symptom	942
+pharyngitis	de	1061	symptom	943
+septisches krankheitsbild	de	1062	symptom	944
+wundinfektion	de	1063	symptom	945
+chorioretinitis	de	1064	symptom	946
+enzephalitis	de	1065	symptom	947
+lymphknotenschwellung	de	1066	symptom	948
+zentralnervöse störungen	de	1067	symptom	949
+acute colitis-like symptoms	en	13	symptom	950
+acute diarrhoea	en	14	symptom	951
+acute ibd-like diarrhea	en	15	symptom	952
+acute ibs-like diarrhea	en	16	symptom	953
+acute ibs-like symptoms	en	17	symptom	954
+adenoids bleeding	en	18	symptom	955
+adenoids blister	en	19	symptom	956
+adenoids rash	en	20	symptom	957
+adenoids ulcer	en	21	symptom	958
+adrenal adenoma	en	22	symptom	959
+adrenal carcinoma	en	23	symptom	960
+agitation	en	24	symptom	961
+airway occlusion	en	26	symptom	962
+altered respiratory pattern	en	27	symptom	963
+amenorrhea	en	28	symptom	964
+anal fissure	en	29	symptom	965
+anal rash	en	30	symptom	966
+anatomic obstruction	en	31	symptom	967
+ankle rash	en	32	symptom	968
+anxiety	en	33	symptom	969
+aphthous ulcer	en	34	symptom	970
+apnea	en	35	symptom	971
+appetite changes	en	36	symptom	972
+ards	en	37	symptom	973
+arm pain	en	38	symptom	974
+arm rash	en	39	symptom	975
+ascites	en	40	symptom	976
+aseptic meningitis	en	41	symptom	977
+a sore throat	en	42	symptom	978
+asparatate aminotransferase elevation	en	43	symptom	979
+ataxia	en	44	symptom	980
+axillary swelling	en	45	symptom	981
+back lump	en	46	symptom	982
+back pain	en	47	symptom	983
+back rash	en	48	symptom	984
+bad breath	en	49	symptom	985
+bilateral adnexal tenderness	en	50	symptom	986
+bilateral crackles	en	51	symptom	987
+bladder burning sensation	en	52	symptom	988
+bladder infection	en	53	symptom	989
+bladder inflammation	en	54	symptom	990
+bladder lump	en	55	symptom	991
+bladder redness	en	56	symptom	992
+bladder swelling	en	57	symptom	993
+bladder ulcer	en	58	symptom	994
+blebs	en	59	symptom	995
+bleeding gums	en	60	symptom	996
+bleeding under skin	en	61	symptom	997
+blood in stool	en	62	symptom	998
+blood in urine	en	63	symptom	999
+blood streaked diarrhoea	en	64	symptom	1000
+bloody diarrhea	en	65	symptom	1001
+bloody ejaculation	en	66	symptom	1002
+bloody semen	en	67	symptom	1003
+bloody sputum	en	68	symptom	1004
+bone pain	en	69	symptom	1005
+bowel obstruction	en	70	symptom	1006
+bradycardia in children	en	71	symptom	1007
+brain tumor	en	72	symptom	1008
+brain tumour	en	73	symptom	1009
+brassy cough	en	74	symptom	1010
+breast rash	en	75	symptom	1011
+breathing difficulties	en	76	symptom	1012
+breathing difficulty	en	77	symptom	1013
+bronchial inflammation	en	78	symptom	1014
+bronchial redness	en	79	symptom	1015
+bronchial stiffness	en	80	symptom	1016
+bruising in pregnancy	en	81	symptom	1017
+buttock rash	en	82	symptom	1018
+cachexia	en	83	symptom	1019
+calf rash	en	84	symptom	1020
+catatonia	en	85	symptom	1021
+cervical lymphadenopathy	en	86	symptom	1022
+cervix ulcer	en	87	symptom	1023
+cirrhosis of liver	en	88	symptom	1024
+clay coloured stools	en	89	symptom	1025
+clitoris rash	en	90	symptom	1026
+clubbed fingers	en	91	symptom	1027
+clubbing in children	en	92	symptom	1028
+clubbing of fingers	en	93	symptom	1029
+cold feet	en	94	symptom	1030
+cold-like symptoms	en	95	symptom	1031
+colitis-like abdominal pain	en	96	symptom	1032
+colitis-like symptoms	en	97	symptom	1033
+complete respiratory arrest	en	98	symptom	1034
+conjunctivitis	en	99	symptom	1035
+constant diarrhea	en	100	symptom	1036
+constant throat pain	en	101	symptom	1037
+constipation	en	102	symptom	1038
+continuous spine pain	en	103	symptom	1039
+cough	en	104	symptom	1040
+crohns-like abdominal symptoms	en	105	symptom	1041
+crohns-like diarrhea symptoms	en	106	symptom	1042
+crohns-like symptoms	en	107	symptom	1043
+cystic fibrosis-like symptoms	en	108	symptom	1044
+dactylitis	en	109	symptom	1045
+decreased cardiac output	en	110	symptom	1046
+decreased hair growth	en	111	symptom	1047
+decreased oxygen saturation	en	112	symptom	1048
+decreased reflexes	en	113	symptom	1049
+decreased respiratory excursions	en	114	symptom	1050
+delayed puberty	en	115	symptom	1051
+delirium in children	en	117	symptom	1052
+dementia	en	118	symptom	1053
+diabetes insipidus	en	119	symptom	1054
+diaphoresis	en	120	symptom	1055
+diarrhea	en	121	symptom	1056
+diarrhea in children	en	122	symptom	1057
+difficulty walking	en	123	symptom	1058
+diminished breath sounds	en	124	symptom	1059
+diplopia	en	125	symptom	1060
+double vision	en	127	symptom	1061
+drenching night sweats	en	128	symptom	1062
+drooling	en	129	symptom	1063
+dull sounds	en	130	symptom	1064
+dyarthria in children	en	131	symptom	1065
+dysarthria	en	132	symptom	1066
+dysphagia	en	133	symptom	1067
+ear rash	en	134	symptom	1068
+edema of larynx	en	135	symptom	1069
+ejaculate blood	en	136	symptom	1070
+elbow rash	en	137	symptom	1071
+elevated sedimentary rate	en	138	symptom	1072
+encephalitis	en	139	symptom	1073
+enlarged lymph nodes	en	140	symptom	1074
+enlarged tonsils	en	141	symptom	1075
+episcleritis	en	142	symptom	1076
+eschar	en	143	symptom	1077
+excessive watery diarrhea	en	144	symptom	1078
+exercise symptoms	en	145	symptom	1079
+external os ulcer	en	146	symptom	1080
+eyebrow rash	en	147	symptom	1081
+eye inflammation	en	148	symptom	1082
+eyelid rash	en	149	symptom	1083
+eye pain	en	150	symptom	1084
+eye rash	en	151	symptom	1085
+face swelling	en	152	symptom	1086
+facial paralysis	en	153	symptom	1087
+facial rash	en	154	symptom	1088
+failure to thrive	en	155	symptom	1089
+fast breathing	en	156	symptom	1090
+fatigue	en	157	symptom	1091
+fatigue in children	en	158	symptom	1092
+feet weakness	en	159	symptom	1093
+female infertility	en	160	symptom	1094
+fever	en	161	symptom	1095
+finger clubbing	en	162	symptom	1096
+finger rash	en	163	symptom	1097
+fixed pupils	en	164	symptom	1098
+flu-like symptoms	en	165	symptom	1099
+foot-drop in children	en	166	symptom	1100
+foot rash	en	167	symptom	1101
+foot weakness	en	168	symptom	1102
+forearm rash	en	169	symptom	1103
+forehead rash	en	170	symptom	1104
+foreskin rash	en	171	symptom	1105
+formation of necrosis	en	172	symptom	1106
+foul smelling sputum	en	173	symptom	1107
+frequency of urination	en	174	symptom	1108
+fuo	en	175	symptom	1109
+gangrene	en	176	symptom	1110
+gastrointestinal symptoms	en	177	symptom	1111
+gi infection	en	178	symptom	1112
+green stool	en	179	symptom	1113
+groin rash	en	180	symptom	1114
+gum rash	en	181	symptom	1115
+haematuria	en	182	symptom	1116
+halitosis	en	183	symptom	1117
+hand rash	en	184	symptom	1118
+headache	en	185	symptom	1119
+head itch	en	186	symptom	1120
+head rash	en	187	symptom	1121
+healing symptoms	en	188	symptom	1122
+hemoptysis in children	en	189	symptom	1123
+hemoptysis in newborns	en	190	symptom	1124
+hemorrhagic rash	en	191	symptom	1125
+hemorrhagic rashes	en	192	symptom	1126
+hepatic failure	en	193	symptom	1127
+hepatitis	en	194	symptom	1128
+high arched foot	en	195	symptom	1129
+high blood calcium	en	196	symptom	1130
+high blood pressure	en	197	symptom	1131
+high fever	en	198	symptom	1132
+hoarseness in children	en	199	symptom	1133
+hypoactive dtrs	en	200	symptom	1134
+hypoalbuminemia	en	201	symptom	1135
+hypogastric swelling	en	202	symptom	1136
+hyporeflexia	en	203	symptom	1137
+hyporeflexia in children	en	204	symptom	1138
+hypotonia in children	en	205	symptom	1139
+cheek rash	en	206	symptom	1140
+chest infection	en	207	symptom	1141
+chest inflammation	en	208	symptom	1142
+chest pain	en	209	symptom	1143
+chest rash	en	210	symptom	1144
+chest tenderness	en	211	symptom	1145
+chest weakness	en	212	symptom	1146
+chills	en	213	symptom	1147
+chin rash	en	214	symptom	1148
+choking	en	215	symptom	1149
+chronic cough	en	216	symptom	1150
+chronic crohns-like symptoms	en	217	symptom	1151
+chronic ibd-like diarrhea	en	218	symptom	1152
+chronic ibd-like symptoms	en	219	symptom	1153
+chronic ibs-like diarrhea	en	220	symptom	1154
+chronic ibs-like symptoms	en	221	symptom	1155
+chronic progressive dysarthria	en	222	symptom	1156
+ibd-like abdominal pain	en	223	symptom	1157
+ibd-like symptoms	en	224	symptom	1158
+ibs-like diarrhea	en	225	symptom	1159
+icterus	en	226	symptom	1160
+impaired brain function	en	227	symptom	1161
+impaired motor movement	en	228	symptom	1162
+impaired speaking	en	229	symptom	1163
+increased lactate	en	230	symptom	1164
+increased salivation	en	231	symptom	1165
+increased thirst	en	232	symptom	1166
+indigestion	en	233	symptom	1167
+inflammatory joint effusion	en	234	symptom	1168
+intermittent bacterial pneumonia	en	235	symptom	1169
+intermittent crohns-like symptoms	en	236	symptom	1170
+intermittent foot weakness	en	237	symptom	1171
+intermittent generalised rashes	en	238	symptom	1172
+intermittent ibd-like diarrhea	en	239	symptom	1173
+intermittent ibd-like symptoms	en	240	symptom	1174
+intermittent ibs-like symptoms	en	241	symptom	1175
+intermittent palmar erythema	en	242	symptom	1176
+intermittent rib pain	en	243	symptom	1177
+internal os ulcer	en	244	symptom	1178
+interrupted urine flow	en	245	symptom	1179
+intestinal obstruction	en	246	symptom	1180
+iritis	en	247	symptom	1181
+itchy rash	en	248	symptom	1182
+jaundice	en	249	symptom	1183
+jaw rash	en	250	symptom	1184
+joint symptoms	en	251	symptom	1185
+kneecap rash	en	252	symptom	1186
+knee rash	en	253	symptom	1187
+knuckle rash	en	254	symptom	1188
+kyphosis	en	255	symptom	1189
+kyphosis in children	en	256	symptom	1190
+lack of urine	en	257	symptom	1191
+lacrimation	en	258	symptom	1192
+large tender liver	en	259	symptom	1193
+laryngitis	en	260	symptom	1194
+laryngospasm	en	261	symptom	1195
+larynx deformity	en	262	symptom	1196
+larynx infection	en	263	symptom	1197
+larynx lump	en	264	symptom	1198
+larynx redness	en	265	symptom	1199
+larynx ulcer	en	266	symptom	1200
+leg paralysis	en	267	symptom	1201
+leg ulcers	en	268	symptom	1202
+leucocytosis	en	269	symptom	1203
+leucopenia	en	270	symptom	1204
+leukopaenia	en	271	symptom	1205
+limp in children	en	272	symptom	1206
+liver cancer	en	273	symptom	1207
+liver enlargement	en	274	symptom	1208
+liver failure	en	275	symptom	1209
+liver infection	en	276	symptom	1210
+liver mass	en	277	symptom	1211
+liver redness	en	278	symptom	1212
+lower back pain	en	279	symptom	1213
+lower jaw rash	en	280	symptom	1214
+low-grade fever	en	281	symptom	1215
+lumbar spasm	en	282	symptom	1216
+lung abscess	en	283	symptom	1217
+lung inflammation	en	284	symptom	1218
+lung redness	en	285	symptom	1219
+lung stiff	en	286	symptom	1220
+lymphadenitis in children	en	287	symptom	1221
+lymphocytosis	en	288	symptom	1222
+maculopapular rash	en	289	symptom	1223
+malaise	en	290	symptom	1224
+male infertility	en	291	symptom	1225
+malnutrition	en	292	symptom	1226
+massive hemoptysis	en	293	symptom	1227
+massive hemorrhaging	en	294	symptom	1228
+mechanical intestinal obstruction	en	295	symptom	1229
+mechanical obstruction	en	296	symptom	1230
+melena	en	297	symptom	1231
+memory changes	en	298	symptom	1232
+menorrhagia	en	300	symptom	1233
+middle back pain	en	301	symptom	1234
+migratory arthritis	en	302	symptom	1235
+mild colitis-like symptoms	en	303	symptom	1236
+mild crohns-like symptoms	en	304	symptom	1237
+mild fever	en	305	symptom	1238
+mild ibs-like symptoms	en	306	symptom	1239
+miliary tuberculosis	en	307	symptom	1240
+mouth infections	en	308	symptom	1241
+mouth lesions	en	309	symptom	1242
+mouth lump	en	310	symptom	1243
+mouth pigmentation	en	311	symptom	1244
+mouth ulcers	en	312	symptom	1245
+mouth white patches	en	313	symptom	1246
+mucoid sputum	en	314	symptom	1247
+mucopurulent secretions	en	315	symptom	1248
+mucopurulent sputum	en	316	symptom	1249
+mucous plugs	en	317	symptom	1250
+mucus buildup	en	318	symptom	1251
+mucus in stool	en	319	symptom	1252
+mucus symptoms	en	320	symptom	1253
+multi-organ dysfunction	en	321	symptom	1254
+muscle atrophy	en	322	symptom	1255
+muscle flaccidity	en	323	symptom	1256
+muscle pain	en	324	symptom	1257
+muscle spasms	en	325	symptom	1258
+muscle weakness	en	326	symptom	1259
+myalgia	en	327	symptom	1260
+mydriasis	en	328	symptom	1261
+myocarditis	en	329	symptom	1262
+nasal obstruction	en	330	symptom	1263
+nasopharyngeal tonsil bleeding	en	331	symptom	1264
+nasopharyngeal tonsil blister	en	332	symptom	1265
+nasopharyngeal tonsil rash	en	333	symptom	1266
+nasopharyngeal tonsil ulcer	en	334	symptom	1267
+nausea	en	335	symptom	1268
+neck lump	en	336	symptom	1269
+neck rash	en	337	symptom	1270
+nerve root irritation	en	338	symptom	1271
+neurotoxic effects	en	339	symptom	1272
+abheilen	de	1068	symptom	1273
+exanthems	de	1069	symptom	1274
+injektionsmilzbrand	de	1070	symptom	1275
+milzbrandmeningitis	de	1071	symptom	1276
+thrombozytopenie	de	1072	symptom	1277
+night sweats	en	340	symptom	1278
+no appetite	en	341	symptom	1279
+noncardiogenic pulmonary edema	en	342	symptom	1280
+nonproductive cough	en	343	symptom	1281
+nostril ulcer	en	344	symptom	1282
+not feeling hungry	en	345	symptom	1283
+nuchal rigidity	en	346	symptom	1284
+ocular dysmetria	en	347	symptom	1285
+ophthalmoplegia	en	348	symptom	1286
+opisthotonus	en	349	symptom	1287
+optic neuritis	en	350	symptom	1288
+pallor in children	en	351	symptom	1289
+palm rash	en	352	symptom	1290
+pancreas inflammation	en	353	symptom	1291
+paralysis symptoms	en	354	symptom	1292
+paraplegia	en	355	symptom	1293
+peripheral neuropathy	en	356	symptom	1294
+peripheral vasoconstriction	en	357	symptom	1295
+persistent cough	en	358	symptom	1296
+persistent high fever	en	359	symptom	1297
+personality changes	en	360	symptom	1298
+petichiae in pregnancy	en	361	symptom	1299
+pharyngeal edema	en	362	symptom	1300
+pharyngeal muscle spasms	en	363	symptom	1301
+pharynx bleeding	en	365	symptom	1302
+pharynx blister	en	366	symptom	1303
+pharynx ulcer	en	367	symptom	1304
+photophobia	en	368	symptom	1305
+pleural effusion	en	369	symptom	1306
+popliteal fossa blister	en	370	symptom	1307
+positive babinski sign	en	371	symptom	1308
+progressive weakness	en	372	symptom	1309
+prolonged fever	en	373	symptom	1310
+proprioception	en	374	symptom	1311
+ptosis in children	en	376	symptom	1312
+pubic area rash	en	377	symptom	1313
+pulmonary inflammation	en	378	symptom	1314
+pulmonary redness	en	379	symptom	1315
+pulmonary stiff	en	380	symptom	1316
+purpura in adults	en	381	symptom	1317
+purulent sputum	en	382	symptom	1318
+pus in stool	en	383	symptom	1319
+pustules	en	384	symptom	1320
+pyelonephritis in pregnancy	en	385	symptom	1321
+pyuria	en	386	symptom	1322
+pyuria in pregnancy	en	387	symptom	1323
+quadriceps muscle weakness	en	388	symptom	1324
+quadriplegia	en	389	symptom	1325
+raised white cells	en	390	symptom	1326
+rapid respirations	en	391	symptom	1327
+rapid respiratory rate	en	392	symptom	1328
+rash in children	en	393	symptom	1329
+rectal bleeding	en	394	symptom	1330
+rectal mass	en	395	symptom	1331
+rectal ulcer	en	396	symptom	1332
+recurrent fever	en	397	symptom	1333
+recurring bouts of fever	en	398	symptom	1334
+recurring crohns-like symptoms	en	399	symptom	1335
+recurring ibd-like diarrhea	en	400	symptom	1336
+recurring ibd-like symptoms	en	401	symptom	1337
+recurring ibs-like symptoms	en	402	symptom	1338
+red spots	en	403	symptom	1339
+red throat	en	404	symptom	1340
+reduced tendon reflexes	en	405	symptom	1341
+renal lump	en	406	symptom	1342
+respiratory disorder	en	407	symptom	1343
+respiratory inflammation	en	408	symptom	1344
+respiratory redness	en	409	symptom	1345
+respiratory stiff	en	410	symptom	1346
+rib itch	en	411	symptom	1347
+rib pain	en	412	symptom	1348
+rib rash	en	413	symptom	1349
+rose spots	en	414	symptom	1350
+runny nose	en	415	symptom	1351
+rupture of blebs	en	416	symptom	1352
+sacral spasm	en	417	symptom	1353
+salivary gland pain	en	418	symptom	1354
+scarring alopecia	en	419	symptom	1355
+scleritis	en	420	symptom	1356
+scoliosis	en	421	symptom	1357
+scoliosis in children	en	422	symptom	1358
+scrotal rash	en	423	symptom	1359
+secondary infection	en	424	symptom	1360
+sensory ataxia	en	425	symptom	1361
+severe colitis-like symptoms	en	426	symptom	1362
+severe crohns-like symptoms	en	427	symptom	1363
+severe diarrhea	en	428	symptom	1364
+severe headache	en	429	symptom	1365
+severe ibd-like diarrhea	en	430	symptom	1366
+severe ibd-like symptoms	en	431	symptom	1367
+severe ibs-like diarrhoea	en	432	symptom	1368
+severe ibs-like symptoms	en	433	symptom	1369
+severe weight loss	en	434	symptom	1370
+shin rash	en	435	symptom	1371
+shortness of breath	en	437	symptom	1372
+short stature	en	438	symptom	1373
+shoulder rash	en	439	symptom	1374
+sinus ulcer	en	440	symptom	1375
+skin lesion	en	441	symptom	1376
+skin ulcer	en	442	symptom	1377
+skull itch	en	443	symptom	1378
+sneezing	en	445	symptom	1379
+sole rash	en	446	symptom	1380
+sore joints	en	447	symptom	1381
+sore throat	en	448	symptom	1382
+speaking difficulty	en	449	symptom	1383
+speech abnormalities	en	450	symptom	1384
+spinal blister	en	451	symptom	1385
+spinal itch	en	452	symptom	1386
+spinal rash	en	453	symptom	1387
+spinal spasm	en	454	symptom	1388
+spine pain	en	455	symptom	1389
+spitting blood	en	456	symptom	1390
+spongiform cerebral degeneration	en	457	symptom	1391
+stertorous breathing	en	459	symptom	1392
+stomach itch	en	460	symptom	1393
+stomach rash	en	461	symptom	1394
+stool color	en	463	symptom	1395
+stridor in children	en	464	symptom	1396
+succussion sounds	en	465	symptom	1397
+sudden onset	en	466	symptom	1398
+swallowing difficulty	en	467	symptom	1399
+sweating	en	468	symptom	1400
+swollen bone	en	469	symptom	1401
+swollen lymph glands	en	470	symptom	1402
+swollen nail	en	471	symptom	1403
+swollen spleen	en	472	symptom	1404
+tearing in children	en	473	symptom	1405
+temperature symptoms	en	474	symptom	1406
+temple itch	en	475	symptom	1407
+temporal itch	en	476	symptom	1408
+testicle lump	en	477	symptom	1409
+testicle swelling	en	478	symptom	1410
+testicular atrophy	en	479	symptom	1411
+testicular pain	en	480	symptom	1412
+testis rash	en	481	symptom	1413
+thigh itch	en	482	symptom	1414
+thigh paralysis	en	483	symptom	1415
+thigh rash	en	484	symptom	1416
+thigh weakness	en	485	symptom	1417
+thoracic blister	en	487	symptom	1418
+thoracic numbness	en	488	symptom	1419
+thoracic rash	en	489	symptom	1420
+thoracic redness	en	490	symptom	1421
+thoracic tingling	en	491	symptom	1422
+thoracic vertebrae blister	en	492	symptom	1423
+thoracic vertebrae itch	en	493	symptom	1424
+thoracic vertebrae rash	en	494	symptom	1425
+thoracic vertebrae spasm	en	495	symptom	1426
+thoracic wall blister	en	496	symptom	1427
+thoracic wall infection	en	497	symptom	1428
+thoracic wall inflammation	en	498	symptom	1429
+thoracic wall weakness	en	499	symptom	1430
+thorax infection	en	500	symptom	1431
+thorax inflammation	en	501	symptom	1432
+thorax weakness	en	502	symptom	1433
+throat bleeding	en	503	symptom	1434
+throat blister	en	504	symptom	1435
+throat infection	en	505	symptom	1436
+throat pain	en	506	symptom	1437
+throat rash	en	507	symptom	1438
+magen-darm 	de	1075	symptom	1439
+blutiger durchfall	de	1076	symptom	1440
+dünnschiss	de	1079	symptom	1441
+scheißerei	de	1080	symptom	1442
+scheißeritis	de	1081	symptom	1443
+bauchschmerzen	de	1082	symptom	1444
+bauchweh	de	1083	symptom	1445
+bauchgrimmen	de	1084	symptom	1446
+leibschneiden	de	1085	symptom	1447
+magendrücken	de	1086	symptom	1448
+magenschmerzen	de	1087	symptom	1449
+magenweh	de	1088	symptom	1450
+bauchkrämpfe	de	1089	symptom	1451
+krämpfe	de	1090	symptom	1452
+niedergeschlagen	de	1092	symptom	1453
+erschöpft	de	1093	symptom	1454
+abgeschlagenheit	de	1094	symptom	1455
+niedergeschlagenheit	de	1095	symptom	1456
+müde	de	1097	symptom	1457
+müdigkeit	de	1098	symptom	1458
+überdruss	de	1099	symptom	1459
+überdruß	de	1100	symptom	1460
+schläfrigkeit	de	1101	symptom	1461
+mattigkeit	de	1102	symptom	1462
+matt	de	1103	symptom	1463
+erschöpfung	de	1104	symptom	1464
+energielos	de	1105	symptom	1465
+dösig	de	1106	symptom	1466
+schläfrig	de	1107	symptom	1467
+heiser	de	3703	symptom	1468
+bubonic plaque	en	3704	symptom	1469
+mumps	en	3705	symptom	1470
+marburg virus	en	3706	symptom	1471
+francisella tularensis	en	3707	symptom	1472
+nasenkatarrh	de	3708	symptom	1473
+atypical bacteria - coxiella burnetti	en	3709	symptom	1474
+haemophilia influenza	en	3710	symptom	1475
+amebiasis	en	3711	symptom	1476
+mattscheibe	de	3712	symptom	1477
+acute hepatitis	en	3713	symptom	1478
+dialyse	de	3714	symptom	1479
+pusteln 	de	3715	symptom	1480
+adenovirus	en	3716	symptom	1481
+early summer meningoencephalitis	en	3717	symptom	1482
+malaria	en	3718	symptom	1483
+corynebacterium diphtheriae	en	3719	symptom	1484
+hantavirus	en	3720	symptom	1485
+campylobacter enteritis	en	3721	symptom	1486
+brucella sp.	en	3722	symptom	1487
+fieber 	de	3723	symptom	1488
+meningococcal disease	en	3724	symptom	1489
+campylobacter sp.	en	3725	symptom	1490
+ebola fever	en	3726	symptom	1491
+west-nil 	de	3727	symptom	1492
+krankheitszeichen	de	3728	symptom	1493
+borreliosis	en	3729	symptom	1494
+schwierigkeiten beim atmen	de	3730	symptom	1495
+dengue fever	en	3731	symptom	1496
+ermüdet	de	3732	symptom	1497
+schwierigkeiten zu atmen 	de	3733	symptom	1498
+anthrax	en	3734	symptom	1499
+ebolavirus	en	3735	symptom	1500
+listeria monocytogenes	en	3736	symptom	1501
+hanta virus	en	3737	symptom	1502
+nase läuft	de	3738	symptom	1503
+empyen	de	3739	symptom	1504
+fieberanstieg	de	3740	symptom	1505
+bacillus anthracis	en	3741	symptom	1506
+hepatitis d virus	en	3742	symptom	1507
+enteric fever	en	3743	symptom	1508
+übernächtigt	de	3744	symptom	1509
+brummschädel	de	3745	symptom	1510
+legionellosis	en	3746	symptom	1511
+haemophilus influenzae	en	3747	symptom	1512
+escherichia coli	en	3748	symptom	1513
+hepatitis a virus	en	3749	symptom	1514
+influenza	en	3750	symptom	1515
+influenza virus	en	3751	symptom	1516
+schlaftrunken	de	3752	symptom	1517
+creutzfeldt-jakob disease	en	3753	symptom	1518
+krätzchen	de	3754	symptom	1519
+chickenpox	en	3755	symptom	1520
+cryptosporidiosis	en	3756	symptom	1521
+borrelia recurrentis	en	3757	symptom	1522
+gas gangrene	en	3758	symptom	1523
+campylobacter	en	3759	symptom	1524
+measles	en	3760	symptom	1525
+meningoencephalitis	en	3761	symptom	1526
+bronchitis 	de	3762	symptom	1527
+congenital toxoplasmosis	en	3763	symptom	1528
+avian influenza	en	3764	symptom	1529
+echinococcosis	en	3765	symptom	1530
+hemolytic-uremic syndrome	en	3766	symptom	1531
+grippaler infekt	de	3767	symptom	1532
+hiv infection	en	3768	symptom	1533
+hepatitis a	en	3769	symptom	1534
+coxiella burnetii	en	3770	symptom	1535
+leptospira interrogans	en	3771	symptom	1536
+clostridium difficile	en	3772	symptom	1537
+cryptosporidium parvum	en	3773	symptom	1538
+lassa fever	en	3774	symptom	1539
+erbrechen 	de	3775	symptom	1540
+fsme-virus	en	3776	symptom	1541
+brucellosis	en	3777	symptom	1542
+diphtheria	en	3778	symptom	1543
+legionella sp.	en	3779	symptom	1544
+hepatitis e	en	3780	symptom	1545
+giardia lamblia	en	3781	symptom	1546
+kurzatmig	de	3782	symptom	1547
+cholera	en	3783	symptom	1548
+hepatitis d	en	3784	symptom	1549
+hepatitis c	en	3785	symptom	1550
+measles virus	en	3786	symptom	1551
+botulism	en	3787	symptom	1552
+human spongiform enzephalopathy	en	3788	symptom	1553
+hepatitis b	en	3789	symptom	1554
+brucella spinal abscess	en	3790	symptom	1555
+jucken	de	3791	symptom	1556
+ehec	en	3792	symptom	1557
+gastroenteritis	en	3793	symptom	1558
+flechte	de	3794	symptom	1559
+adenovirus infection	en	3795	symptom	1560
+hepatitis e virus	en	3796	symptom	1561
+pickel	de	3797	symptom	1562
+hepatitis b virus	en	3798	symptom	1563
+hantavirus pulmonary syndrome	en	3799	symptom	1564
+adenovirus keratitis	en	3800	symptom	1565
+leptospirosis	en	3801	symptom	1566
+keine stimme	de	3802	symptom	1567
+nasenbluten 	de	3803	symptom	1568
+congenital rubella syndrome	en	3804	symptom	1569
+nase putzen	de	3805	symptom	1570
+beschwerden	de	3806	symptom	1571
+acute virus hepatitis	en	3807	symptom	1572
+krätze	de	3808	symptom	1573
+methicillin-resistant staphylococcus aureus	en	3809	symptom	1574
+chlamydia psittaci	en	3810	symptom	1575
+kopfweh	de	3811	symptom	1576
+ebola virus	en	3812	symptom	1577
+giardiasis	en	3813	symptom	1578
+esbl	de	3814	symptom	1579
+clostridium botulinum	en	3815	symptom	1580
+rastlos	de	3816	symptom	1581
+listeriosis	en	3817	symptom	1582
+legionella	en	3818	symptom	1583
+übermüdet	de	3819	symptom	1584
+enterohemorrhagic e. coli	en	3820	symptom	1585
+staphylokokken	de	3821	symptom	1586
+leprosy	en	3822	symptom	1587
+lassa virus	en	3823	symptom	1588
+harnwegsinfektion	de	3824	symptom	1589
+enterobakteriazeen 	de	3825	symptom	1590
+verkühlung 	de	3826	symptom	1591
+schluckschmerzen	de	2848	symptom	1592
+darmblutung 	de	2849	symptom	1593
+anzeichen für 	de	2850	symptom	1594
+wundsekret 	de	2851	symptom	1595
+verkühlung	de	2852	symptom	1596
+schlaff	de	2853	symptom	1597
+elend	de	2854	symptom	1598
+durchfall	de	2855	symptom	1599
+nachtschweiss	de	2856	symptom	1600
+appetitlos	de	2857	symptom	1601
+blutungen	de	2858	symptom	1602
+entzündliche erkrankung	de	2859	symptom	1603
+wie ein haufen elend	de	2860	symptom	1604
+wechselfieber	de	2861	symptom	1605
+fiebrig	de	2862	symptom	1606
+lähmung von hirnnerven	de	2863	symptom	1607
+absonderung 	de	2864	symptom	1608
+kotzen	de	2865	symptom	1609
+darmentzündung	de	2866	symptom	1610
+bauchbeschwerden	de	2867	symptom	1611
+entzündung 	de	2868	symptom	1612
+nicht auf dem damm	de	2869	symptom	1613
+rachenentzündung	de	2870	symptom	1614
+infekt 	de	2871	symptom	1615
+verkrampfung 	de	2872	symptom	1616
+schlapp	de	2873	symptom	1617
+angegriffen	de	2874	symptom	1618
+schmerzhaft	de	2875	symptom	1619
+abwehrreaktion	de	2876	symptom	1620
+wie ein häufchen elend	de	2877	symptom	1621
+bewusstlosigkeit	de	2878	symptom	1622
+fieberschübe	de	2879	symptom	1623
+atemnot	de	2880	symptom	1624
+rotz	de	2881	symptom	1625
+dünndarminfektion	de	2882	symptom	1626
+dallas	de	2883	symptom	1627
+gliederschmerzen	de	2884	symptom	1628
+groogy	de	2885	symptom	1629
+kopf-und gliederschmerzen	de	2886	symptom	1630
+keuchen 	de	2887	symptom	1631
+eiter	de	2888	symptom	1632
+leidend	de	2889	symptom	1633
+atemwegsbeschwerden 	de	2890	symptom	1634
+blut im stuhl	de	2891	symptom	1635
+kränkelnd	de	2892	symptom	1636
+dienstunfähig	de	2893	symptom	1637
+psychische auffälligkeit	de	2894	symptom	1638
+sexuell übertragbare erkrankung	de	2895	symptom	1639
+beinschmerz	de	2896	symptom	1640
+schüttelforst	de	2897	symptom	1641
+nicht auf der höhe	de	2898	symptom	1642
+hämorrhagisches fieber	de	2899	symptom	1643
+kraftlos	de	2900	symptom	1644
+juckreiz	de	2901	symptom	1645
+krämpfe 	de	2902	symptom	1646
+blutiger stuhl	de	2903	symptom	1647
+gasödem 	de	2904	symptom	1648
+gliederzittern	de	2905	symptom	1649
+pflegebedürftigt	de	2906	symptom	1650
+stuhl	de	2907	symptom	1651
+rötung 	de	2908	symptom	1652
+darminfektion	de	2909	symptom	1653
+unpässlich	de	2910	symptom	1654
+eitrige bläschen	de	2911	symptom	1655
+erhöhte temperatur	de	2912	symptom	1656
+schwindsucht	de	2913	symptom	1657
+grippal	de	2914	symptom	1658
+diarrhoe	de	2915	symptom	1659
+diarrhö 	de	2916	symptom	1660
+appetitsverlust	de	2917	symptom	1661
+stickhusten	de	2918	symptom	1662
+halluzination	de	2919	symptom	1663
+hautveränderung	de	2920	symptom	1664
+hohes fieber	de	2921	symptom	1665
+flitzekacke	de	2922	symptom	1666
+halsschmerzen	de	2923	symptom	1667
+nahrungsmittelvergiftung	de	2924	symptom	1668
+reizhusten	de	2925	symptom	1669
+behandlung 	de	2926	symptom	1670
+wachstumsverzögerung	de	2927	symptom	1671
+geschwollene	de	2928	symptom	1672
+abdomen	de	2929	symptom	1673
+marod	de	2930	symptom	1674
+fremdkörpergefühl	de	2931	symptom	1675
+variola	de	2932	symptom	1676
+hüsteln 	de	2933	symptom	1677
+erreger	de	2934	symptom	1678
+erkrankt	de	2935	symptom	1679
+mundfäule	de	2936	symptom	1680
+flüssigkeitsverlust	de	2937	symptom	1681
+invasiver zugang	de	2938	symptom	1682
+kränkeln	de	2939	symptom	1683
+ausschlag	de	2940	symptom	1684
+bettlägerig	de	2941	symptom	1685
+bläschen	de	2942	symptom	1686
+trinkbeschwerden	de	2943	symptom	1687
+fad-süssliche mundgeruch	de	2944	symptom	1688
+depressiv	de	2945	symptom	1689
+hustenattacken	de	2946	symptom	1690
+grippeähnliche symptome 	de	2947	symptom	1691
+erkrankung 	de	2948	symptom	1692
+indisponiert	de	2949	symptom	1693
+urin	de	2950	symptom	1694
+schwach auf den beinen	de	2951	symptom	1695
+parotitis 	de	2952	symptom	1696
+nackensteifheit 	de	2953	symptom	1697
+schmerzhafte empfindungsstörungen	de	2954	symptom	1698
+bewegungsstörungen	de	2955	symptom	1699
+unwohl 	de	2956	symptom	1700
+darmkrämpfe	de	2957	symptom	1701
+flotterotto	de	2958	symptom	1702
+sterbenskrank	de	2959	symptom	1703
+lebensmittelvergiftung	de	2960	symptom	1704
+trockener reizhusten	de	2961	symptom	1705
+wahnvorstellung	de	2962	symptom	1706
+hautblutungen	de	2963	symptom	1707
+infektion	de	2964	symptom	1708
+lymphknoten	de	2965	symptom	1709
+abstehende ohrläppchen	de	2966	symptom	1710
+blattern	de	2967	symptom	1711
+mangelernährung 	de	2968	symptom	1712
+wässriger durchfall	de	2969	symptom	1713
+kränklich	de	2970	symptom	1714
+dünnpfiff	de	2971	symptom	1715
+gallenbrechdurchfall	de	2972	symptom	1716
+symptom 	de	2973	symptom	1717
+bluthusten	de	2974	symptom	1718
+angeschlagen	de	2975	symptom	1719
+muskellehmung	de	2976	symptom	1720
+unwohlsein	de	2977	symptom	1721
+schleimhautgeschwüre	de	2978	symptom	1722
+nicht gesund	de	2979	symptom	1723
+ansteckungsfähig	de	2980	symptom	1724
+gewebsnekrose	de	2981	symptom	1725
+krankheitsgefühl	de	2982	symptom	1726
+unruhe	de	2983	symptom	1727
+dengue schock syndrom	de	2984	symptom	1728
+papeln	de	2985	symptom	1729
+milzvergrösserung	de	2986	symptom	1730
+juckend	de	2987	symptom	1731
+blutdruckabfall 	de	2988	symptom	1732
+furunkel	de	2989	symptom	1733
+fehlbildung	de	2990	symptom	1734
+schwindelanfälle	de	2991	symptom	1735
+k.o.	de	2992	symptom	1736
+geschwächte immunabwehr	de	2993	symptom	1737
+exanthem	de	2994	symptom	1738
+magenkrämpfe	de	2995	symptom	1739
+neuroborreliose	de	2996	symptom	1740
+mitgenommen	de	2997	symptom	1741
+fleckiger ausschlag 	de	2998	symptom	1742
+verschleppte grippe	de	2999	symptom	1743
+lebervergrösserung	de	3000	symptom	1744
+dunkelroter fleck	de	3001	symptom	1745
+asymptomatischer verlauf	de	3002	symptom	1746
+schmerz	de	3003	symptom	1747
+schwellung 	de	3004	symptom	1748
+todkrank	de	3005	symptom	1749
+verwirrtheit	de	3006	symptom	1750
+gewichtsverlust	de	3007	symptom	1751
+krank sein	de	3008	symptom	1752
+wund	de	3009	symptom	1753
+todesursache	de	3010	symptom	1754
+krankheitsbeginn	de	3011	symptom	1755
+asymptomatisch	de	3012	symptom	1756
+erschwertes einatmen	de	3013	symptom	1757
+krankheitsfall	de	3014	symptom	1758
+jauchzen	de	3015	symptom	1759
+hautreaktion	de	3016	symptom	1760
+blutvergiftung	de	3017	symptom	1761
+starke rötung 	de	3018	symptom	1762
+schluckbeschwerden	de	3019	symptom	1763
+flau	de	3020	symptom	1764
+enterisches fieber	de	3021	symptom	1765
+krankheitsursache	de	3022	symptom	1766
+enteropathisch	de	3023	symptom	1767
+erkältung	de	3024	symptom	1768
+mattchig	de	3025	symptom	1769
+geschwür	de	3026	symptom	1770
+himbeerzunge	de	3027	symptom	1771
+nicht ganz auf dem posten	de	3028	symptom	1772
+schwindlig	de	3029	symptom	1773
+bewusstseinsminderung	de	3030	symptom	1774
+persönlichkeitsveränderung	de	3031	symptom	1775
+leberentzündung	de	3032	symptom	1776
+arbeitsunfähig	de	3033	symptom	1777
+rachenbeschwerden	de	3034	symptom	1778
+schwindelgefühl	de	3035	symptom	1779
+siech	de	3036	symptom	1780
+schmerzhafte radikuloneuritis	de	3037	symptom	1781
+rote flecken	de	3038	symptom	1782
+geschwächt 	de	3039	symptom	1783
+schüttelfrost	de	3040	symptom	1784
+mattschig	de	3041	symptom	1785
+entzündung der muskulatur	de	3042	symptom	1786
+darmblutung	de	3043	symptom	1787
+stadium convulsivum 	de	3044	symptom	1788
+angeschlagenheit	de	3045	symptom	1789
+innere unruhe	de	3046	symptom	1790
+schwindel	de	3047	symptom	1791
+effloreszenz	de	3048	symptom	1792
+mandelentzündung	de	3049	symptom	1793
+blutige scheisse	de	3050	symptom	1794
+vermehrter speichelfluß	de	3051	symptom	1795
+gastroenteritis 	de	3052	symptom	1796
+hochrotes gesicht	de	3053	symptom	1797
+ist übel	de	3054	symptom	1798
+schwellung der ohrspeicheldrüsen	de	3055	symptom	1799
+trockener husten	de	3056	symptom	1800
+schmerzhafte beulen	de	3057	symptom	1801
+myalgien	de	3058	symptom	1802
+missempfindungen	de	3059	symptom	1803
+bläschengesäumtes ulkus	de	3060	symptom	1804
+ärztin	de	3061	symptom	1805
+ängstlichkeit	de	3062	symptom	1806
+mikrozephalie	de	3063	symptom	1807
+impfen	de	3064	symptom	1808
+reisedurchfall	de	3065	symptom	1809
+erhöhung der zahl eosinophiler granulozyten	de	3066	symptom	1810
+muskelkrämpfe	de	3067	symptom	1811
+schlafschwierigkeiten	de	3068	symptom	1812
+bewusstseinsveränderung	de	3069	symptom	1813
+flecken auf der haut	de	3070	symptom	1814
+dunkler urin	de	3071	symptom	1815
+hämorrhagische diathese	de	3072	symptom	1816
+reizbarkeit	de	3073	symptom	1817
+appetitlosigkeit	de	3074	symptom	1818
+starker juckreiz	de	3075	symptom	1819
+arzt	de	3076	symptom	1820
+eintrübung	de	3077	symptom	1821
+wässriges wundsekret	de	3078	symptom	1822
+stadium decrementi 	de	3079	symptom	1823
+klo	de	3080	symptom	1824
+lehmfarbener stuhl	de	3081	symptom	1825
+depression	de	3082	symptom	1826
+42°c	de	3083	symptom	1827
+schlaflosigkeit	de	3084	symptom	1828
+rote hautflecken	de	3085	symptom	1829
+verfärbung der wundregion	de	3086	symptom	1830
+kotz	de	3087	symptom	1831
+41°c	de	3088	symptom	1832
+ringförmige rötung	de	3089	symptom	1833
+ist schlecht	de	3090	symptom	1834
+schwerer durchfall	de	3091	symptom	1835
+atemschwierigkeiten	de	3092	symptom	1836
+schock	de	3093	symptom	1837
+verlust des schmerzempfindens	de	3094	symptom	1838
+milzschwellung	de	3095	symptom	1839
+hüsteln	de	3096	symptom	1840
+respiratorische symptome	de	3097	symptom	1841
+verhaltensveränderung	de	3098	symptom	1842
+pertussis	de	3099	symptom	1843
+entzündung der leber	de	3100	symptom	1844
+muskellähmung	de	3101	symptom	1845
+darmverschluss	de	3102	symptom	1846
+magen-darmbeschwerden	de	3103	symptom	1847
+kinderkrankheit	de	3104	symptom	1848
+blutige kacke	de	3105	symptom	1849
+fleckiger ausschlag	de	3106	symptom	1850
+flitze kacke	de	3107	symptom	1851
+blutungsneigung	de	3108	symptom	1852
+milchbart	de	3109	symptom	1853
+blutdruckabfall	de	3110	symptom	1854
+verkrampfung der muskulatur	de	3111	symptom	1855
+diarrhö	de	3112	symptom	1856
+wachstumsstörungen	de	3113	symptom	1857
+belag auf der zunge	de	3114	symptom	1858
+ards	de	3115	symptom	1859
+glasiger schleim	de	3116	symptom	1860
+vergrößerung der milz und leber	de	3117	symptom	1861
+dicke lymphknoten	de	3118	symptom	1862
+schwächegfühl	de	3119	symptom	1863
+schmerzen der wundregion	de	3120	symptom	1864
+punktförmige hautblutungen	de	3121	symptom	1865
+lichtscheu	de	3122	symptom	1866
+kieferklemme	de	3123	symptom	1867
+bindehautentzündung	de	3124	symptom	1868
+durchfälle	de	3125	symptom	1869
+hals kratzt	de	3126	symptom	1870
+untergewicht	de	3127	symptom	1871
+atemprobleme	de	3128	symptom	1872
+schmerzen beim kauen	de	3129	symptom	1873
+langsamer herzschlag	de	3130	symptom	1874
+krank	de	3131	symptom	1875
+weiß belegte zunge	de	3132	symptom	1876
+veränderte hautfarbe	de	3133	symptom	1877
+luftnot	de	3134	symptom	1878
+dengue fieber	de	3135	symptom	1879
+myositis	de	3136	symptom	1880
+anophthalmie	de	3137	symptom	1881
+verlust der wärmeempfindung	de	3138	symptom	1882
+schwellung der lymphknoten	de	3139	symptom	1883
+mundtrockenheit	de	3140	symptom	1884
+39°c	de	3141	symptom	1885
+juckender hautausschlag	de	3142	symptom	1886
+reiern	de	3143	symptom	1887
+verstopfung	de	3144	symptom	1888
+grippeartige symptomen	de	3145	symptom	1889
+ansteckend	de	3146	symptom	1890
+gelbfärbung	de	3147	symptom	1891
+halskratzen	de	3148	symptom	1892
+bewußtlosigkeit	de	3149	symptom	1893
+heller stuhl	de	3150	symptom	1894
+verschwommen sehen	de	3151	symptom	1895
+geschwollene lymphknoten	de	3152	symptom	1896
+roter rachen	de	3153	symptom	1897
+sprechstörungen	de	3154	symptom	1898
+starke kopfschmerzen	de	3155	symptom	1899
+juckreiz an der stichstelle	de	3156	symptom	1900
+toilettenschüssel	de	3157	symptom	1901
+heiserkeit	de	3158	symptom	1902
+heller urin	de	3159	symptom	1903
+beinschmerzen	de	3160	symptom	1904
+bradykardie	de	3161	symptom	1905
+doktor	de	3162	symptom	1906
+rote flecken im rachenraum	de	3163	symptom	1907
+lärmempfindlichkeit	de	3164	symptom	1908
+epidemie	de	3165	symptom	1909
+hautrötung	de	3166	symptom	1910
+wasserkopf	de	3167	symptom	1911
+verlust der schmerzempfindung	de	3168	symptom	1912
+dunkelfärbung des urins	de	3169	symptom	1913
+milzvergrößerung	de	3170	symptom	1914
+austrocknung	de	3171	symptom	1915
+stuhkgang	de	3172	symptom	1916
+40°c	de	3173	symptom	1917
+schwellung der halslymphknoten	de	3174	symptom	1918
+lethargie	de	3175	symptom	1919
+blutig-schleimig-eitriger durchfall	de	3176	symptom	1920
+lungenschmerzen	de	3177	symptom	1921
+entzündung des rachens	de	3178	symptom	1922
+papel	de	3179	symptom	1923
+fehlen der augenanlage	de	3180	symptom	1924
+anstecken 	de	3181	symptom	1925
+entzündung der schleimhäute	de	3182	symptom	1926
+blutiger kot	de	3183	symptom	1927
+petechie	de	3184	symptom	1928
+verlust des kälteempfindens	de	3185	symptom	1929
+brechen	de	3186	symptom	1930
+hämorrhagische diarrhoe	de	3187	symptom	1931
+hirnhautentzündung	de	3188	symptom	1932
+stuhlinkontinenz	de	3189	symptom	1933
+schlafbeschwerden	de	3190	symptom	1934
+atembeschwerden	de	3191	symptom	1935
+nierenfunktionsstörungen	de	3192	symptom	1936
+gelbfärbung der augen	de	3193	symptom	1937
+kalte füße	de	3194	symptom	1938
+heftige brustschmerzen	de	3195	symptom	1939
+pusteln	de	3196	symptom	1940
+rote augen	de	3197	symptom	1941
+stadium catarrhale	de	3198	symptom	1942
+übergeben	de	3199	symptom	1943
+lebensmittelinfektion	de	3200	symptom	1944
+doppelt sehen	de	3201	symptom	1945
+entzündung des gehirns	de	3202	symptom	1946
+scheisserei	de	3203	symptom	1947
+trockener mund	de	3204	symptom	1948
+lungenentzündung	de	3205	symptom	1949
+kotzerei	de	3206	symptom	1950
+magen darm 	de	3207	symptom	1951
+trismus	de	3208	symptom	1952
+krankgeschrieben	de	3209	symptom	1953
+purpura	de	3210	symptom	1954
+benommenheit	de	3211	symptom	1955
+blutiger dünnpfiff	de	3212	symptom	1956
+erkrankung der atemwege	de	3213	symptom	1957
+blutiges erbrechen	de	3214	symptom	1958
+kloschüssel	de	3215	symptom	1959
+verändertes hautkolorit	de	3216	symptom	1960
+verlust der geistigen leistungsfähigkeit	de	3217	symptom	1961
+reizbar	de	3218	symptom	1962
+ausscheidung von eiweiß über den urin	de	3219	symptom	1963
+leberfunktionsstörungen	de	3220	symptom	1964
+ohrenschmerzen	de	3221	symptom	1965
+lähmungserscheinung	de	3222	symptom	1966
+rötung um den stich	de	3223	symptom	1967
+mangelernährung	de	3224	symptom	1968
+angesteckt	de	3225	symptom	1969
+toilette	de	3226	symptom	1970
+leichte schwindelanfälle	de	3227	symptom	1971
+gelbsucht	de	3228	symptom	1972
+blaue flecke	de	3229	symptom	1973
+harninkontinenz	de	3230	symptom	1974
+entzündung der hirnhaut	de	3231	symptom	1975
+hydrocephalus	de	3232	symptom	1976
+entzündung der atmungsorgane	de	3233	symptom	1977
+wasserverlust	de	3234	symptom	1978
+schwer wässriger durchfall	de	3235	symptom	1979
+kalte hände	de	3236	symptom	1980
+gesundheitsamt	de	3237	symptom	1981
+fad-süsslicher mundgeruch	de	3238	symptom	1982
+lebervergrößerung	de	3239	symptom	1983
+verlust des wärmeempfindens	de	3240	symptom	1984
+rotes gesicht	de	3241	symptom	1985
+rückwärts essen	de	3242	symptom	1986
+blutiger dünnschiss	de	3243	symptom	1987
+empfindungsstörungen	de	3244	symptom	1988
+prodromalstadium	de	3245	symptom	1989
+stimmungsschwankungen	de	3246	symptom	1990
+magen-darm-infektion	de	3247	symptom	1991
+krampfartige bauchschmerzen 	de	3248	symptom	1992
+heftige lungenschmerzen	de	3249	symptom	1993
+magen-darm-entzündung	de	3250	symptom	1994
+krank geschrieben	de	3251	symptom	1995
+verdauungsbeschwerden	de	3252	symptom	1996
+brechanfälle	de	3253	symptom	1997
+schwach	de	3254	symptom	1998
+gesichtslähmungen	de	3255	symptom	1999
+bewußtseinsstörungen	de	3256	symptom	2000
+bläschengesäumtes geschwür	de	3257	symptom	2001
+aufgedunsenes gesicht	de	3258	symptom	2002
+verlust der kälteempfindung	de	3259	symptom	2003
+gelbfärbung der haut	de	3260	symptom	2004
+dehydration	de	3261	symptom	2005
+spucken	de	3262	symptom	2006
+gasblasen	de	3263	symptom	2007
+hypotonie	de	3264	symptom	2008
+anorexie	de	3265	symptom	2009
+krank schreiben	de	3266	symptom	2010
+psychische auffälligkeiten	de	3267	symptom	2011
+proteinurie	de	3268	symptom	2012
+schwäche	de	3269	symptom	2013
+halsentzündung	de	3270	symptom	2014
+farbloser urin	de	3271	symptom	2015
+schwarzer urin	de	3272	symptom	2016
+depressive verstimmung	de	3273	symptom	2017
+überaktivität	de	3274	symptom	2018
+neurologische auffälligkeiten	de	3275	symptom	2019
+absonderung von farbloser flüssigkeit	de	3276	symptom	2020
+fehlbildungen	de	3277	symptom	2021
+rote punkte	de	3278	symptom	2022
+kapillarblutung	de	3279	symptom	2023
+überempfindlichkeit gegen licht	de	3280	symptom	2024
+nackensteifheit	de	3281	symptom	2025
+atemstillstand	de	3282	symptom	2026
+schwächeattacke	de	3283	symptom	2027
+entfärbter urin	de	3284	symptom	2028
+38°c	de	3285	symptom	2029
+leichtes fieber	de	3286	symptom	2030
+schockzustand	de	3287	symptom	2031
+brustschmerzen	de	3288	symptom	2032
+dauerfieber	de	3289	symptom	2033
+entzündung der lymphknoten	de	3290	symptom	2034
+untertemperatur	de	3291	symptom	2035
+hustenanfälle	de	3292	symptom	2036
+entzündung der mandeln	de	3293	symptom	2037
+magen-darm	de	3294	symptom	2038
+schwächeanfall	de	3295	symptom	2039
+ohrentzündung	de	3296	symptom	2040
+scheisseritis	de	3297	symptom	2041
+fieber(-anstieg)	de	3298	symptom	2042
+stimmlosigkeit	de	3299	symptom	2043
+hirnhautzeichen	de	3300	symptom	2044
+entzündungserscheinungen im rachen	de	3301	symptom	2045
+abgeschlagen 	de	3302	symptom	2046
+lichtempfindlichkeit	de	3303	symptom	2047
+atemwegsbeschwerden	de	3304	symptom	2048
+periorbitales ödem	de	3305	symptom	2049
+wanderröte	de	3306	symptom	2050
+grippeähnliche symptomatik	de	3307	symptom	2051
+mundgeruch	de	3308	symptom	2052
+darmverstopfung	de	3309	symptom	2053
+hellfärbung des stuhls	de	3310	symptom	2054
+milchig-weißer stuhl	de	3311	symptom	2055
+atemnotsyndrom	de	3312	symptom	2056
+flotter otto	de	3313	symptom	2057
+demenz	de	3314	symptom	2058
+hautblasen	de	3315	symptom	2059
+schwangerschafts-listeriose	en	3316	symptom	2060
+überzug	de	3317	symptom	2061
+dengue	de	3318	symptom	2062
+dengue-schock-syndrom	en	3319	symptom	2063
+hautmilzbrand	en	3320	symptom	2064
+respiratorische symptome	en	3321	symptom	2065
+bläschen auf der haut	de	3322	symptom	2066
+symptomatik	en	3323	symptom	2067
+pickel	en	3324	symptom	2068
+brummschädel	en	3325	symptom	2069
+fieber 	en	3326	symptom	2070
+erkrankt	en	3327	symptom	2071
+keine stimme	en	3328	symptom	2072
+wund	en	3329	symptom	2073
+rote flecken	en	3330	symptom	2074
+bauchkrämpfe	en	3331	symptom	2075
+flau	en	3332	symptom	2076
+entzündung des gehirns	en	3333	symptom	2077
+entzündung der lymphknoten	en	3334	symptom	2078
+entzündung 	en	3335	symptom	2079
+brechdurchfall	de	3336	symptom	2080
+pneumonie 	de	3337	symptom	2081
+anophthalmie	en	3338	symptom	2082
+krätzchen	en	3339	symptom	2083
+gallenbrechdurchfall	en	3340	symptom	2084
+fehlgeburt	en	3341	symptom	2085
+energielos	en	3342	symptom	2086
+nasentripper 	de	3343	symptom	2087
+stimmungsschwankungen	en	3344	symptom	2088
+lähmungen	de	3345	symptom	2089
+rachenbeschwerden	en	3346	symptom	2090
+empyen	en	3347	symptom	2091
+krank	en	3348	symptom	2092
+zeckenbiss	de	3349	symptom	2093
+epiglottitis	en	3350	symptom	2094
+papel	en	3351	symptom	2095
+verstörtheit	de	3352	symptom	2096
+obstipation	en	3353	symptom	2097
+wie ein haufen elend	en	3354	symptom	2098
+klo	en	3355	symptom	2099
+eiteransammlung	de	3356	symptom	2100
+karditis	en	3357	symptom	2101
+starke rötung 	en	3358	symptom	2102
+acinetobacter	de	3359	symptom	2103
+schlafschwierigkeiten	en	3360	symptom	2104
+veränderte bewusstseinslage	en	3361	symptom	2105
+mundtrockenheit	en	3362	symptom	2106
+nase läuft	en	3363	symptom	2107
+fehlbildung	en	3364	symptom	2108
+rastlos	en	3365	symptom	2109
+starke kopfschmerzen	en	3366	symptom	2110
+kurzatmig	en	3367	symptom	2111
+entzündung der muskulatur	en	3368	symptom	2112
+gasblasen	en	3369	symptom	2113
+ansteckungsfähig	en	3370	symptom	2114
+enzephalitis	en	3371	symptom	2115
+marod	en	3372	symptom	2116
+hanta	de	3373	symptom	2117
+signalanhebungen im posterioren thalamus	en	3374	symptom	2118
+brechreiz	de	3375	symptom	2119
+hämorrhagischer verlauf	en	3376	symptom	2120
+migräne	de	3377	symptom	2121
+kopliksche flecken	en	3378	symptom	2122
+blutiger dünnpfiff	en	3379	symptom	2123
+ataxie	en	3380	symptom	2124
+anhaltende schmerzhafte empfindungsstörungen	en	3381	symptom	2125
+exanthem	en	3382	symptom	2126
+erkrankung 	en	3383	symptom	2127
+darmverstopfung	en	3384	symptom	2128
+erreger	en	3385	symptom	2129
+thrombozytopenie	en	3386	symptom	2130
+krämpfe 	en	3387	symptom	2131
+nasenbluten 	en	3388	symptom	2132
+pflegebedürftigt	en	3389	symptom	2133
+ekchymosen	en	3390	symptom	2134
+entzündung der leber	en	3391	symptom	2135
+übergeben	en	3392	symptom	2136
+krankheitsursache	en	3393	symptom	2137
+ruhebedürftig	de	3394	symptom	2138
+mrsa	de	3395	symptom	2139
+hämorrhagisches fieber	en	3396	symptom	2140
+fiebrig	en	3397	symptom	2141
+staphylokokken	en	3398	symptom	2142
+ächzen	de	3399	symptom	2143
+waterhouse-friderichsen-syndrom	en	3400	symptom	2144
+myositis	en	3401	symptom	2145
+juckreiz	en	3402	symptom	2146
+schlaftrunken	en	3403	symptom	2147
+darmkrämpfe	en	3404	symptom	2148
+klinische zeichen	en	3405	symptom	2149
+verlust der geistigen leistungsfähigkeit	en	3406	symptom	2150
+wechselfieber	en	3407	symptom	2151
+kopfschmerzen 	de	3408	symptom	2152
+aufgedunsenes gesicht	en	3409	symptom	2153
+feinfleckiges exanthem	en	3410	symptom	2154
+depressiv	en	3411	symptom	2155
+weiß belegte zunge	en	3412	symptom	2156
+zns-symptomatik	en	3413	symptom	2157
+schwächegfühl	en	3414	symptom	2158
+trockener husten	en	3415	symptom	2159
+magenkrämpfe	en	3416	symptom	2160
+krankheitszeichen	en	3417	symptom	2161
+entzündung der schleimhäute	en	3418	symptom	2162
+darmverschluss	en	3419	symptom	2163
+gasödem 	en	3420	symptom	2164
+hämorrhagische diathese	en	3421	symptom	2165
+heiserkeit	en	3422	symptom	2166
+muskelkrämpfe	en	3423	symptom	2167
+abgeschlagenheit	en	3424	symptom	2168
+grippeartige symptomen	en	3425	symptom	2169
+wasserverlust	en	3426	symptom	2170
+fehlbildungen	en	3427	symptom	2171
+grippal	en	3428	symptom	2172
+extraintestinale abszesse	en	3429	symptom	2173
+katarrh	en	3430	symptom	2174
+verändertes hautkolorit	en	3431	symptom	2175
+gastroenteritis 	en	3432	symptom	2176
+eitrige bläschen	en	3433	symptom	2177
+entzündungserscheinungen im rachen	en	3434	symptom	2178
+symptom	de	3435	symptom	2179
+schläfrigkeit	en	3436	symptom	2180
+bronchitis 	en	3437	symptom	2181
+rote hautflecken	en	3438	symptom	2182
+schwellung	de	3439	symptom	2183
+eiter	en	3440	symptom	2184
+grippeähnliche symptome 	en	3441	symptom	2185
+blutergüsse	de	3442	symptom	2186
+erstmalig auftretende mono- oder oligoarthritis	en	3443	symptom	2187
+sterbenskrank	en	3444	symptom	2188
+ängstlichkeit	en	3445	symptom	2189
+enteropathisch	en	3446	symptom	2190
+starker wundschmerz	en	3447	symptom	2191
+pharyngitis	en	3448	symptom	2192
+gesichtslähmungen	en	3449	symptom	2193
+bewußtseinsstörungen	en	3450	symptom	2194
+veränderte hautfarbe	en	3451	symptom	2195
+schlechtsein	de	3452	symptom	2196
+belag	de	3453	symptom	2197
+verlust des wärmeempfindens	en	3454	symptom	2198
+zentralnervöse störungen	en	3455	symptom	2199
+esbl	en	3456	symptom	2200
+übernächtigt	en	3457	symptom	2201
+austrocknung	en	3458	symptom	2202
+rachendiphtherie	en	3459	symptom	2203
+dünnschiß	de	3460	symptom	2204
+husten 	de	3461	symptom	2205
+heiser	en	3462	symptom	2206
+blutige scheisse	en	3463	symptom	2207
+im krankenhaus erworben 	de	3464	symptom	2208
+abstehende ohrläppchen	en	3465	symptom	2209
+beschichtung	de	3466	symptom	2210
+granulomatosis infantiseptica	en	3467	symptom	2211
+arthritis	en	3468	symptom	2212
+mattscheibe	en	3469	symptom	2213
+ansteckend	en	3470	symptom	2214
+hautgeschwür	en	3471	symptom	2215
+untertemperatur	en	3472	symptom	2216
+dicke lymphknoten	en	3473	symptom	2217
+stomatitis	en	3474	symptom	2218
+verkühlung 	en	3475	symptom	2219
+erhöhung der zahl eosinophiler granulozyten	en	3476	symptom	2220
+erhöhte gefäßdurchlässigkeit	en	3477	symptom	2221
+groogy	en	3478	symptom	2222
+verdauungsbeschwerden	en	3479	symptom	2223
+vermehrter speichelfluß	en	3480	symptom	2224
+schwindel	en	3481	symptom	2225
+plaque	de	3482	symptom	2226
+nase putzen	en	3483	symptom	2227
+erythema migrans	en	3484	symptom	2228
+anstecken 	en	3485	symptom	2229
+punktförmige hautblutungen	en	3486	symptom	2230
+schwierigkeiten zu atmen 	en	3487	symptom	2231
+ebola	de	3488	symptom	2232
+rüsselpest 	de	3489	symptom	2233
+mattigkeit	en	3490	symptom	2234
+fieber(-anstieg)	en	3491	symptom	2235
+krampfartige bauchschmerzen 	en	3492	symptom	2236
+blauerfleck	de	3493	symptom	2237
+muskellähmung	en	3494	symptom	2238
+akute lähmung von hirnnerven	en	3495	symptom	2239
+absonderung 	en	3496	symptom	2240
+wasserkopf	en	3497	symptom	2241
+gewebsnekrose	en	3498	symptom	2242
+darmentzündung	en	3499	symptom	2243
+persönlichkeitsveränderung	en	3500	symptom	2244
+leberfunktionsstörungen	en	3501	symptom	2245
+peritonitis	en	3502	symptom	2246
+siech	en	3503	symptom	2247
+keine alternative diagnose	en	3504	symptom	2248
+enterobakterien	de	3505	symptom	2249
+bindegewebsentzündung	en	3506	symptom	2250
+blutreinigung	de	3507	symptom	2251
+nierenversagen	de	3508	symptom	2252
+papeln	en	3509	symptom	2253
+38°	de	3510	symptom	2254
+enterobakteriazeen 	en	3511	symptom	2255
+multiresistent	de	3512	symptom	2256
+schniefende nase	de	3513	symptom	2257
+erschöpfung	en	3514	symptom	2258
+west-nil 	en	3515	symptom	2259
+vogelgrippe	de	3516	symptom	2260
+darmblutung	en	3517	symptom	2261
+39°	de	3518	symptom	2262
+stimmlosigkeit	en	3519	symptom	2263
+gelbfärbung der haut	en	3520	symptom	2264
+fad-süsslicher mundgeruch	en	3521	symptom	2265
+angeschlagenheit	en	3522	symptom	2266
+grippaler infekt	en	3523	symptom	2267
+kopfschmerz	de	3524	symptom	2268
+stuhl	en	3525	symptom	2269
+wundsekret 	en	3526	symptom	2270
+parotitis 	en	3527	symptom	2271
+übermüdet	en	3528	symptom	2272
+magen-darm-grippe	de	3529	symptom	2273
+kolitis	en	3530	symptom	2274
+verlust des kälteempfindens	en	3531	symptom	2275
+todesursache	en	3532	symptom	2276
+wie ein häufchen elend	en	3533	symptom	2277
+clostridien	de	3534	symptom	2278
+beule	de	3535	symptom	2279
+blutwäsche	de	3536	symptom	2280
+petechien	en	3537	symptom	2281
+abgeschlagen 	en	3538	symptom	2282
+entzündliche erkrankung	en	3539	symptom	2283
+bewusstseinsminderung	en	3540	symptom	2284
+nachtschweiß	en	3541	symptom	2285
+jucken	en	3542	symptom	2286
+beschwerden	en	3543	symptom	2287
+reizbar	en	3544	symptom	2288
+entfärbter urin	en	3545	symptom	2289
+kalte hände	en	3546	symptom	2290
+juckender hautausschlag	en	3547	symptom	2291
+schwindelgefühl	en	3548	symptom	2292
+absonderung von farbloser flüssigkeit	en	3549	symptom	2293
+erschwertes einatmen	en	3550	symptom	2294
+depressive verstimmung	en	3551	symptom	2295
+bewußtseinstrübung	de	3552	symptom	2296
+krankenhausinfektion	de	3553	symptom	2297
+krankheitsbeginn	en	3554	symptom	2298
+wahnvorstellung	en	3555	symptom	2299
+halluzination	en	3556	symptom	2300
+ohrentzündung	en	3557	symptom	2301
+lebensmittelbedingter botulismus	en	3558	symptom	2302
+milzschwellung	en	3559	symptom	2303
+enterokokken 	de	3560	symptom	2304
+pertussis	en	3561	symptom	2305
+furunkel	en	3562	symptom	2306
+farbloser urin	en	3563	symptom	2307
+juckreiz an der stichstelle	en	3564	symptom	2308
+harnwegsinfektion	en	3565	symptom	2309
+sepsis	de	3566	symptom	2310
+hautveränderung	en	3567	symptom	2311
+ödem	en	3568	symptom	2312
+ohrenschmerzen	en	3569	symptom	2313
+wanderröte	en	3570	symptom	2314
+hautblutungen	en	3571	symptom	2315
+depression	en	3572	symptom	2316
+pusteln 	en	3573	symptom	2317
+schwerer durchfall	en	3574	symptom	2318
+krankenhauskeim	de	3575	symptom	2319
+entzündung der mandeln	en	3576	symptom	2320
+akute neuroborreliose	en	3577	symptom	2321
+nachweis von pathologischem prionprotein	en	3578	symptom	2322
+trauma	en	3579	symptom	2323
+erkrankung der atemwege	en	3580	symptom	2324
+krankheitsgefühl	en	3581	symptom	2325
+entzündung des rachens	en	3582	symptom	2326
+reisedurchfall	en	3583	symptom	2327
+wässriger durchfall	en	3584	symptom	2328
+magen-darmbeschwerden	en	3585	symptom	2329
+schwellung der lymphknoten	en	3586	symptom	2330
+verlust des schmerzempfindens	en	3587	symptom	2331
+entzündung der hirnhaut	en	3588	symptom	2332
+diarrhoe	en	3589	symptom	2333
+tenesmen	en	3590	symptom	2334
+abheilen	en	3591	symptom	2335
+erkältung 	de	3592	symptom	2336
+schwächeattacke	en	3593	symptom	2337
+darmmilzbrand	en	3594	symptom	2338
+gedeihstörung	en	3595	symptom	2339
+fieberschübe	en	3596	symptom	2340
+subkonjunktivale blutungen	en	3597	symptom	2341
+roter rachen	en	3598	symptom	2342
+zeckenstich	de	3599	symptom	2343
+lassa 	de	3600	symptom	2344
+black out	de	3601	symptom	2345
+empfindungsstörungen	en	3602	symptom	2346
+anorexie	en	3603	symptom	2347
+schnupfe	de	3604	symptom	2348
+behandlung 	en	3605	symptom	2349
+eosinophilie	en	3606	symptom	2350
+nackensteifigkeit	en	3607	symptom	2351
+nasenkatarrh	en	3608	symptom	2352
+lähmung von hirnnerven	en	3609	symptom	2353
+kurzatmigkeit	en	3610	symptom	2354
+ermüdet	en	3611	symptom	2355
+blutige kacke	en	3612	symptom	2356
+langsamer herzschlag	en	3613	symptom	2357
+asymptomatisch	en	3614	symptom	2358
+nasenschleimhautentzündung	de	3615	symptom	2359
+anzeichen für 	en	3616	symptom	2360
+kapillarblutung	en	3617	symptom	2361
+krätze	en	3618	symptom	2362
+erbrechen 	en	3619	symptom	2363
+schweinegrippe	de	3620	symptom	2364
+angegriffen	en	3621	symptom	2365
+vre	de	3622	symptom	2366
+epidemie	en	3623	symptom	2367
+akinetischer mutismus	en	3624	symptom	2368
+schwachbrüstig	de	3625	symptom	2369
+nachtschweiss	en	3626	symptom	2370
+herz-/kreislaufversagen	de	3627	symptom	2371
+matt	en	3628	symptom	2372
+rote punkte	en	3629	symptom	2373
+muskelschmerzen	en	3630	symptom	2374
+ärztin	en	3631	symptom	2375
+41°c	en	3632	symptom	2376
+oberbauchbeschwerden	en	3633	symptom	2377
+bauchschmerzen	en	3634	symptom	2378
+bewußtseinsveränderung	de	3635	symptom	2379
+purpura fulminans	en	3636	symptom	2380
+karunkelschwellung	en	3637	symptom	2381
+schwarzer urin	en	3638	symptom	2382
+stationärer aufenthalt	de	3639	symptom	2383
+halsschmerzen 	de	3640	symptom	2384
+stuhkgang	en	3641	symptom	2385
+nahrungsmittelvergiftung	en	3642	symptom	2386
+flecken auf der haut	en	3643	symptom	2387
+stickhusten	en	3644	symptom	2388
+parese	en	3645	symptom	2389
+enterisches fieber	en	3646	symptom	2390
+blutiger durchfall	en	3647	symptom	2391
+endokarditis	en	3648	symptom	2392
+kloschüssel	en	3649	symptom	2393
+schwierigkeiten beim atmen	en	3650	symptom	2394
+gelbfärbung der augen	en	3651	symptom	2395
+anfallsweise auftretender husten	en	3652	symptom	2396
+nicht auf dem damm	en	3653	symptom	2397
+stuhlinkontinenz	en	3654	symptom	2398
+purpura	en	3655	symptom	2399
+arzt	en	3656	symptom	2400
+bewusstseinsstörung	en	3657	symptom	2401
+rachenentzündung	en	3658	symptom	2402
+angesteckt	en	3659	symptom	2403
+angeschlagen	en	3660	symptom	2404
+dengue-fieber	en	3661	symptom	2405
+reiern	en	3662	symptom	2406
+nosokomiale infektionen	de	3663	symptom	2407
+tachykardie	en	3664	symptom	2408
+dienstunfähig	en	3665	symptom	2409
+angstzustände	en	3666	symptom	2410
+extraintestinale manifestation	en	3667	symptom	2411
+verkrampfung der muskulatur	en	3668	symptom	2412
+harninkontinenz	en	3669	symptom	2413
+andere symptome	en	3670	symptom	2414
+fehlen der augenanlage	en	3671	symptom	2415
+bettlägerig	en	3672	symptom	2416
+dialyse	en	3673	symptom	2417
+kränklich	en	3674	symptom	2418
+schwer wässriger durchfall	en	3675	symptom	2419
+diarrhö	en	3676	symptom	2420
+osteomyelitis	en	3677	symptom	2421
+überdruss / überdruß	de	3678	symptom	2422
+blutiger dünnschiss	en	3679	symptom	2423
+prodromalstadium	en	3680	symptom	2424
+pyelonephritis	en	3681	symptom	2425
+40°	de	3682	symptom	2426
+kopfweh	en	3683	symptom	2427
+verschleppte grippe	en	3684	symptom	2428
+gesundheitsamt	en	3685	symptom	2429
+austrocknen	de	3686	symptom	2430
+fieberanstieg	en	3687	symptom	2431
+geschwür	en	3688	symptom	2432
+kieferklemme	en	3689	symptom	2433
+untergewicht	en	3690	symptom	2434
+darminfektion	en	3691	symptom	2435
+schwindelanfälle	en	3692	symptom	2436
+hydrophobie	en	3693	symptom	2437
+kein hinweis auf eine iatrogene vcjk	en	3694	symptom	2438
+rotznase	de	3695	symptom	2439
+wachstumsverzögerung	en	3696	symptom	2440
+hautbläschen	de	3697	symptom	2441
+abszess	en	3698	symptom	2442
+abdomen	en	3699	symptom	2443
+erschöpft	en	3700	symptom	2444
+flechte	en	3701	symptom	2445
+grippe	de	3702	symptom	2446

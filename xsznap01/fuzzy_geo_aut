@@ -1,0 +1,858 @@
+#!/usr/bin/python
+import psycopg2
+import re
+import urllib
+import xml.dom.minidom as minidom
+import time
+from sys import argv
+import subprocess
+import sys
+import os
+import confi
+
+# Slovnik duplikatu
+def readFile(): 
+  fileHandle=open("ENVR/sample","r")
+  line = fileHandle.readline() 
+  dictName = {} 
+  line=line.split('\n')
+  line=line[0].split('\t')
+
+  while line!=['']:
+    if line[0] in dictName:
+      dictName[line[0]].append(line) 
+    else:
+      dictName[line[0]] = []
+      dictName[line[0]].append(line)
+    line = fileHandle.readline() 
+    line=line.split('\n')
+    line=line[0].split('\t')
+  return dictName
+
+def reversedImportance(uniq):
+  resultKeys={}
+  PCLI=[]
+  PPLC=[]
+  RGN=[]
+  ADM1=[]
+  PPLA=[]
+  ADM2=[]
+  PPLA2=[]
+  ADM3=[]
+  PPLA3=[]
+  ADM4=[]
+  PPLA4=[]
+  ADMD=[]
+  PPL=[]
+  status=13
+  context=0
+
+  for i in uniq:
+    word=i 
+    if (word[-3]=="ppl") & (status>=1):
+      PPL.append(word)
+      status=1
+    elif (word[-3]=="admd") & (status>=2):
+      ADMD.append(word)
+      status=2
+    elif (word[-3]=="ppla4") & (status>=3):
+      PPLA4.append(word)
+      status=3
+    elif (word[-3]=="adm4") & (status>=4):
+      ADM4.append(word)
+      status=4
+    elif (word[-3]=="ppla3") & (status>=5):
+      PPLA3.append(word)
+      status=5
+    elif (word[-3]=="adm3") & (status>=6):
+      ADM3.append(word)
+      status=6
+    elif (word[-3]=="ppla2") & (status>=7):
+      PPLA2.append(word)
+      status=7
+    elif (word[-3]=="adm2") & (status>=8):
+      ADM2.append(word)
+      status=8
+    elif (word[-3]=="ppla") & (status>=9):
+      PPLA2.append(word)
+      status=9
+    elif (word[-3]=="adm1") & (status>=10):
+      ADM1.append(word)
+      status=10
+    elif (word[-3]=="rgn") & (status>=11):
+      RGN.append(word)
+      status=11
+    elif (word[-3]=="pplc") & (status>=12):
+      PPLC.append(word)
+      status=12
+    elif (word[-3]=="pcli") & (status>=13):
+      PCLI.append(word)
+      status=13
+
+  if PPL:
+    resultKeys=PPL
+  elif ADMD:
+    resultKeys=ADMD
+  elif PPLA4:
+    resultKeys=PPLA4
+  elif ADM4:
+    resultKeys=ADM4
+  elif PPLA3:
+    resultKeys=PPLA3
+  elif ADM3:
+    resultKeys=ADM3
+  elif PPLA2:
+    resultKeys=PPLA2
+  elif ADM2:
+    resultKeys=ADM2
+  elif PPLA:
+    resultKeys=PPLA
+  elif ADM1:
+    resultKeys=ADM1
+  elif RGN:
+    resultKeys=RGN
+  elif PPLC:
+    resultKeys=PPLC
+  elif PCLI:
+    resultKeys=PCLI
+
+  keys=sorted(resultKeys, key=lambda x: x[-1])
+  try:
+    return keys[-1]
+  except:
+    return None
+
+def mostImportance(uniq):
+  contextKeys=[]
+  resultKeys={}
+  PCLI=[]
+  PPLC=[]
+  RGN=[]
+  ADM1=[]
+  PPLA=[]
+  ADM2=[]
+  PPLA2=[]
+  ADM3=[]
+  PPLA3=[]
+  ADM4=[]
+  PPLA4=[]
+  ADMD=[]
+  PPL=[]
+  status=13
+
+  for i in uniq:
+    word=i
+    if (word[-3]=="pcli") & (status>=1):
+      PCLI.append(word)
+      status=1
+    elif (word[-3]=="pplc") & (status>=2):
+      PPLC.append(word)
+      status=2
+    elif (word[-3]=="rgn") & (status>=3):
+      PPLA2.append(word)
+      status=3
+    elif (word[-3]=="adm1") & (status>=4):
+      ADM1.append(word)
+      status=4
+    elif (word[-3]=="ppla") & (status>=5):
+      PPLA.append(word)
+      status=5
+    elif (word[-3]=="adm2") & (status>=6):
+      ADM2.append(word)
+      status=6
+    elif (word[-3]=="ppla2") & (status>=7):
+      PPLA2.append(word)
+      status=7
+    elif (word[-3]=="adm3") & (status>=8):
+      ADM3.append(word)
+      status=8
+    elif (word[-3]=="ppla3") & (status>=9):
+      PPLA3.append(word)
+      status=9
+    elif (word[-3]=="adm4") & (status>=10):
+      ADM4.append(word)
+      status=10
+    elif (word[-3]=="ppla4") & (status>=11):
+      PPLA4.append(word)
+      status=11
+    elif (word[-3]=="admd") & (status>=12):
+      ADMD.append(word)
+      status=12
+    elif (word[-3]=="ppl") & (status>=13):
+      PPL.append(word)
+      status=13
+
+  if PCLI:
+    resultKeys=PCLI
+  elif PPLC:
+    resultKeys=PPLC
+  elif RGN:
+    resultKeys=RGN
+  elif ADM1:
+    resultKeys=ADM1
+  elif PPLA:
+    resultKeys=PPLA
+  elif ADM2:
+    resultKeys=ADM2
+  elif PPLA2:
+    resultKeys=PPLA2
+  elif ADM3:
+    resultKeys=ADM3
+  elif PPLA3:
+    resultKeys=PPLA3
+  elif ADM4:
+    resultKeys=ADM4
+  elif PPLA4:
+    resultKeys=PPLA4
+  elif ADMD:
+    resultKeys=ADMD
+  elif PPL:
+    resultKeys=PPL
+
+  keys=sorted(resultKeys, key=lambda x: x[-1])
+  try:
+    return keys[-1]
+  except:
+    return None
+
+def importance(list,location):
+  contextKeys=[]
+  resultKeys={}
+  PCLI=[]
+  PPLC=[]
+  RGN=[]
+  ADM1=[]
+  PPLA=[]
+  ADM2=[]
+  PPLA2=[]
+  ADM3=[]
+  PPLA3=[]
+  ADM4=[]
+  PPLA4=[]
+  ADMD=[]
+  PPL=[]
+  status=13
+
+  try:
+    list[location[2]]
+  except:
+    return None  
+
+  contextKeys.append(location[2])
+  for i in contextKeys:
+    for a in list[i]:
+      word=a
+      if (word[0]==location[2]) & (word[-3]=="pcli") & (status>=1):
+        PCLI.append(word)
+        status=1
+      elif (word[0]==location[2]) & (word[-3]=="pplc") & (status>=2):
+        PPLC.append(word)
+        status=2
+      elif (word[0]==location[2]) & (word[-3]=="rgn") & (status>=3):
+        PPLA2.append(word)
+        status=3
+      elif (word[0]==location[2]) & (word[-3]=="adm1") & (status>=4):
+        ADM1.append(word)
+        status=4
+      elif (word[0]==location[2]) & (word[-3]=="ppla") & (status>=5):
+        PPLA.append(word)
+        status=5
+      elif (word[0]==location[2]) & (word[-3]=="adm2") & (status>=6):
+        ADM2.append(word)
+        status=6
+      elif (word[0]==location[2]) & (word[-3]=="ppla2") & (status>=7):
+        PPLA2.append(word)
+        status=7
+      elif (word[0]==location[2]) & (word[-3]=="adm3") & (status>=8):
+        ADM3.append(word)
+        status=8
+      elif (word[0]==location[2]) & (word[-3]=="ppla3") & (status>=9):
+        PPLA3.append(word)
+        status=9
+      elif (word[0]==location[2]) & (word[-3]=="adm4") & (status>=10):
+        ADM4.append(word)
+        status=10
+      elif (word[0]==location[2]) & (word[-3]=="ppla4") & (status>=11):
+        PPLA4.append(word)
+        status=11
+      elif (word[0]==location[2]) & (word[-3]=="admd") & (status>=12):
+        ADMD.append(word)
+        status=12
+      elif (word[0]==location[2]) & (word[-3]=="ppl") & (status>=13):
+        PPL.append(word)
+        status=13
+
+  if PCLI:
+    resultKeys=PCLI
+  elif PPLC:
+    resultKeys=PPLC
+  elif RGN:
+    resultKeys=RGN
+  elif ADM1:
+    resultKeys=ADM1
+  elif PPLA:
+    resultKeys=PPLA
+  elif ADM2:
+    resultKeys=ADM2
+  elif PPLA2:
+    resultKeys=PPLA2
+  elif ADM3:
+    resultKeys=ADM3
+  elif PPLA3:
+    resultKeys=PPLA3
+  elif ADM4:
+    resultKeys=ADM4
+  elif PPLA4:
+    resultKeys=PPLA4
+  elif ADMD:
+    resultKeys=ADMD
+  elif PPL:
+    resultKeys=PPL
+
+  keys=sorted(resultKeys, key=lambda x: x[-1])
+  try:
+    return keys[-1]
+  except:
+    return None
+
+def processResults(list,results):
+  position=[0]
+  final=[]
+  for line in open('FILES/stack'):
+    offset=line.find('\n')
+    offset = position[-1] + offset + 2
+    position.append(offset)
+  keylist=results.keys()
+  for i in range(len(position)-1):
+    uniq=[]
+    for record in keylist:
+      for a in results[record]:
+        if position[i] < a[0] < position[i+1] and position[i] < a[1] < position[i+1]:
+          uniq.append(results[record][0])
+    if not uniq:
+      final.append('')  # Pokud neni zaznam, vlozim prazdne
+    elif len(uniq)==1:  # Pokud je jeden zaznam, vlozim ten jeden
+      final.append(uniq[0])
+    else: # Pokud je vic zaznamu
+      reverse=1
+      for number in range(len(uniq)):
+        if uniq[0][-2] != uniq[number][-2]: # Kdyz maji ruzny stat
+          reverse=0
+      if reverse==1:
+        final.append(reversedImportance(uniq))
+      else:
+        final.append(mostImportance(uniq))
+  return final
+           
+def disambiguation(dupl,uniq):
+  for location in dupl:
+    importantPlaces=importance(list,location)
+
+    #Zde ukladam vsechny nalezene vysledky do uniq
+    ret=[]
+    ret.append(location[0])
+    ret.append(location[1])
+    if importantPlaces!=None:
+      for i in importantPlaces:
+        ret.append(i)
+    else:
+        ret.append(importantPlaces)
+
+    if ret[2]!=None:
+      uniq.append(ret)
+    else:
+      uniq.append(location)
+  return uniq
+
+def ner(stack):
+  uniq = []
+  subprocess.call(['ENVR/figav03 -l  ENVR/allc_list  -d ENVR/automat.fsa -m ENVR/mapa.map < FILES/stack > ENVR/result'],shell = True,stdout=subprocess.PIPE,stdin = subprocess.PIPE)
+  f1 = open("ENVR/result","r")
+  dupl = []
+  dict = {}
+  while True:
+    line = f1.readline()
+    if line == '':
+      f1.close()
+      break
+    lnsplit = line.split('	')
+    beg = int(lnsplit[1])
+    en = int(lnsplit[2])
+    if lnsplit[3] in duplicates:
+      dupl.append([beg,en,lnsplit[3],lnsplit[5],lnsplit[6],lnsplit[7],lnsplit[8],lnsplit[9],lnsplit[10],lnsplit[11]])
+    else:
+      uniq.append([beg,en,lnsplit[3],lnsplit[5],lnsplit[6],lnsplit[7],lnsplit[8],lnsplit[9],lnsplit[10],lnsplit[11]])
+  final=disambiguation(dupl,uniq)
+  for i in final:
+    if i[3] in dict:
+      dict[i[3]].append(i)
+    else:
+      dict[i[3]] = []
+      dict[i[3]].append(i) 
+  return dict	 
+
+fname_f='FILES/found'
+fname_nf='FILES/notfound'
+fname_stack='FILES/stack'
+fname_err='FILES/errors'
+fname_c='FILES/check'
+conn = psycopg2.connect("dbname=meco user=xsznap01 password=meco host=meco.l3s.uni-hannover.de")
+conn.set_isolation_level(0)
+
+cur = conn.cursor()
+cursor = conn.cursor()
+cursor1 = conn.cursor()
+
+cur.execute("set autocommit to on")
+cursor.execute("set autocommit to on")
+cursor1.execute("set autocommit to on")
+
+def clean(error):
+  cur.close()
+  cursor.close()
+  cursor1.close()
+  conn.close()
+  exit()
+
+def writec(id, loc_id):
+  id=str(id)
+  loc_id=str(loc_id)
+  file_c.write(id)
+  file_c.write(",")
+  file_c.write(loc_id)
+  file_c.write("\n")
+
+def getCountryID(countryCode):
+  f2 = open("ENVR/states",'r')
+  states={}
+  while True:
+    state_code= f2.readline()
+    if state_code == '':
+      f2.close()
+      break
+    a = state_code.split('\n')
+    a = a[0].split('\t')
+    states[a[0]]= a[1]
+
+  if countryCode in states:
+    countryCode = int(states[countryCode])
+  else:
+    return 0
+  return countryCode
+
+def updateDB(line):
+  r = re.match('^(\S+:[ ]?)?(?P<lat>-?[0-9]+[.]?[0-9]*)[, ]+(?P<lng>-?[0-9]+[.]?[0-9]*$)',line)
+  lat = r.group('lat')
+  lng = r.group('lng')
+
+  url="http://api.geonames.org/findNearbyPlaceName?lng=%(lat)s&lat=%(lng)s&username=con&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % locals()
+  try:
+    usock = urllib.urlopen(url)
+  except:
+    return 1
+  try:
+    xmldoc = minidom.parse(usock)
+  except:
+    return 1
+  usock.close()
+ 
+  place_node_list = xmldoc.getElementsByTagName('name')
+  
+  if not place_node_list:
+    url="http://api.geonames.org/findNearbyPlaceName?lng=%(lng)s&lat=%(lat)s&username=con&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % locals()
+    try:
+      usock = urllib.urlopen(url)
+    except:
+      return 1
+    try:
+      xmldoc = minidom.parse(usock)
+    except:
+      return 1
+    usock.close()
+
+    if xmldoc.getElementsByTagName('status'):
+      check_node_list = xmldoc.getElementsByTagName('status')
+      check_my_node = check_node_list[0]
+      status = check_my_node.attributes["message"]
+      if status.value=="invalid lat/lng":
+        writenf(line,id)
+        return 1
+      return 0
+
+    place_node_list = xmldoc.getElementsByTagName('name')   
+    if not place_node_list:
+      writenf(line,id)
+      return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  location = "%(place_text)s" % locals()
+  location = location.encode("utf-8")
+  location = location.lower()
+
+  place_node_list = xmldoc.getElementsByTagName('geonameId')
+  if not place_node_list:
+    writenf(line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  geonames_id = "%(place_text)s" % locals()
+  geonames_id = geonames_id.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('lat')
+  if not place_node_list:
+    writenf(line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  lat = "%(place_text)s" % locals()
+  lat = lat.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('lng')
+  if not place_node_list:
+    writenf(line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  lng = "%(place_text)s" % locals()
+  lng = lng.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('fcode')
+  if not place_node_list:
+    writenf(line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  fcode = "%(place_text)s" % locals()
+  fcode = fcode.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('countryCode')
+  if not place_node_list:
+    writenf(line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  countryCode = "%(place_text)s" % locals()
+  countryCode = countryCode.encode("utf-8")
+
+  countryCode = getCountryID(countryCode)
+  print geonames_id
+  try:
+    cursor.execute("INSERT INTO entities_loc (id,name,enttype_id,normalized_entity,width,height,geonames_id,feature_code,population,country) VALUES (NULL,%s,63,%s,%s,%s,%s,%s,0,%s)",(location,location,lng,lat,geonames_id,fcode,countryCode))
+  except:
+    return 0
+  cursor.execute("SELECT id FROM entities_loc WHERE geonames_id=(%s);", (geonames_id,))
+
+  check = cursor.fetchone()
+  return check
+
+def writef(line,location,state, id, geonames_id):
+  cursor.execute("SELECT id FROM entities_loc WHERE geonames_id=(%s);", (geonames_id,))
+
+  try:
+    check = cursor.fetchone()
+  except:
+    print "Fetch: Cant find geonames_id in entities_loc:", geonames_id
+    file_err=file(fname_err,'a')
+    file_err.write("F: ")
+    file_err.write(line)
+    file_err.write(", ")
+    file_err.write(geonames_id)
+    file_err.write("\n")
+    file_err.close()
+    writenf(line)
+    return 0
+
+  if not check:
+    check = updateDB(line)
+    if check == 1:
+      file_err=file(fname_err,'a')
+      file_err.write("C: ")
+      file_err.write(line)
+      file_err.write(", ")
+      file_err.write(geonames_id)
+      file_err.write("\n")
+      file_err.close()
+      writenf(line)
+      return 0
+    if check == 0:
+      return 0
+
+  authors_id = check[0]
+  cursor.execute("SELECT name,feature_code,population,country FROM entities_loc WHERE id=(%s);", (authors_id,))
+  check = cursor.fetchall()
+  print "location: ",line,
+  confidence = confi.get_conf(check[0][0],check[0][1],check[0][2],check[0][3],duplicates,line)
+  print " confidence: ",confidence
+
+  cursor.execute("UPDATE authors SET confidence=(%s) WHERE id=(%s)", (confidence,id))
+  cursor.execute("UPDATE authors SET loc_id=(%s) WHERE id=(%s)", (authors_id,id))
+  cursor.execute("UPDATE authors SET has_loc=TRUE WHERE id=(%s)", (id,))
+
+  id_check= writeid(id)
+  if id_check==0:
+    return 0
+  file_f=file(fname_f,'a')
+  file_f.write("||")
+  file_f.write(line)
+  file_f.write(" -->")
+  file_f.write(location)
+  file_f.write(",")
+  file_f.write(state)
+  file_f.write(",")
+  file_f.write(geonames_id)
+  file_f.write("\n")
+  file_f.close()
+
+def writenf(line, id):
+  try:
+    cursor.execute("UPDATE authors SET loc_id=NULL WHERE id=(%s)", (id,))
+    cursor.execute("UPDATE authors SET has_loc=FALSE WHERE id=(%s)", (id,))  
+  except:
+    return 0
+
+  id_check= writeid(id)
+  if id_check==0:
+    return 0
+  file_nf=file(fname_nf,'a')
+  file_nf.write("||")
+  file_nf.write(line)
+  file_nf.write("||")
+  file_nf.write("\n")
+  file_nf.close()
+
+def writeStack(line, id):
+  file_stack=file(fname_stack,'a')
+  file_stack.write(line)
+  file_stack.write(",")
+  id=str(id)
+  file_stack.write(id)
+  file_stack.write("\n")
+  file_stack.close()
+
+def writeid(id):
+  try:
+    cursor.execute("UPDATE authors SET gps_process = TRUE WHERE id = (%s)", (id,))
+  except:
+    file_err=file(fname_err,'a')
+    file_err.write("Critical error:update_id")
+    file_err.write("\n")
+    file_err.close
+    return 0
+
+#vyhledavani v tabulce authors normalizuje
+#vyhledanim v databazi i prevodem souradnic
+def geo_name():
+  stack=[]
+  print "cur"
+  cur.execute("select location,id from authors where location IS NOT NULL AND gps_process IS NOT TRUE") 
+  try:
+    check = cur.fetchall()
+  except:
+    time.sleep(360)
+    print "Normalization cycle done"
+    return 0
+  print "/cur"
+
+  for row in check:
+    find=0
+    line=row[0]
+    id = row[1]
+    print line,id
+    line = line.replace("+", "")
+    line = line.replace("\n", "")
+    test_line_found = "||%(line)s -->" % locals()
+    test_line_notfound = "||%(line)s||" % locals()
+
+# Kdyz zaznam, ktery se pokousim normalizovat jiz normalizovan byl(uspesne)
+#    for test in open("FILES/found"):
+#      if test_line_found in test:
+#        find=1
+#        r = re.match('.*[ ]\-\-\>(?P<place>[^,]+),(?P<state>[^,]*),(?P<geonames_id>[0-9]*)',test)
+#        place = "%s" % (r.group('place'))
+#        state = "%s" % (r.group('state'))
+#        geonames_id = "%s" % (r.group('geonames_id'))
+#        geonames_id = geonames_id.encode("utf-8")
+#        writef(line, place, state, id, geonames_id)
+#        break
+#    if find==1 and check[-1]!=row:
+#      continue
+#Kdyz zaznam, ktery se pokousim normalizovat jiz normalizovan byl(neuspesne)
+#    for test in open("FILES/notfound"):
+#      if test_line_notfound in test:
+#        find=1
+#        writenf(line, id)
+#        break
+#    if find==1 and check[-1]!=row:
+#      continue
+    
+    numberOfLines=len(open("FILES/stack").readlines())
+    if numberOfLines<10000:
+      reduced=re.sub(r'[^\w\d\s.,-:]', '', line)
+      reduced=reduced.lower()
+      if find==1 and check[-1]==row: # Neukladej pokud byl posledni prvek a zaroven byl jiz normalizovan
+        pass
+      else:
+        writeStack(reduced,id)
+        record=[line,id]
+        stack.append(record)
+      if numberOfLines !=9999 and check[-1]!=row: # Nacti dalsi prvek, pokud je v davce misto a nejsi na poslednim prvku
+        continue 
+      else:
+        numberOfLines=len(open("FILES/stack").readlines())
+
+    # Pokusim se najit vysledek a disambiguovat
+    print "/stack"
+    NERResult=ner(stack)
+    processed=processResults(list,NERResult)
+    print "/processed"
+    for i in range(numberOfLines):
+      print i,
+      geo_record=stack[i]
+      line=stack[i][0]
+      id=stack[i][1]
+
+#NER nenasel vysledek
+      if not processed[i]:
+        r = re.match('^(\S+:[ ]?)?(?P<lat>-?[0-9]+[.]?[0-9]*)[, ]+(?P<lng>-?[0-9]+[.]?[0-9]*$)',line)
+        if r:
+          url="http://api.geonames.org/findNearbyPlaceName?lng=%s&lat=%s&username=con&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % (r.group('lng'),r.group('lat'))
+          try:
+            usock = urllib.urlopen(url)
+          except:
+            continue
+          try:
+            xmldoc = minidom.parse(usock)
+          except:
+            continue
+          usock.close()
+
+          if xmldoc.getElementsByTagName('status'):
+            check_node_list = xmldoc.getElementsByTagName('status')
+            check_my_node = check_node_list[0]
+            status = check_my_node.attributes["message"]
+
+          place_node_list = xmldoc.getElementsByTagName('name')
+
+          if not place_node_list:
+            url="http://api.geonames.org/findNearbyPlaceName?lng=%s&lat=%s&username=con&featureCode=ADM3&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % (r.group('lat'),r.group('lng'))
+            try:
+              usock = urllib.urlopen(url)
+            except:
+              continue
+            try:
+              xmldoc = minidom.parse(usock)
+            except:
+              continue
+            usock.close()
+
+            if xmldoc.getElementsByTagName('status'):
+              check_node_list = xmldoc.getElementsByTagName('status')
+              check_my_node = check_node_list[0]
+              status = check_my_node.attributes["message"]
+              print status.value
+              if status.value=="invalid lat/lng":
+                print "invalid: ",line
+                writenf(line,id)
+                continue
+              continue
+
+#Ziskani dat z elementu name a zpracovani vypadku
+            place_node_list = xmldoc.getElementsByTagName('name')
+            if not place_node_list:
+              writenf(line, id)
+              continue
+
+          place_n_node = place_node_list[0]
+          place_child = place_n_node.firstChild
+          place_text = place_child.data
+          location = "%(place_text)s" % locals()
+          location = location.encode("utf-8")
+          location = location.lower()
+
+#          print stack[i][0],",",stack[i][1],",",location
+
+#Ziskani dat z elementu name a zpracovani vypadku
+          place_node_list = xmldoc.getElementsByTagName('countryCode')
+          if not place_node_list:
+            writenf(line, id)
+            continue
+
+          place_n_node = place_node_list[0]
+          place_child = place_n_node.firstChild
+          place_text = place_child.data
+          state = "%(place_text)s" % locals()
+          state = state.encode("utf-8")
+
+          place_node_list = xmldoc.getElementsByTagName('geonameId')
+          if not place_node_list:
+            writenf(line, id)
+            continue
+
+          place_n_node = place_node_list[0]
+          place_child = place_n_node.firstChild
+          place_text = place_child.data
+          geonames_id = "%(place_text)s" % locals()
+          geonames_id = geonames_id.encode("utf-8")
+          writef(line, location, state, id, geonames_id)
+          continue
+        else:
+          writenf(line, id)
+          continue
+#-----------------------------------------------------------
+#NER nasel vysledek
+      else:  
+        location=processed[i][3]
+        state=processed[i][-2]
+        geonames_id=processed[i][-4]
+#        print line,",",id," -->",location,",",state,",",id,",",geonames_id
+        writef(line,location,state, id, geonames_id)
+        continue
+    stack=[]
+    file_stack=file(fname_stack,'w')
+    file_stack.close()
+    continue
+  return 0
+#-----------------------------------------------------------
+file_f=file(fname_f,'w')
+file_nf=file(fname_nf,'w')
+file_s=file(fname_stack,'w')
+file_e=file(fname_err,'w')
+file_c=file(fname_c,'w')
+file_c.close()
+file_f.close()
+file_nf.close()
+file_s.close()
+file_e.close()
+print "lists"
+list=readFile()
+dup = open("ENVR/duplicates","r")
+duplicates={}
+while True:
+  a = dup.readline()
+  if a == '':
+    dup.close()
+    break
+  b = a.split('\n')
+  c = b[0]
+  duplicates[c]=1;
+print "/lists"
+while 1:
+  file_c=file(fname_c,'a')
+  print "correction"
+  cursor.execute("UPDATE authors SET has_loc=FALSE WHERE has_loc IS NULL AND (location IS NULL OR location='')")
+  print "/correction"
+  geo_name()
+  file_c.close()
+clean(0)

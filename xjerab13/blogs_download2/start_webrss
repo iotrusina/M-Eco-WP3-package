@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /mnt/minerva1/nlp/projects/blogs_download2
+. pyinit32.sh
+cd web_rss
+eval "(python WebRSS.py) &"
+pid=$!
+echo $pid > prog.pid
+wait $pid
+

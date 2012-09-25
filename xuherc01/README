@@ -1,0 +1,34 @@
+#
+# Subor: README
+# Autor: Maroš Uherčík, xuherc01 
+#
+#################################################################
+
+Aplikácia sa spúšťa príkazom 				"./runTwitter_v06.sh"
+
+
+Popis súborov:    
+
+- shell skript      "runTwitter_v06.sh"
+                    popis - spúšťa celú aplikáciu
+
+- shell skript      "exportPath.sh"
+                    popis - exportuje pythonpath, prevedie potrebné nastavenia
+
+- python skript     "parsovanie_json_v06.py"
+                    popis - skript na prevod formátu 
+
+- adresáre          popis - ukladajú sa výsledné dokumenty v prevedenom formáte 
+  s priponou        (súbory pre projekt M-Eco sa kopírujú do adresára "/mnt/minerva1/nlp/projects/spinn3r/solr_data/xuherc01/data_pre_indexovanie/")        
+  "_outputs"        
+
+- adresár           "backups"
+                    popis - ukladajú sa surové data zo služby twitter
+
+- adresár           "track_files"
+                    popis - nachádzjú sa tu track súbory, teda súbory v ktorých sa nachádzajú kľúčové slová vo formáte "track=keyword1,keyword2,keyword3..."
+
+
+Popis chovania:
+- aplikácia spustí sťahovanie z twitter streaming API, po určitej dobe sťahovanie reštartuje (aby nedochádzalo k výpadkom a vytváraniu príliš veľkých dokumentov). Zároveň paralelne spúšťa spracovanie sťiahnutých údajov - teda prevod do zvoleného formátu. 
+Podrobnejší popis aplikácie môžte násjť na "https://merlin.fit.vutbr.cz/nlp-wiki/index.php/Twitter"

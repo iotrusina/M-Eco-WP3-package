@@ -1,0 +1,17 @@
+#!/usr/bin/python
+import re
+import shutil
+import sys
+
+s = open("pomlcky",'r')
+while True:
+  line = s.readline()
+  if line == '':
+     s.close()
+     break
+  split = line.split("\t")
+  pom = split[0].replace("-"," ")
+  split[0] = pom
+  print split[0] + "\t" + split[1] + "\t" + split[2] + "\t" + split[3] + "\t" + split[4] + "\t" + split[5] + "\t" + split[6] + "\t" + split[7],
+  #for i in split:
+  #  print i+"\t",

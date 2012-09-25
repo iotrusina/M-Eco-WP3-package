@@ -1,0 +1,52 @@
+<%include file="header.html"/>
+
+<%include file="menu.html"/>
+<script>
+    var parseurl = "${purl}";
+
+</script>
+<script type="text/javascript" src="/static/js/analyze_comet.js" ></script>
+<div class="container">
+    <style>
+        .main_loader {
+            height: 200px;
+        }
+        .main_loader img, .main_loader h2 {
+            padding-left: 50%;
+            padding-top: 100px;
+        }
+        table {
+            visibility: hidden;
+        }
+    </style>
+    <h1> Page analysis </h1>
+    <div id="r1">
+        <h2> &lt;link&gt; tag searching </h2>
+        <div id = "l1"  class="main_loader"><img src="/static/img/loading-circle-.gif" /></div>
+        <table id="t_lnk" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Feed Name</th>
+                    <th>Content type</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="r2">
+        <h2> &lt;a&gt; tag searching </h2>
+        <div id = "l2" class="main_loader"><img src="/static/img/loading-circle-.gif" /></div>
+        <table id="t_a" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>HTML content</th>
+                    <th>Content Type</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<%include file="footer.html"/> 

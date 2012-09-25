@@ -1,0 +1,328 @@
+#!/usr/bin/python
+import psycopg2
+import re
+import urllib
+import xml.dom.minidom as minidom
+import time
+import os
+from sys import argv
+
+fname_f='FILES/found'
+fname_nf='FILES/notfound'
+fname_err='FILES/errors'
+conn = psycopg2.connect("dbname=meco user=xsznap01 password=meco host=meco.l3s.uni-hannover.de")
+conn.set_isolation_level(0)
+
+cursor = conn.cursor()
+cursor.execute("set autocommit to on")
+
+def clean(error):
+  cursor.close()
+  conn.close()
+  exit()
+
+def getCountryID(countryCode):
+  f2 = open("ENVR/states",'r')
+  states={}
+  while True:
+    state_code= f2.readline()
+    if state_code == '':
+      f2.close()
+      break
+    a = state_code.split('\n')
+    a = a[0].split('\t')
+    states[a[0]]= a[1]
+
+  if countryCode in states:
+    countryCode = int(states[countryCode])
+  else:
+    return 0
+  return countryCode
+
+def updateDB(line):
+  r = re.match('^(\S+:[ ]?)?(?P<lat>-?[0-9]+[.]?[0-9]*)[, ]+(?P<lng>-?[0-9]+[.]?[0-9]*$)',line)
+  lat = r.group('lat')
+  lng = r.group('lng')
+  print "updateDB: ",lat,lng,
+
+  url="http://api.geonames.org/findNearbyPlaceName?lng=%(lng)s&lat=%(lat)s&username=con&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % locals()
+  try:
+    usock = urllib.urlopen(url)
+  except:
+    return 1
+  try:
+    xmldoc = minidom.parse(usock)
+  except:
+    return 1
+  usock.close()
+ 
+  place_node_list = xmldoc.getElementsByTagName('name')
+  if not place_node_list:
+    url="http://api.geonames.org/findNearbyPlaceName?lng=%(lat)s&lat=%(lng)s&username=con&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % locals()
+    try:
+      usock = urllib.urlopen(url)
+    except:
+      return 1
+    try:
+      xmldoc = minidom.parse(usock)
+    except:
+      return 1
+    usock.close()
+
+    if xmldoc.getElementsByTagName('status'):
+      check_node_list = xmldoc.getElementsByTagName('status')
+      check_my_node = check_node_list[0]
+      status = check_my_node.attributes["message"]
+      print status.value
+      if status.value=="invalid lat/lng":
+        writenf("invalid "+line,id)
+        return 1
+      return 0
+
+    place_node_list = xmldoc.getElementsByTagName('name')   
+    if not place_node_list:
+      writenf("not found in url:"+url+" "+line,id)
+      return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  location = "%(place_text)s" % locals()
+  location = location.encode("utf-8")
+  location = location.lower()
+
+  place_node_list = xmldoc.getElementsByTagName('geonameId')
+  if not place_node_list:
+    writenf("not geoid "+line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  geonames_id = "%(place_text)s" % locals()
+  geonames_id = geonames_id.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('lat')
+  if not place_node_list:
+    writenf("not lat "+line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  lat = "%(place_text)s" % locals()
+  lat = lat.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('lng')
+  if not place_node_list:
+    writenf("not lng "+line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  lng = "%(place_text)s" % locals()
+  lng = lng.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('fcode')
+  if not place_node_list:
+    writenf("not fcode "+line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  fcode = "%(place_text)s" % locals()
+  fcode = fcode.encode("utf-8")
+
+  place_node_list = xmldoc.getElementsByTagName('countryCode')
+  if not place_node_list:
+    writenf("not country "+line, id)
+    return 1
+
+  place_n_node = place_node_list[0]
+  place_child = place_n_node.firstChild
+  place_text = place_child.data
+  countryCode = "%(place_text)s" % locals()
+  countryCode = countryCode.encode("utf-8")
+
+  countryCode = getCountryID(countryCode)
+  try:
+    cursor.execute("INSERT INTO entities_loc (id,name,enttype_id,normalized_entity,width,height,geonames_id,feature_code,population,country) VALUES (NULL,%s,63,%s,%s,%s,%s,%s,0,%s)",(location,location,lng,lat,geonames_id,fcode,countryCode))
+    print "inserted\n"
+    conn.commit()
+  except:
+    print "Failed with geoid",geonames_id
+    return 1
+  print "updated\n"
+  cursor.execute("SELECT id FROM entities_loc WHERE geonames_id=(%s);", (geonames_id,))
+
+  check = cursor.fetchall()
+  return check
+
+def writef(line,location,id, geonames_id):
+  print geonames_id
+  cursor.execute("SELECT id FROM entities_loc WHERE geonames_id=%s" % geonames_id)
+  check = cursor.fetchall()
+
+  if not check:
+    check = updateDB(line)
+    if check == 1:
+      print "updateDB: FAIL"
+      file_err=file(fname_err,'a')
+      file_err.write("C: ")
+      file_err.write(line)
+      file_err.write(", ")
+      file_err.write(geonames_id)
+      file_err.write("\n")
+      file_err.close()
+      writenf("update DB fail "+line,id)
+      return 0
+    if check == 0:
+      return 0
+
+  authors_id = check[0][0]
+  cursor.execute("UPDATE documents SET loc_id=(%s) WHERE id=(%s)", (authors_id,id))
+  cursor.execute("UPDATE documents SET has_loc=TRUE WHERE id=%s" %  id)
+  print "NEW item in DB with id",id
+  file_f=file(fname_f,'a')
+  file_f.write(line)
+  file_f.write(" -->")
+  file_f.write(location)
+  file_f.write(",")
+  file_f.write(geonames_id)
+  file_f.write("\n")  
+  file_f.close()
+
+def writenf(line,id):
+  cursor.execute("UPDATE documents SET loc_id=NULL WHERE id=%s" %  id)
+  cursor.execute("UPDATE documents SET has_loc=FALSE WHERE id=%s" %  id)
+  file_nf=file(fname_nf,'a')
+  file_nf.write(line)
+  file_nf.write("\n")
+  file_nf.close()
+
+def geo_loc(cursor):
+  print "prepare cursor"
+  cursor.execute("SELECT georss_lat,georss_lon,id FROM documents WHERE georss_lat!='' AND georss_lon!='' AND loc_id IS NULL AND georss_lat IS NOT NULL AND has_loc IS NULL order by pubdate limit 100")
+  print "finished cursor"
+
+  try:
+    check = cursor.fetchall()
+  except:
+    if not check:
+      time.sleep(360)
+      return 0
+
+  for row in check:
+    find = 0
+    lat = row[0]
+    lon = row[1]
+    id = row[2]
+    if not lat or not lon:
+      print "invalid"
+      continue
+#    print lat,
+#    print lon
+    line = "%(lat)s %(lon)s" % locals()
+
+    for test in open("FILES/found"):
+      if line in test:
+        find = 1
+        r = re.match('.*[ ]\-\-\>(?P<place>.+),(?P<geonames_id>[0-9]{4,})',test)
+        place = "%s" % (r.group('place'))
+        geonames_id = "%s" % (r.group('geonames_id'))
+        writef(line, place, id, geonames_id)
+        break
+      continue       
+    if find==1:
+      continue
+
+    for test in open("FILES/notfound"):
+      if line in test:
+        find = 1
+        writenf("already not found "+line,id)
+        break
+      continue 
+    if find==1:
+      continue
+
+#vyhledavani pomoci zemepisne polohy
+    url="http://api.geonames.org/findNearbyPlaceName?lng=%(lat)s&lat=%(lon)s&username=nlp&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % locals()
+    try:
+      usock = urllib.urlopen(url)
+    except:
+      continue
+    try:
+      xmldoc = minidom.parse(usock)
+    except:
+      continue
+    usock.close()
+ 
+    place_node_list = xmldoc.getElementsByTagName('name')
+   
+    if not place_node_list:
+      url="http://api.geonames.org/findNearbyPlaceName?lng=%(lon)s&lat=%(lat)s&username=nlp&featureCode=ADM2&featureCode=ADM2&featureCode=ADM3&featureCode=ADM4&featureCode=PPL&featureCode=PPLA&featureCode=PPLA2&featureCode=PPLA3&featureCode=PPLA4&featureCode=RGN" % locals()
+      try:
+        usock = urllib.urlopen(url)
+      except:
+        continue
+      try:
+        xmldoc = minidom.parse(usock)
+      except:
+        continue 
+      usock.close()
+
+      if xmldoc.getElementsByTagName('status'):
+        check_node_list = xmldoc.getElementsByTagName('status')
+        check_my_node = check_node_list[0]
+        status = check_my_node.attributes["message"]
+        if status.value=="invalid lat/lng":
+          print status.value,line
+          writenf("invalid: "+line,id)
+          continue
+        print status.value
+        continue
+
+      place_node_list = xmldoc.getElementsByTagName('name')   
+      if not place_node_list:
+        writenf("not found in url "+url+" "+line,id)
+        continue
+
+    place_n_node = place_node_list[0]
+    place_child = place_n_node.firstChild
+    place_text = place_child.data
+    location = "%(place_text)s" % locals()
+    location = location.encode("utf-8")
+    location = location.lower()
+
+    place_node_list = xmldoc.getElementsByTagName('geonameId')
+    if not place_node_list:
+      writenf("no geoid "+line, id)
+      continue
+
+    place_n_node = place_node_list[0]
+    place_child = place_n_node.firstChild
+    place_text = place_child.data
+    geonames_id = "%(place_text)s" % locals()
+    geonames_id = geonames_id.encode("utf-8")
+    writef(line,location, id, geonames_id)
+#    print location
+  return 0
+#-----------------------------------------------------------
+file_f=file(fname_f,'w')
+file_nf=file(fname_nf,'w')
+file_e=file(fname_err,'w')
+file_f.close()
+file_nf.close()
+file_e.close()
+cycle = 0
+while 1:
+  if cycle%10 == 0:
+    print "correction"
+    cursor.execute("UPDATE documents SET has_loc=FALSE WHERE has_loc IS NULL AND (georss_lat IS NULL OR georss_lon IS NULL OR georss_lat='' OR georss_lon='')")
+    print "/correction"
+    cycle = 0
+  cycle+=1
+  geo_loc(cursor)
+clean(0)

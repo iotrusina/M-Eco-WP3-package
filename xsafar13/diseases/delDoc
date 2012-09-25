@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import sys
+import os
+import psycopg2
+import re
+
+conn = psycopg2.connect("dbname=meco user=xsafar13 password=meco host=meco.l3s.uni-hannover.de")
+cursor = conn.cursor()
+conn.commit()
+while True:
+  cursor.execute(" select documents.id from documents,authors where documents.author_id = authors.id and authors.has_loc is false and documents.has_loc is false and ner_process is true and _analyzed is true;")
+  cur = cursor.fetchall()
+  for i in cur:
+    cursor.execute("select enttype_id from instances join entities on entity_id = entities.id where item_id ="+str(i[0]))
+    cur2 = cursor.fetchall()
+    pom = 0
+    for j in cur2:
+      print str(i[0])+"   "+str(j[0])
+      if j[0] == 63:
+        pom = 1 
+    if pom == 0:
+      cursor.execute("begin; insert into documents_bak select * from documents where id="+str(i[0])+"; delete from documents where id="+str(i[0])+"; commit;")
+      print "Deleted " + str(i[0])
+    else: 
+      print "Not Deleted " + str(i[0])

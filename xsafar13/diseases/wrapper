@@ -1,0 +1,24 @@
+#!/bin/sh
+python soft/download > fromDbn
+sort fromDbn > fromDb
+python soft/en_process_inp > fromDb_EN
+python soft/de_process_inp > fromDb_DE
+
+sort -u fromDb_EN > sorted_EN 
+sort -u fromDb_DE > sorted_DE
+python soft/filter sorted_EN > filtered_EN
+python soft/filter sorted_DE > filtered_DE
+cut -d '	' -f 1 filtered_EN > listo_EN
+cut -d '	' -f 1 filtered_DE > listo_DE
+############################################################
+# KONEC PRIPRAVY DAT
+# volani skriptu sorter, ktery zpracuje data, vytvori 
+# automat a mapu  pro vyhledavani pomoci nastroje ner3
+##############################################################
+echo "dokonceni odstraneni duplikatu"
+echo "zacina vytvareni automatu atd"
+
+soft/./sorter listo_EN filtered_EN
+soft/./gersorter listo_DE filtered_DE
+
+rm listo_EN listo_DE filtered_EN filtered_DE sorted_EN sorted_DE fromDb_EN fromDb_DE

@@ -1,0 +1,3 @@
+#/bin/bash
+
+cat stopfuzzy1 | sed "s/^a/A/" | sed "s/^b/B/" | sed "s/^c/C/" | sed "s/^d/D/" | sed "s/^e/E/" | sed "s/^f/F/" | sed "s/^g/G/" | sed "s/^h/H/" | sed "s/^i/I/" | sed "s/^j/J/" | sed "s/^k/K/" | sed "s/^l/L/" | sed "s/^m/M/" | sed "s/^n/N/" | sed "s/^o/O/" | sed "s/^p/P/" | sed "s/^q/Q/" | sed "s/^r/R/" |  sed "s/^s/S/" | sed "s/^t/T/" | sed "s/^s/S/" | sed "s/^u/U/" | sed "s/^v/V/" | sed "s/^w/W/" | sed "s/^x/X/" | sed "s/^y/Y/" | sed "s/^z/Z/" > stopupper

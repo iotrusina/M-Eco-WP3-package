@@ -1,0 +1,22 @@
+#!/usr/bin/python
+import sys
+import os
+import psycopg2
+import re
+import NERDisamb
+import subprocess
+import time
+
+a = NERDisamb.states()
+b = NERDisamb.dupli()
+c = NERDisamb.readFile()
+
+args = []
+args.insert(0,a)
+args.insert(1,b)
+args.insert(2,c)
+conn = psycopg2.connect("dbname=meco user=xsafar13 password=meco host=meco.l3s.uni-hannover.de")
+cursor = conn.cursor()
+cursor.execute("begin; set autocommit = on; commit;")
+conn.commit()
+o = NERDisamb.find("baseline","en",args)

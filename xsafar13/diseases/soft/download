@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import sys
+import os
+import psycopg2
+import re
+import subprocess
+import nltk
+from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.stem import PorterStemmer
+conn = psycopg2.connect("dbname=meco user=xsafar13 password=meco host=meco.l3s.uni-hannover.de")
+cursor = conn.cursor()
+cursor.execute("select disease,language,id from diseases;")
+cur = cursor.fetchall()
+pom = 0
+for i in cur:
+  print str(i[0])+'\t'+i[1]+'\t'+str(i[2])+'\t'+'disease'+'\t'+str(pom)
+  pom += 1
+cursor.execute("select symptom,language,id from symptoms;")
+cur = cursor.fetchall()
+for i in cur:
+  print str(i[0])+'\t'+i[1]+'\t'+str(i[2])+'\t'+'symptom'+'\t'+str(pom)
+  pom += 1
+
+
+

@@ -1,0 +1,742 @@
+[21/Aug/2012:14:53:57] ENGINE Listening for SIGHUP.
+[21/Aug/2012:14:53:57] ENGINE Listening for SIGTERM.
+[21/Aug/2012:14:53:57] ENGINE Listening for SIGUSR1.
+[21/Aug/2012:14:53:57] ENGINE Bus STARTING
+[21/Aug/2012:14:53:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Aug/2012:14:53:57] ENGINE Serving on 147.229.8.40:8090
+[21/Aug/2012:14:53:57] ENGINE Bus STARTED
+[21/Aug/2012:15:00:14]  error when parsing feed id 2 name drfruehwein
+[21/Aug/2012:15:00:14]  cannot serialize <br /> (type Tag)
+[22/Aug/2012:15:00:42]  error when parsing feed id 2 name drfruehwein
+[22/Aug/2012:15:00:42]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:19:50:11]  error when parsing feed id 1 name sail
+[23/Aug/2012:19:50:11]  ['ttp://webdemo:80/MediaMiningBasic/storyxml/972768.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175400_462_2m702ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175400_462_2m702ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / CNN MARKETPLACE MIDDLE EAST / 2012/08/23 17:54 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">CNN MARKETPLACE MIDDLE EAST</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972769</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 17:54:27 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972769.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175400_462_2m702ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175400_462_2m702ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / CNN MARKETPLACE MIDDLE EAST / 2012/08/23 17:54 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">CNN MARKETPLACE MIDDLE EAST</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972770</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 17:54:54 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972770.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175400_462_2m702ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175400_462_2m702ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / CNN MARKETPLACE MIDDLE EAST / 2012/08/23 17:56 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">CNN MARKETPLACE MIDDLE EAST</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972818</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 17:56:00 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972818.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175600_705_1m59s982ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175600_705_1m59s982ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / CNN MARKETPLACE MIDDLE EAST / 2012/08/23 17:56 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">CNN MARKETPLACE MIDDLE EAST</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972819</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 17:56:13 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972819.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175600_705_1m59s982ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175600_705_1m59s982ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / CNN MARKETPLACE MIDDLE EAST / 2012/08/23 17:58 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">CNN MARKETPLACE MIDDLE EAST</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972835</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 17:58:00 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972835.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175800_280_1m59s839ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175800_280_1m59s839ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / CNN MARKETPLACE MIDDLE EAST / 2012/08/23 17:59 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">CNN MARKETPLACE MIDDLE EAST</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972836</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 17:59:18 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972836.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_175800_280_1m59s839ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_175800_280_1m59s839ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / WORLD SPORT / 2012/08/23 18:00 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">WORLD SPORT</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972895</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 18:00:00 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972895.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_180000_219_2m1s231ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_180000_219_2m1s231ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / WORLD SPORT / 2012/08/23 18:01 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">WORLD SPORT</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972896</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 18:01:29 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972896.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_180000_219_2m1s231ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_180000_219_2m1s231ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / WORLD SPORT / 2012/08/23 18:02 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">WORLD SPORT</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972897</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 18:02:00 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972897.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN International/20120823/CNN International_20120823_180000_219_2m1s231ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage1/CNN International/20120823/CNN International_20120823_180000_219_2m1s231ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / WORLD SPORT / 2012/08/23 18:02 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">WORLD SPORT</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">972945</guid>\n\t\t<pubDate>Thu, 23 Aug 2012 18:02:01 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/972945.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage1/CNN Internation']
+[23/Aug/2012:20:06:16]  error when parsing feed id 1 name sail
+[23/Aug/2012:20:06:16]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:20:22:22]  error when parsing feed id 1 name sail
+[23/Aug/2012:20:22:22]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:20:38:28]  error when parsing feed id 1 name sail
+[23/Aug/2012:20:38:28]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:20:54:34]  error when parsing feed id 1 name sail
+[23/Aug/2012:20:54:34]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:21:10:40]  error when parsing feed id 1 name sail
+[23/Aug/2012:21:10:40]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:21:26:46]  error when parsing feed id 1 name sail
+[23/Aug/2012:21:26:46]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:21:42:52]  error when parsing feed id 1 name sail
+[23/Aug/2012:21:42:52]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:21:58:58]  error when parsing feed id 1 name sail
+[23/Aug/2012:21:58:58]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:22:15:04]  error when parsing feed id 1 name sail
+[23/Aug/2012:22:15:04]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:22:30:07]  error when parsing feed id 1 name sail
+[23/Aug/2012:22:30:07]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:22:46:11]  error when parsing feed id 1 name sail
+[23/Aug/2012:22:46:11]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:23:02:17]  error when parsing feed id 1 name sail
+[23/Aug/2012:23:02:17]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:23:17:30]  error when parsing feed id 1 name sail
+[23/Aug/2012:23:17:30]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:23:33:34]  error when parsing feed id 1 name sail
+[23/Aug/2012:23:33:34]  argument 1 must be string or read-only character buffer, not None
+[23/Aug/2012:23:49:40]  error when parsing feed id 1 name sail
+[23/Aug/2012:23:49:40]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:00:05:46]  error when parsing feed id 1 name sail
+[24/Aug/2012:00:05:46]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:00:21:52]  error when parsing feed id 1 name sail
+[24/Aug/2012:00:21:52]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:00:37:58]  error when parsing feed id 1 name sail
+[24/Aug/2012:00:37:58]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:00:54:04]  error when parsing feed id 1 name sail
+[24/Aug/2012:00:54:04]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:01:10:10]  error when parsing feed id 1 name sail
+[24/Aug/2012:01:10:10]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:01:26:16]  error when parsing feed id 1 name sail
+[24/Aug/2012:01:26:16]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:01:42:22]  error when parsing feed id 1 name sail
+[24/Aug/2012:01:42:22]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:01:58:28]  error when parsing feed id 1 name sail
+[24/Aug/2012:01:58:28]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:02:14:36]  error when parsing feed id 1 name sail
+[24/Aug/2012:02:14:36]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:02:30:40]  error when parsing feed id 1 name sail
+[24/Aug/2012:02:30:40]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:02:46:46]  error when parsing feed id 1 name sail
+[24/Aug/2012:02:46:46]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:03:02:53]  error when parsing feed id 1 name sail
+[24/Aug/2012:03:02:53]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:03:19:02]  error when parsing feed id 1 name sail
+[24/Aug/2012:03:19:02]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:03:36:07]  error when parsing feed id 1 name sail
+[24/Aug/2012:03:36:07]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:03:52:11]  error when parsing feed id 1 name sail
+[24/Aug/2012:03:52:11]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:04:08:17]  error when parsing feed id 1 name sail
+[24/Aug/2012:04:08:17]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:04:24:23]  error when parsing feed id 1 name sail
+[24/Aug/2012:04:24:23]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:04:40:29]  error when parsing feed id 1 name sail
+[24/Aug/2012:04:40:29]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:04:56:35]  error when parsing feed id 1 name sail
+[24/Aug/2012:04:56:35]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:05:12:41]  error when parsing feed id 1 name sail
+[24/Aug/2012:05:12:41]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:05:28:47]  error when parsing feed id 1 name sail
+[24/Aug/2012:05:28:47]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:05:44:53]  error when parsing feed id 1 name sail
+[24/Aug/2012:05:44:53]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:06:00:59]  error when parsing feed id 1 name sail
+[24/Aug/2012:06:00:59]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:06:17:05]  error when parsing feed id 1 name sail
+[24/Aug/2012:06:17:05]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:06:33:11]  error when parsing feed id 1 name sail
+[24/Aug/2012:06:33:11]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:06:49:17]  error when parsing feed id 1 name sail
+[24/Aug/2012:06:49:17]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:07:05:23]  error when parsing feed id 1 name sail
+[24/Aug/2012:07:05:23]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:07:21:29]  error when parsing feed id 1 name sail
+[24/Aug/2012:07:21:29]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:07:37:35]  error when parsing feed id 1 name sail
+[24/Aug/2012:07:37:35]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:07:53:41]  error when parsing feed id 1 name sail
+[24/Aug/2012:07:53:41]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:08:09:47]  error when parsing feed id 1 name sail
+[24/Aug/2012:08:09:47]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:08:25:53]  error when parsing feed id 1 name sail
+[24/Aug/2012:08:25:53]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:08:41:59]  error when parsing feed id 1 name sail
+[24/Aug/2012:08:41:59]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:08:58:05]  error when parsing feed id 1 name sail
+[24/Aug/2012:08:58:05]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:09:14:11]  error when parsing feed id 1 name sail
+[24/Aug/2012:09:14:11]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:09:30:17]  error when parsing feed id 1 name sail
+[24/Aug/2012:09:30:17]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:09:46:23]  error when parsing feed id 1 name sail
+[24/Aug/2012:09:46:23]  argument 1 must be string or read-only character buffer, not None
+[24/Aug/2012:10:04:05]  error when parsing feed id 1 name sail
+[24/Aug/2012:10:04:05]  'link'
+[24/Aug/2012:10:22:07]  error when parsing feed id 1 name sail
+[24/Aug/2012:10:22:07]  'link'
+[25/Aug/2012:00:14:59]  error when parsing feed id 1 name sail
+[25/Aug/2012:00:14:59]  'link'
+[25/Aug/2012:00:38:21]  error when parsing feed id 1 name sail
+[25/Aug/2012:00:38:21]  'link'
+[25/Aug/2012:01:01:40]  error when parsing feed id 1 name sail
+[25/Aug/2012:01:01:40]  'link'
+[25/Aug/2012:01:24:36]  error when parsing feed id 1 name sail
+[25/Aug/2012:01:24:36]  'link'
+[25/Aug/2012:01:47:35]  error when parsing feed id 1 name sail
+[25/Aug/2012:01:47:35]  'link'
+[25/Aug/2012:02:10:11]  error when parsing feed id 1 name sail
+[25/Aug/2012:02:10:11]  'link'
+[25/Aug/2012:02:32:37]  error when parsing feed id 1 name sail
+[25/Aug/2012:02:32:37]  'link'
+[25/Aug/2012:02:55:14]  error when parsing feed id 1 name sail
+[25/Aug/2012:02:55:14]  'link'
+[25/Aug/2012:03:17:21]  error when parsing feed id 1 name sail
+[25/Aug/2012:03:17:21]  'link'
+[25/Aug/2012:03:39:33]  error when parsing feed id 1 name sail
+[25/Aug/2012:03:39:33]  'link'
+[25/Aug/2012:04:01:46]  error when parsing feed id 1 name sail
+[25/Aug/2012:04:01:46]  'link'
+[25/Aug/2012:04:23:55]  error when parsing feed id 1 name sail
+[25/Aug/2012:04:23:55]  'link'
+[25/Aug/2012:04:45:36]  error when parsing feed id 1 name sail
+[25/Aug/2012:04:45:36]  'link'
+[25/Aug/2012:05:07:03]  error when parsing feed id 1 name sail
+[25/Aug/2012:05:07:03]  'link'
+[25/Aug/2012:05:28:29]  error when parsing feed id 1 name sail
+[25/Aug/2012:05:28:29]  'link'
+[25/Aug/2012:05:50:00]  error when parsing feed id 1 name sail
+[25/Aug/2012:05:50:00]  'link'
+[25/Aug/2012:07:41:29]  error when parsing feed id 1 name sail
+[25/Aug/2012:07:41:30]  'link'
+[25/Aug/2012:08:02:10]  error when parsing feed id 1 name sail
+[25/Aug/2012:08:02:10]  'link'
+[25/Aug/2012:08:22:20]  error when parsing feed id 1 name sail
+[25/Aug/2012:08:22:20]  'link'
+[25/Aug/2012:08:42:27]  error when parsing feed id 1 name sail
+[25/Aug/2012:08:42:27]  'link'
+[25/Aug/2012:09:02:47]  error when parsing feed id 1 name sail
+[25/Aug/2012:09:02:47]  'link'
+[25/Aug/2012:09:22:51]  error when parsing feed id 1 name sail
+[25/Aug/2012:09:22:51]  'link'
+[25/Aug/2012:09:42:54]  error when parsing feed id 1 name sail
+[25/Aug/2012:09:42:54]  'link'
+[25/Aug/2012:10:02:42]  error when parsing feed id 1 name sail
+[25/Aug/2012:10:02:42]  'link'
+[25/Aug/2012:10:22:38]  error when parsing feed id 1 name sail
+[25/Aug/2012:10:22:38]  'link'
+[25/Aug/2012:10:42:16]  error when parsing feed id 1 name sail
+[25/Aug/2012:10:42:16]  'link'
+[25/Aug/2012:11:02:06]  error when parsing feed id 1 name sail
+[25/Aug/2012:11:02:06]  'link'
+[25/Aug/2012:11:21:22]  error when parsing feed id 1 name sail
+[25/Aug/2012:11:21:22]  'link'
+[25/Aug/2012:11:40:43]  error when parsing feed id 1 name sail
+[25/Aug/2012:11:40:43]  'link'
+[25/Aug/2012:11:59:59]  error when parsing feed id 1 name sail
+[25/Aug/2012:11:59:59]  'link'
+[25/Aug/2012:12:18:51]  error when parsing feed id 1 name sail
+[25/Aug/2012:12:18:51]  'link'
+[25/Aug/2012:12:37:50]  error when parsing feed id 1 name sail
+[25/Aug/2012:12:37:50]  'link'
+[25/Aug/2012:12:56:41]  error when parsing feed id 1 name sail
+[25/Aug/2012:12:56:41]  'link'
+[25/Aug/2012:13:15:07]  error when parsing feed id 1 name sail
+[25/Aug/2012:13:15:07]  'link'
+[25/Aug/2012:13:33:47]  error when parsing feed id 1 name sail
+[25/Aug/2012:13:33:47]  'link'
+[25/Aug/2012:13:52:31]  error when parsing feed id 1 name sail
+[25/Aug/2012:13:52:31]  'link'
+[25/Aug/2012:14:10:47]  error when parsing feed id 1 name sail
+[25/Aug/2012:14:10:47]  'link'
+[25/Aug/2012:14:29:04]  error when parsing feed id 1 name sail
+[25/Aug/2012:14:29:04]  'link'
+[25/Aug/2012:14:47:22]  error when parsing feed id 1 name sail
+[25/Aug/2012:14:47:22]  'link'
+[25/Aug/2012:15:05:17]  error when parsing feed id 1 name sail
+[25/Aug/2012:15:05:17]  'link'
+[25/Aug/2012:15:23:14]  error when parsing feed id 1 name sail
+[25/Aug/2012:15:23:14]  'link'
+[25/Aug/2012:15:41:10]  error when parsing feed id 1 name sail
+[25/Aug/2012:15:41:10]  'link'
+[25/Aug/2012:15:59:06]  error when parsing feed id 1 name sail
+[25/Aug/2012:15:59:06]  'link'
+[25/Aug/2012:16:16:38]  error when parsing feed id 1 name sail
+[25/Aug/2012:16:16:38]  'link'
+[25/Aug/2012:16:34:10]  error when parsing feed id 1 name sail
+[25/Aug/2012:16:34:10]  'link'
+[25/Aug/2012:16:51:45]  error when parsing feed id 1 name sail
+[25/Aug/2012:16:51:45]  'link'
+[25/Aug/2012:17:09:08]  error when parsing feed id 1 name sail
+[25/Aug/2012:17:09:08]  'link'
+[25/Aug/2012:17:26:27]  error when parsing feed id 1 name sail
+[25/Aug/2012:17:26:28]  'link'
+[25/Aug/2012:17:43:47]  error when parsing feed id 1 name sail
+[25/Aug/2012:17:43:47]  'link'
+[25/Aug/2012:18:01:03]  error when parsing feed id 1 name sail
+[25/Aug/2012:18:01:03]  'link'
+[25/Aug/2012:18:17:58]  error when parsing feed id 1 name sail
+[25/Aug/2012:18:17:58]  'link'
+[25/Aug/2012:18:34:52]  error when parsing feed id 1 name sail
+[25/Aug/2012:18:34:52]  'link'
+[25/Aug/2012:18:51:51]  error when parsing feed id 1 name sail
+[25/Aug/2012:18:51:51]  'link'
+[25/Aug/2012:19:08:22]  error when parsing feed id 1 name sail
+[25/Aug/2012:19:08:22]  'link'
+[25/Aug/2012:19:24:48]  error when parsing feed id 1 name sail
+[25/Aug/2012:19:24:48]  'link'
+[25/Aug/2012:19:41:18]  error when parsing feed id 1 name sail
+[25/Aug/2012:19:41:18]  'link'
+[25/Aug/2012:19:57:52]  error when parsing feed id 1 name sail
+[25/Aug/2012:19:57:52]  'link'
+[25/Aug/2012:20:14:09]  error when parsing feed id 1 name sail
+[25/Aug/2012:20:14:09]  'link'
+[25/Aug/2012:20:30:25]  error when parsing feed id 1 name sail
+[25/Aug/2012:20:30:25]  'link'
+[25/Aug/2012:20:46:40]  error when parsing feed id 1 name sail
+[25/Aug/2012:20:46:40]  'link'
+[25/Aug/2012:21:02:36]  error when parsing feed id 1 name sail
+[25/Aug/2012:21:02:36]  'link'
+[25/Aug/2012:21:18:32]  error when parsing feed id 1 name sail
+[25/Aug/2012:21:18:32]  'link'
+[25/Aug/2012:21:34:24]  error when parsing feed id 1 name sail
+[25/Aug/2012:21:34:24]  'link'
+[25/Aug/2012:21:50:17]  error when parsing feed id 1 name sail
+[25/Aug/2012:21:50:17]  'link'
+[25/Aug/2012:22:05:50]  error when parsing feed id 1 name sail
+[25/Aug/2012:22:05:50]  'link'
+[25/Aug/2012:22:21:26]  error when parsing feed id 1 name sail
+[25/Aug/2012:22:21:26]  'link'
+[25/Aug/2012:22:37:02]  error when parsing feed id 1 name sail
+[25/Aug/2012:22:37:02]  'link'
+[25/Aug/2012:22:52:37]  error when parsing feed id 1 name sail
+[25/Aug/2012:22:52:37]  'link'
+[25/Aug/2012:23:07:59]  error when parsing feed id 1 name sail
+[25/Aug/2012:23:07:59]  'link'
+[25/Aug/2012:23:23:20]  error when parsing feed id 1 name sail
+[25/Aug/2012:23:23:20]  'link'
+[25/Aug/2012:23:38:35]  error when parsing feed id 1 name sail
+[25/Aug/2012:23:38:35]  'link'
+[25/Aug/2012:23:53:51]  error when parsing feed id 1 name sail
+[25/Aug/2012:23:53:51]  'link'
+[26/Aug/2012:00:09:07]  error when parsing feed id 1 name sail
+[26/Aug/2012:00:09:07]  'link'
+[26/Aug/2012:00:24:23]  error when parsing feed id 1 name sail
+[26/Aug/2012:00:24:23]  'link'
+[26/Aug/2012:00:39:39]  error when parsing feed id 1 name sail
+[26/Aug/2012:00:39:39]  'link'
+[26/Aug/2012:00:54:55]  error when parsing feed id 1 name sail
+[26/Aug/2012:00:54:55]  'link'
+[26/Aug/2012:01:10:11]  error when parsing feed id 1 name sail
+[26/Aug/2012:01:10:11]  'link'
+[26/Aug/2012:01:25:28]  error when parsing feed id 1 name sail
+[26/Aug/2012:01:25:28]  'link'
+[26/Aug/2012:01:40:43]  error when parsing feed id 1 name sail
+[26/Aug/2012:01:40:43]  'link'
+[26/Aug/2012:01:55:59]  error when parsing feed id 1 name sail
+[26/Aug/2012:01:55:59]  'link'
+[26/Aug/2012:02:11:15]  error when parsing feed id 1 name sail
+[26/Aug/2012:02:11:15]  'link'
+[26/Aug/2012:02:26:31]  error when parsing feed id 1 name sail
+[26/Aug/2012:02:26:31]  'link'
+[26/Aug/2012:02:41:47]  error when parsing feed id 1 name sail
+[26/Aug/2012:02:41:47]  'link'
+[26/Aug/2012:02:57:03]  error when parsing feed id 1 name sail
+[26/Aug/2012:02:57:03]  'link'
+[26/Aug/2012:03:12:19]  error when parsing feed id 1 name sail
+[26/Aug/2012:03:12:19]  'link'
+[26/Aug/2012:03:27:35]  error when parsing feed id 1 name sail
+[26/Aug/2012:03:27:35]  'link'
+[26/Aug/2012:03:42:51]  error when parsing feed id 1 name sail
+[26/Aug/2012:03:42:51]  'link'
+[26/Aug/2012:03:58:07]  error when parsing feed id 1 name sail
+[26/Aug/2012:03:58:07]  'link'
+[26/Aug/2012:04:13:23]  error when parsing feed id 1 name sail
+[26/Aug/2012:04:13:23]  'link'
+[26/Aug/2012:04:28:39]  error when parsing feed id 1 name sail
+[26/Aug/2012:04:28:39]  'link'
+[26/Aug/2012:04:43:58]  error when parsing feed id 1 name sail
+[26/Aug/2012:04:43:58]  'link'
+[26/Aug/2012:04:59:11]  error when parsing feed id 1 name sail
+[26/Aug/2012:04:59:11]  'link'
+[26/Aug/2012:05:14:27]  error when parsing feed id 1 name sail
+[26/Aug/2012:05:14:27]  'link'
+[26/Aug/2012:05:29:42]  error when parsing feed id 1 name sail
+[26/Aug/2012:05:29:42]  'link'
+[26/Aug/2012:05:44:59]  error when parsing feed id 1 name sail
+[26/Aug/2012:05:44:59]  'link'
+[26/Aug/2012:06:00:16]  error when parsing feed id 1 name sail
+[26/Aug/2012:06:00:16]  'link'
+[26/Aug/2012:06:15:31]  error when parsing feed id 1 name sail
+[26/Aug/2012:06:15:31]  'link'
+[26/Aug/2012:06:30:47]  error when parsing feed id 1 name sail
+[26/Aug/2012:06:30:47]  'link'
+[26/Aug/2012:06:46:05]  error when parsing feed id 1 name sail
+[26/Aug/2012:06:46:05]  'link'
+[26/Aug/2012:07:01:18]  error when parsing feed id 1 name sail
+[26/Aug/2012:07:01:18]  'link'
+[26/Aug/2012:07:16:34]  error when parsing feed id 1 name sail
+[26/Aug/2012:07:16:34]  'link'
+[26/Aug/2012:07:32:17]  error when parsing feed id 1 name sail
+[26/Aug/2012:07:32:17]  'link'
+[26/Aug/2012:07:47:32]  error when parsing feed id 1 name sail
+[26/Aug/2012:07:47:32]  'link'
+[26/Aug/2012:08:02:47]  error when parsing feed id 1 name sail
+[26/Aug/2012:08:02:47]  'link'
+[26/Aug/2012:08:18:03]  error when parsing feed id 1 name sail
+[26/Aug/2012:08:18:03]  'link'
+[26/Aug/2012:08:33:19]  error when parsing feed id 1 name sail
+[26/Aug/2012:08:33:19]  'link'
+[26/Aug/2012:08:48:35]  error when parsing feed id 1 name sail
+[26/Aug/2012:08:48:35]  'link'
+[26/Aug/2012:09:03:52]  error when parsing feed id 1 name sail
+[26/Aug/2012:09:03:52]  'link'
+[26/Aug/2012:09:19:07]  error when parsing feed id 1 name sail
+[26/Aug/2012:09:19:07]  'link'
+[26/Aug/2012:09:34:23]  error when parsing feed id 1 name sail
+[26/Aug/2012:09:34:23]  'link'
+[26/Aug/2012:09:49:39]  error when parsing feed id 1 name sail
+[26/Aug/2012:09:49:39]  'link'
+[26/Aug/2012:10:04:55]  error when parsing feed id 1 name sail
+[26/Aug/2012:10:04:55]  'link'
+[26/Aug/2012:10:20:24]  error when parsing feed id 1 name sail
+[26/Aug/2012:10:20:24]  'link'
+[26/Aug/2012:10:35:37]  error when parsing feed id 1 name sail
+[26/Aug/2012:10:35:37]  'link'
+[26/Aug/2012:10:50:53]  error when parsing feed id 1 name sail
+[26/Aug/2012:10:50:53]  'link'
+[26/Aug/2012:11:06:09]  error when parsing feed id 1 name sail
+[26/Aug/2012:11:06:09]  'link'
+[26/Aug/2012:11:21:24]  error when parsing feed id 1 name sail
+[26/Aug/2012:11:21:24]  'link'
+[26/Aug/2012:11:36:40]  error when parsing feed id 1 name sail
+[26/Aug/2012:11:36:40]  'link'
+[26/Aug/2012:11:51:57]  error when parsing feed id 1 name sail
+[26/Aug/2012:11:51:57]  'link'
+[26/Aug/2012:12:07:13]  error when parsing feed id 1 name sail
+[26/Aug/2012:12:07:13]  'link'
+[26/Aug/2012:12:22:28]  error when parsing feed id 1 name sail
+[26/Aug/2012:12:22:28]  'link'
+[26/Aug/2012:12:37:45]  error when parsing feed id 1 name sail
+[26/Aug/2012:12:37:45]  'link'
+[26/Aug/2012:12:53:01]  error when parsing feed id 1 name sail
+[26/Aug/2012:12:53:01]  'link'
+[26/Aug/2012:13:08:16]  error when parsing feed id 1 name sail
+[26/Aug/2012:13:08:16]  'link'
+[26/Aug/2012:13:23:33]  error when parsing feed id 1 name sail
+[26/Aug/2012:13:23:33]  'link'
+[26/Aug/2012:13:38:48]  error when parsing feed id 1 name sail
+[26/Aug/2012:13:38:48]  'link'
+[26/Aug/2012:13:54:04]  error when parsing feed id 1 name sail
+[26/Aug/2012:13:54:04]  'link'
+[26/Aug/2012:14:09:20]  error when parsing feed id 1 name sail
+[26/Aug/2012:14:09:20]  'link'
+[26/Aug/2012:14:24:36]  error when parsing feed id 1 name sail
+[26/Aug/2012:14:24:36]  'link'
+[26/Aug/2012:14:39:52]  error when parsing feed id 1 name sail
+[26/Aug/2012:14:39:52]  'link'
+[26/Aug/2012:14:55:08]  error when parsing feed id 1 name sail
+[26/Aug/2012:14:55:08]  'link'
+[26/Aug/2012:15:10:24]  error when parsing feed id 1 name sail
+[26/Aug/2012:15:10:24]  'link'
+[26/Aug/2012:15:25:40]  error when parsing feed id 1 name sail
+[26/Aug/2012:15:25:40]  'link'
+[26/Aug/2012:15:40:58]  error when parsing feed id 1 name sail
+[26/Aug/2012:15:40:58]  'link'
+[26/Aug/2012:15:56:12]  error when parsing feed id 1 name sail
+[26/Aug/2012:15:56:12]  'link'
+[26/Aug/2012:16:11:28]  error when parsing feed id 1 name sail
+[26/Aug/2012:16:11:28]  'link'
+[26/Aug/2012:16:26:44]  error when parsing feed id 1 name sail
+[26/Aug/2012:16:26:44]  'link'
+[26/Aug/2012:16:42:00]  error when parsing feed id 1 name sail
+[26/Aug/2012:16:42:00]  'link'
+[26/Aug/2012:16:57:16]  error when parsing feed id 1 name sail
+[26/Aug/2012:16:57:16]  'link'
+[26/Aug/2012:17:12:33]  error when parsing feed id 1 name sail
+[26/Aug/2012:17:12:33]  'link'
+[26/Aug/2012:17:27:48]  error when parsing feed id 1 name sail
+[26/Aug/2012:17:27:48]  'link'
+[26/Aug/2012:17:43:04]  error when parsing feed id 1 name sail
+[26/Aug/2012:17:43:04]  'link'
+[26/Aug/2012:17:58:20]  error when parsing feed id 1 name sail
+[26/Aug/2012:17:58:20]  'link'
+[26/Aug/2012:18:13:36]  error when parsing feed id 1 name sail
+[26/Aug/2012:18:13:36]  'link'
+[26/Aug/2012:18:28:52]  error when parsing feed id 1 name sail
+[26/Aug/2012:18:28:52]  'link'
+[26/Aug/2012:18:44:18]  error when parsing feed id 1 name sail
+[26/Aug/2012:18:44:18]  'link'
+[26/Aug/2012:18:59:34]  error when parsing feed id 1 name sail
+[26/Aug/2012:18:59:34]  'link'
+[26/Aug/2012:19:14:49]  error when parsing feed id 1 name sail
+[26/Aug/2012:19:14:49]  'link'
+[26/Aug/2012:19:30:05]  error when parsing feed id 1 name sail
+[26/Aug/2012:19:30:05]  'link'
+[26/Aug/2012:19:45:21]  error when parsing feed id 1 name sail
+[26/Aug/2012:19:45:21]  'link'
+[26/Aug/2012:20:00:37]  error when parsing feed id 1 name sail
+[26/Aug/2012:20:00:37]  'link'
+[26/Aug/2012:20:15:53]  error when parsing feed id 1 name sail
+[26/Aug/2012:20:15:53]  'link'
+[26/Aug/2012:20:31:11]  error when parsing feed id 1 name sail
+[26/Aug/2012:20:31:11]  'link'
+[26/Aug/2012:20:46:25]  error when parsing feed id 1 name sail
+[26/Aug/2012:20:46:25]  'link'
+[26/Aug/2012:21:01:41]  error when parsing feed id 1 name sail
+[26/Aug/2012:21:01:41]  'link'
+[26/Aug/2012:21:16:57]  error when parsing feed id 1 name sail
+[26/Aug/2012:21:16:57]  'link'
+[26/Aug/2012:21:32:33]  error when parsing feed id 1 name sail
+[26/Aug/2012:21:32:33]  'link'
+[26/Aug/2012:21:47:49]  error when parsing feed id 1 name sail
+[26/Aug/2012:21:47:49]  'link'
+[26/Aug/2012:22:03:05]  error when parsing feed id 1 name sail
+[26/Aug/2012:22:03:05]  'link'
+[26/Aug/2012:22:18:21]  error when parsing feed id 1 name sail
+[26/Aug/2012:22:18:21]  'link'
+[26/Aug/2012:22:33:37]  error when parsing feed id 1 name sail
+[26/Aug/2012:22:33:37]  'link'
+[26/Aug/2012:22:48:53]  error when parsing feed id 1 name sail
+[26/Aug/2012:22:48:53]  'link'
+[26/Aug/2012:23:04:09]  error when parsing feed id 1 name sail
+[26/Aug/2012:23:04:09]  'link'
+[26/Aug/2012:23:19:24]  error when parsing feed id 1 name sail
+[26/Aug/2012:23:19:24]  'link'
+[26/Aug/2012:23:34:40]  error when parsing feed id 1 name sail
+[26/Aug/2012:23:34:40]  'link'
+[26/Aug/2012:23:49:57]  error when parsing feed id 1 name sail
+[26/Aug/2012:23:49:57]  'link'
+[27/Aug/2012:00:05:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:00:05:13]  'link'
+[27/Aug/2012:00:20:29]  error when parsing feed id 1 name sail
+[27/Aug/2012:00:20:29]  'link'
+[27/Aug/2012:00:35:45]  error when parsing feed id 1 name sail
+[27/Aug/2012:00:35:45]  'link'
+[27/Aug/2012:00:51:01]  error when parsing feed id 1 name sail
+[27/Aug/2012:00:51:01]  'link'
+[27/Aug/2012:01:06:16]  error when parsing feed id 1 name sail
+[27/Aug/2012:01:06:16]  'link'
+[27/Aug/2012:01:21:32]  error when parsing feed id 1 name sail
+[27/Aug/2012:01:21:32]  'link'
+[27/Aug/2012:01:36:48]  error when parsing feed id 1 name sail
+[27/Aug/2012:01:36:48]  'link'
+[27/Aug/2012:01:52:05]  error when parsing feed id 1 name sail
+[27/Aug/2012:01:52:05]  'link'
+[27/Aug/2012:02:07:20]  error when parsing feed id 1 name sail
+[27/Aug/2012:02:07:20]  'link'
+[27/Aug/2012:02:22:36]  error when parsing feed id 1 name sail
+[27/Aug/2012:02:22:36]  'link'
+[27/Aug/2012:02:37:52]  error when parsing feed id 1 name sail
+[27/Aug/2012:02:37:52]  'link'
+[27/Aug/2012:02:53:08]  error when parsing feed id 1 name sail
+[27/Aug/2012:02:53:08]  'link'
+[27/Aug/2012:03:08:48]  error when parsing feed id 1 name sail
+[27/Aug/2012:03:08:50]  'link'
+[27/Aug/2012:03:24:05]  error when parsing feed id 1 name sail
+[27/Aug/2012:03:24:05]  'link'
+[27/Aug/2012:03:39:21]  error when parsing feed id 1 name sail
+[27/Aug/2012:03:39:21]  'link'
+[27/Aug/2012:03:54:37]  error when parsing feed id 1 name sail
+[27/Aug/2012:03:54:37]  'link'
+[27/Aug/2012:04:09:53]  error when parsing feed id 1 name sail
+[27/Aug/2012:04:09:53]  'link'
+[27/Aug/2012:04:25:09]  error when parsing feed id 1 name sail
+[27/Aug/2012:04:25:09]  'link'
+[27/Aug/2012:04:40:25]  error when parsing feed id 1 name sail
+[27/Aug/2012:04:40:25]  'link'
+[27/Aug/2012:04:55:41]  error when parsing feed id 1 name sail
+[27/Aug/2012:04:55:41]  'link'
+[27/Aug/2012:05:10:57]  error when parsing feed id 1 name sail
+[27/Aug/2012:05:10:57]  'link'
+[27/Aug/2012:05:26:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:05:26:13]  'link'
+[27/Aug/2012:05:41:29]  error when parsing feed id 1 name sail
+[27/Aug/2012:05:41:29]  'link'
+[27/Aug/2012:05:56:45]  error when parsing feed id 1 name sail
+[27/Aug/2012:05:56:45]  'link'
+[27/Aug/2012:06:12:01]  error when parsing feed id 1 name sail
+[27/Aug/2012:06:12:01]  'link'
+[27/Aug/2012:06:27:16]  error when parsing feed id 1 name sail
+[27/Aug/2012:06:27:16]  'link'
+[27/Aug/2012:06:42:32]  error when parsing feed id 1 name sail
+[27/Aug/2012:06:42:32]  'link'
+[27/Aug/2012:06:57:49]  error when parsing feed id 1 name sail
+[27/Aug/2012:06:57:49]  'link'
+[27/Aug/2012:07:13:04]  error when parsing feed id 1 name sail
+[27/Aug/2012:07:13:04]  'link'
+[27/Aug/2012:07:28:21]  error when parsing feed id 1 name sail
+[27/Aug/2012:07:28:21]  'link'
+[27/Aug/2012:07:43:37]  error when parsing feed id 1 name sail
+[27/Aug/2012:07:43:37]  'link'
+[27/Aug/2012:07:58:53]  error when parsing feed id 1 name sail
+[27/Aug/2012:07:58:53]  'link'
+[27/Aug/2012:08:14:08]  error when parsing feed id 1 name sail
+[27/Aug/2012:08:14:08]  'link'
+[27/Aug/2012:08:29:24]  error when parsing feed id 1 name sail
+[27/Aug/2012:08:29:24]  'link'
+[27/Aug/2012:08:44:40]  error when parsing feed id 1 name sail
+[27/Aug/2012:08:44:40]  'link'
+[27/Aug/2012:08:59:56]  error when parsing feed id 1 name sail
+[27/Aug/2012:08:59:56]  'link'
+[27/Aug/2012:09:15:12]  error when parsing feed id 1 name sail
+[27/Aug/2012:09:15:12]  'link'
+[27/Aug/2012:09:30:28]  error when parsing feed id 1 name sail
+[27/Aug/2012:09:30:28]  'link'
+[27/Aug/2012:09:45:44]  error when parsing feed id 1 name sail
+[27/Aug/2012:09:45:44]  'link'
+[27/Aug/2012:10:01:02]  error when parsing feed id 1 name sail
+[27/Aug/2012:10:01:02]  'link'
+[27/Aug/2012:10:16:21]  error when parsing feed id 1 name sail
+[27/Aug/2012:10:16:21]  'link'
+[27/Aug/2012:10:31:43]  error when parsing feed id 1 name sail
+[27/Aug/2012:10:31:43]  'link'
+[27/Aug/2012:10:47:04]  error when parsing feed id 1 name sail
+[27/Aug/2012:10:47:04]  'link'
+[27/Aug/2012:11:02:25]  error when parsing feed id 1 name sail
+[27/Aug/2012:11:02:25]  'link'
+[27/Aug/2012:11:17:46]  error when parsing feed id 1 name sail
+[27/Aug/2012:11:17:46]  'link'
+[27/Aug/2012:11:33:07]  error when parsing feed id 1 name sail
+[27/Aug/2012:11:33:07]  'link'
+[27/Aug/2012:11:48:28]  error when parsing feed id 1 name sail
+[27/Aug/2012:11:48:28]  'link'
+[27/Aug/2012:12:03:50]  error when parsing feed id 1 name sail
+[27/Aug/2012:12:03:50]  'link'
+[27/Aug/2012:12:19:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:12:19:13]  'link'
+[27/Aug/2012:12:34:42]  error when parsing feed id 1 name sail
+[27/Aug/2012:12:34:42]  'link'
+[27/Aug/2012:12:50:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:12:50:13]  'link'
+[27/Aug/2012:13:05:50]  error when parsing feed id 1 name sail
+[27/Aug/2012:13:05:50]  'link'
+[27/Aug/2012:13:21:34]  error when parsing feed id 1 name sail
+[27/Aug/2012:13:21:34]  'link'
+[27/Aug/2012:13:37:27]  error when parsing feed id 1 name sail
+[27/Aug/2012:13:37:27]  'link'
+[27/Aug/2012:13:53:25]  error when parsing feed id 1 name sail
+[27/Aug/2012:13:53:25]  'link'
+[27/Aug/2012:14:09:26]  error when parsing feed id 1 name sail
+[27/Aug/2012:14:09:26]  'link'
+[27/Aug/2012:14:25:18]  error when parsing feed id 1 name sail
+[27/Aug/2012:14:25:18]  'link'
+[27/Aug/2012:14:41:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:14:41:13]  'link'
+[27/Aug/2012:14:57:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:14:57:13]  'link'
+[27/Aug/2012:15:13:13]  error when parsing feed id 1 name sail
+[27/Aug/2012:15:13:13]  'link'
+[27/Aug/2012:15:29:19]  error when parsing feed id 1 name sail
+[27/Aug/2012:15:29:19]  'link'
+[27/Aug/2012:15:45:35]  error when parsing feed id 1 name sail
+[27/Aug/2012:15:45:35]  'link'
+[27/Aug/2012:16:01:54]  error when parsing feed id 1 name sail
+[27/Aug/2012:16:01:54]  'link'
+[27/Aug/2012:16:18:21]  error when parsing feed id 1 name sail
+[27/Aug/2012:16:18:21]  'link'
+[27/Aug/2012:16:34:51]  error when parsing feed id 1 name sail
+[27/Aug/2012:16:34:51]  'link'
+[27/Aug/2012:16:51:29]  error when parsing feed id 1 name sail
+[27/Aug/2012:16:51:29]  'link'
+[27/Aug/2012:17:08:10]  error when parsing feed id 1 name sail
+[27/Aug/2012:17:08:10]  'link'
+[27/Aug/2012:17:25:01]  error when parsing feed id 1 name sail
+[27/Aug/2012:17:25:01]  'link'
+[27/Aug/2012:17:41:54]  error when parsing feed id 1 name sail
+[27/Aug/2012:17:41:54]  'link'
+[27/Aug/2012:17:58:58]  error when parsing feed id 1 name sail
+[27/Aug/2012:17:58:58]  'link'
+[27/Aug/2012:18:16:08]  error when parsing feed id 1 name sail
+[27/Aug/2012:18:16:08]  'link'
+[27/Aug/2012:18:33:45]  error when parsing feed id 1 name sail
+[27/Aug/2012:18:33:45]  'link'
+[27/Aug/2012:18:51:04]  error when parsing feed id 1 name sail
+[27/Aug/2012:18:51:04]  'link'
+[27/Aug/2012:19:08:38]  error when parsing feed id 1 name sail
+[27/Aug/2012:19:08:38]  'link'
+[27/Aug/2012:19:26:15]  error when parsing feed id 1 name sail
+[27/Aug/2012:19:26:15]  'link'
+[27/Aug/2012:19:44:03]  error when parsing feed id 1 name sail
+[27/Aug/2012:19:44:03]  'link'
+[27/Aug/2012:20:02:00]  error when parsing feed id 1 name sail
+[27/Aug/2012:20:02:00]  'link'
+[27/Aug/2012:20:19:58]  error when parsing feed id 1 name sail
+[27/Aug/2012:20:19:58]  'link'
+[27/Aug/2012:20:38:12]  error when parsing feed id 1 name sail
+[27/Aug/2012:20:38:12]  'link'
+[27/Aug/2012:20:56:35]  error when parsing feed id 1 name sail
+[27/Aug/2012:20:56:35]  'link'
+[27/Aug/2012:21:15:03]  error when parsing feed id 1 name sail
+[27/Aug/2012:21:15:03]  'link'
+[27/Aug/2012:21:33:43]  error when parsing feed id 1 name sail
+[27/Aug/2012:21:33:43]  'link'
+[27/Aug/2012:21:52:19]  error when parsing feed id 1 name sail
+[27/Aug/2012:21:52:19]  'link'
+[27/Aug/2012:22:11:02]  error when parsing feed id 1 name sail
+[27/Aug/2012:22:11:02]  'link'
+[27/Aug/2012:22:30:17]  error when parsing feed id 1 name sail
+[27/Aug/2012:22:30:17]  'link'
+[27/Aug/2012:22:49:36]  error when parsing feed id 1 name sail
+[27/Aug/2012:22:49:36]  'link'
+[27/Aug/2012:23:08:54]  error when parsing feed id 1 name sail
+[27/Aug/2012:23:08:54]  'link'
+[27/Aug/2012:23:28:35]  error when parsing feed id 1 name sail
+[27/Aug/2012:23:28:35]  'link'
+[27/Aug/2012:23:48:27]  error when parsing feed id 1 name sail
+[27/Aug/2012:23:48:27]  'link'
+[28/Aug/2012:00:08:22]  error when parsing feed id 1 name sail
+[28/Aug/2012:00:08:22]  'link'
+[28/Aug/2012:00:28:13]  error when parsing feed id 1 name sail
+[28/Aug/2012:00:28:13]  'link'
+[28/Aug/2012:00:48:04]  error when parsing feed id 1 name sail
+[28/Aug/2012:00:48:04]  'link'
+[28/Aug/2012:01:07:44]  error when parsing feed id 1 name sail
+[28/Aug/2012:01:07:44]  'link'
+[28/Aug/2012:01:27:13]  error when parsing feed id 1 name sail
+[28/Aug/2012:01:27:13]  'link'
+[28/Aug/2012:01:47:09]  error when parsing feed id 1 name sail
+[28/Aug/2012:01:47:09]  'link'
+[28/Aug/2012:02:06:48]  error when parsing feed id 1 name sail
+[28/Aug/2012:02:06:48]  'link'
+[28/Aug/2012:02:26:23]  error when parsing feed id 1 name sail
+[28/Aug/2012:02:26:23]  'link'
+[28/Aug/2012:02:46:03]  error when parsing feed id 1 name sail
+[28/Aug/2012:02:46:03]  'link'
+[28/Aug/2012:03:05:46]  error when parsing feed id 1 name sail
+[28/Aug/2012:03:05:46]  'link'
+[28/Aug/2012:03:25:12]  error when parsing feed id 1 name sail
+[28/Aug/2012:03:25:12]  'link'
+[28/Aug/2012:03:44:37]  error when parsing feed id 1 name sail
+[28/Aug/2012:03:44:38]  'link'
+[28/Aug/2012:04:04:11]  error when parsing feed id 1 name sail
+[28/Aug/2012:04:04:11]  'link'
+[28/Aug/2012:04:23:26]  error when parsing feed id 1 name sail
+[28/Aug/2012:04:23:26]  'link'
+[28/Aug/2012:04:42:36]  error when parsing feed id 1 name sail
+[28/Aug/2012:04:42:36]  'link'
+[28/Aug/2012:05:02:13]  error when parsing feed id 1 name sail
+[28/Aug/2012:05:02:13]  'link'
+[28/Aug/2012:05:21:31]  error when parsing feed id 1 name sail
+[28/Aug/2012:05:21:31]  'link'
+[28/Aug/2012:05:40:55]  error when parsing feed id 1 name sail
+[28/Aug/2012:05:40:55]  'link'
+[28/Aug/2012:06:00:38]  error when parsing feed id 1 name sail
+[28/Aug/2012:06:00:38]  'link'
+[28/Aug/2012:06:19:43]  error when parsing feed id 1 name sail
+[28/Aug/2012:06:19:43]  'link'
+[28/Aug/2012:06:38:56]  error when parsing feed id 1 name sail
+[28/Aug/2012:06:38:56]  'link'
+[28/Aug/2012:06:58:18]  error when parsing feed id 1 name sail
+[28/Aug/2012:06:58:18]  'link'
+[28/Aug/2012:07:17:24]  error when parsing feed id 1 name sail
+[28/Aug/2012:07:17:24]  'link'
+[28/Aug/2012:07:36:29]  error when parsing feed id 1 name sail
+[28/Aug/2012:07:36:29]  'link'
+[28/Aug/2012:07:55:59]  error when parsing feed id 1 name sail
+[28/Aug/2012:07:55:59]  'link'
+[28/Aug/2012:08:15:15]  error when parsing feed id 1 name sail
+[28/Aug/2012:08:15:15]  'link'
+[28/Aug/2012:08:34:34]  error when parsing feed id 1 name sail
+[28/Aug/2012:08:34:35]  'link'
+[28/Aug/2012:08:54:03]  error when parsing feed id 1 name sail
+[28/Aug/2012:08:54:03]  'link'
+[28/Aug/2012:09:13:31]  error when parsing feed id 1 name sail
+[28/Aug/2012:09:13:31]  'link'
+[28/Aug/2012:09:32:44]  error when parsing feed id 1 name sail
+[28/Aug/2012:09:32:44]  'link'
+[28/Aug/2012:09:52:15]  error when parsing feed id 1 name sail
+[28/Aug/2012:09:52:15]  'link'
+[28/Aug/2012:10:11:33]  error when parsing feed id 1 name sail
+[28/Aug/2012:10:11:33]  'link'
+[28/Aug/2012:10:31:12]  error when parsing feed id 1 name sail
+[28/Aug/2012:10:31:12]  'link'
+[28/Aug/2012:10:50:46]  error when parsing feed id 1 name sail
+[28/Aug/2012:10:50:46]  'link'
+[28/Aug/2012:11:10:22]  error when parsing feed id 1 name sail
+[28/Aug/2012:11:10:22]  'link'
+[28/Aug/2012:11:30:07]  error when parsing feed id 1 name sail
+[28/Aug/2012:11:30:07]  'link'
+[28/Aug/2012:11:49:55]  error when parsing feed id 1 name sail
+[28/Aug/2012:11:49:55]  'link'
+[31/Aug/2012:00:15:49] ENGINE Listening for SIGHUP.
+[31/Aug/2012:00:15:49] ENGINE Listening for SIGTERM.
+[31/Aug/2012:00:15:49] ENGINE Listening for SIGUSR1.
+[31/Aug/2012:00:15:49] ENGINE Bus STARTING
+[31/Aug/2012:00:15:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[31/Aug/2012:00:15:49] ENGINE Serving on 147.229.8.40:8090
+[31/Aug/2012:00:15:49] ENGINE Bus STARTED
+[31/Aug/2012:18:03:48]  error when parsing feed id 1 name sail
+[31/Aug/2012:18:03:48]  ['N International/20120831/CNN International_20120831_112400_868_1m59s511ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage2/CNN International/20120831/CNN International_20120831_112400_868_1m59s511ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / AMANPOUR / 2012/08/31 11:24 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">AMANPOUR</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">1162272</guid>\n\t\t<pubDate>Fri, 31 Aug 2012 11:24:13 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/1162272.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage2/CNN International/20120831/CNN International_20120831_112400_868_1m59s511ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage2/CNN International/20120831/CNN International_20120831_112400_868_1m59s511ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / AMANPOUR / 2012/08/31 11:24 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">AMANPOUR</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">1162273</guid>\n\t\t<pubDate>Fri, 31 Aug 2012 11:24:52 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/1162273.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage2/CNN International/20120831/CNN International_20120831_112400_868_1m59s511ms.wmv</link>\n\t\t<enclosure url="http://media.sail-labs.com/keyframe/storage2/CNN International/20120831/CNN International_20120831_112400_868_1m59s511ms.wmv.1s.100x100.jpg" type="image/jpeg" />\n\t</item> \n\t<item>\n\t<title>CNN International / AMANPOUR / 2012/08/31 11:26 </title>\n\t\t<description></description>\n\t\t<category domain="Source">TV</category>\n\t\t<category domain="Channel">CNN International</category>\n\t\t<category domain="Program">AMANPOUR</category>\n\t\t<iso:language>en</iso:language>\n\t\t<guid isPermaLink="false">1162321</guid>\n\t\t<pubDate>Fri, 31 Aug 2012 11:26:00 +0200</pubDate>\n\t\t<xmllink>http://webdemo:80/MediaMiningBasic/storyxml/1162321.xml</xmllink>\n\t\t\n\t\t<link>http://video.sail-labs.com//storage2/CNN International/2012083']
+[13/Sep/2012:10:52:18] ENGINE Listening for SIGHUP.
+[13/Sep/2012:10:52:18] ENGINE Listening for SIGTERM.
+[13/Sep/2012:10:52:18] ENGINE Listening for SIGUSR1.
+[13/Sep/2012:10:52:18] ENGINE Bus STARTING
+[13/Sep/2012:10:52:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[13/Sep/2012:10:52:18] ENGINE Serving on 147.229.8.40:8090
+[13/Sep/2012:10:52:18] ENGINE Bus STARTED
+[13/Sep/2012:10:52:18]  error when parsing feed id 2 name drfruehwein
+[13/Sep/2012:10:52:18]  argument 1 must be string or read-only character buffer, not None
+[13/Sep/2012:15:31:02]  Traceback (most recent call last):
+  File "/mnt/minerva1/nlp/projects/blogs_download2/web_rss/cherrypy/_cpwsgi.py", line 169, in trap
+    return func(*args, **kwargs)
+  File "/mnt/minerva1/nlp/projects/blogs_download2/web_rss/cherrypy/_cpwsgi.py", line 96, in __call__
+    return self.nextapp(environ, start_response)
+  File "/mnt/minerva1/nlp/projects/blogs_download2/web_rss/cherrypy/_cpwsgi.py", line 379, in tail
+    return self.response_class(environ, start_response, self.cpapp)
+  File "/mnt/minerva1/nlp/projects/blogs_download2/web_rss/cherrypy/_cpwsgi.py", line 222, in __init__
+    self.run()
+  File "/mnt/minerva1/nlp/projects/blogs_download2/web_rss/cherrypy/_cpwsgi.py", line 320, in run
+    request.run(meth, path, qs, rproto, headers, rfile)
+  File "/mnt/minerva1/nlp/projects/blogs_download2/web_rss/cherrypy/_cprequest.py", line 603, in run
+    raise cherrypy.TimeoutError()
+TimeoutError
+
+[13/Sep/2012:22:52:19]  error when parsing feed id 2 name drfruehwein
+[13/Sep/2012:22:52:19]  argument 1 must be string or read-only character buffer, not None
+[14/Sep/2012:10:52:22]  error when parsing feed id 2 name drfruehwein
+[14/Sep/2012:10:52:22]  argument 1 must be string or read-only character buffer, not None

@@ -1,0 +1,43 @@
+#!/usr/bin/python
+import re
+import time
+import shutil
+import sys
+
+s = open(sys.argv[1],'r')
+
+a = s.readline()
+if a == '':
+   s.close()
+   exit()
+else:
+   r = re.search('^(?P<name>[^\t]*)\t(?P<rest>[^$]*)',a)
+   nameprvs  = r.group('name')
+   restprvs = r.group('rest')
+
+a=s.readline()
+if a == '':
+   s.close()
+   exit()
+else:
+   r = re.search('^(?P<name>[^\t]*)\t(?P<rest>[^$]*)',a)
+   namecurr  = r.group('name')
+   restcurr = r.group('rest')
+   
+while True:
+  a = s.readline()
+  if a == '':
+    s.close()
+    break
+  r = re.search('^(?P<name>[^\t]*)\t(?P<rest>[^$]*)',a)
+  namefollow = r.group('name')
+  restfollow = r.group('rest')
+  #print nameprvs + "	" +  namecurr + "	" +  namefollow
+  if (namecurr == nameprvs) or (namecurr == namefollow ):
+    print namecurr + "\t" + restcurr
+  nameprvs = namecurr
+  restprvs = restcurr
+  namecurr = namefollow
+  restcurr = restfollow
+  
+  

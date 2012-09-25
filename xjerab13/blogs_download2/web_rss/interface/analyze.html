@@ -1,0 +1,163 @@
+<%include file="blocks/header.html"/>
+<div class="container">
+    <h1>Url analysis</h1>
+
+<%include file="blocks/menu.html"/>
+
+<style>
+        .main_loader {
+            height: 200px;
+        }
+        .main_loader img, .main_loader h2 {
+            padding-left: 50%;
+            padding-top: 100px;
+        }
+        #output_block, table {
+            visibility: hidden;
+            
+        
+        }
+        
+        
+        .float_container{
+          display:none;  
+          position:absolute;
+          top:100px;
+          left:50%;
+          
+        }
+        
+        .float_win{
+            position:relative;
+            left:-50%;
+            border: 1px solid black;
+        }
+
+</style>
+
+<div id="input_block">
+    <form name="input" class="well form-inline">
+        <label class="label-control">Analyze url:</label>
+        <input type="text" name="url" placeholder="Enter url:"/>
+        <input type="submit" value="Submit" class="btn" id="analyze_submit_btn"/>
+        
+    </form>
+</div>
+<div id="output_block">
+    <div id="r1">
+        <h2> &lt;link&gt; tag</h2>
+        <div id = "l1"  class="main_loader"><img src="/static/img/loading-circle-.gif" /></div>
+        <table id="t_lnk" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Feed Name</th>
+                    <th>Content type</th>
+                    <th>URL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="r2">
+        <h2> &lt;a&gt; tag</h2>
+        <div id = "l2" class="main_loader"><img src="/static/img/loading-circle-.gif" /></div>
+        <table id="t_a" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>HTML content</th>
+                    <th>Content Type</th>
+                    <th>URL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="float_container">
+<div class="span8 hero-unit float_win alert-error">
+    <a class="close">&times;</a>
+    <form class="form-horizontal" id="f_feed">
+        <fieldset>
+            <legend>
+                Add Feed
+            </legend>
+            <div class="control-group">
+                <label class="control-label" for="f_name">Name</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="f_name">
+                    <p class="help-block">
+                        Edit feed name
+                    </p>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="f_url">URL</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="f_url">
+                    <p class="help-block">
+                        Edit feed url
+                    </p>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="f_ftype">Feed type</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="f_ftype">
+                    <p class="help-block">
+                        Edit feed type
+                    </p>
+                </div>
+            </div>
+            <div class="control-group">
+                        <label class="control-label" for="f_utime">update time every</label>
+                        <div class="controls">
+                            <input type="text" class="input-mini inline" id="f_utime_h" >
+                            :
+                            <input type="text" class="input-mini inline" id="f_utime_m" >
+                            <p class="help-block">
+                                Interval between downloads in HH:MM format
+                            </p>
+                        </div>
+                    </div>
+
+            <div class="control-group">
+                <label class="control-label" for="f_login">Authentization</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="f_login">
+                    <p class="help-block">
+                        Login for HTTP authentization
+                    </p>
+                    <input type="text" class="input-xlarge" id="f_passwd">
+                    <p class="help-block">
+                        Password for HTTP authentization
+                    </p>
+                </div>
+            </div>
+           <!-- <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Enable download</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="f_enable" value="option1">
+                
+                
+              </label>
+            </div>
+          </div>-->
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary" id="f_submit_btn">
+                    Add feed
+                </button>
+                <button id="f_close_btn" class="btn">
+                    Cancel
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/static/js/analyze_comet.js" ></script>
+<%include file="blocks/footer.html"/>

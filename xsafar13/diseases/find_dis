@@ -1,0 +1,44 @@
+#!/usr/bin/python
+import sys
+import os
+import psycopg2
+import re
+import subprocess
+import nltk
+from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.stem import PorterStemmer
+import NER
+
+file = open('diseases_num','r')
+list = []
+while True: 
+  line = file.readline()
+  if line == '':
+    file.close()
+    break
+  line = line.split('\n')
+  split = line[0].split('\t')
+  list.append([split[0],split[1]])
+#conn = psycopg2.connect("dbname=meco user=xsafar13 password=meco host=meco.l3s.uni-hannover.de")
+#cursor = conn.cursor()
+lemm = WordNetLemmatizer()
+a = 0
+ff = open('baseline','r')
+a = ff.read()
+#while True:
+  #cursor.execute("select id,language,text,pubdate from documents where source_id = 1 limit 421;")
+  #cur = cursor.fetchall()
+  #for i in cur:
+  #  a += 1
+  #  print 'a:' + str(a)
+  #  print i[0]
+o = NER.find(a,'de')
+#    print o
+#    for loc in o.keys():
+#      for k in o[loc]:
+#        pom = list[int(k[4])]
+#        print pom 
+        
+        #print 'Document:',i[0],'exact:',k[2],'begin:',k[0],'lenght:',k[1],'language',k[3]
+#  break
+  #braeak

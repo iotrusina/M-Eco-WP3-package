@@ -1,0 +1,53 @@
+<%import time,datetime%>
+<%include file="blocks/header.html"/>
+
+<%include file="blocks/menu.html"/>
+<div class="container">
+    <h1> Feeds settings </h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                %for name in items[0].__class__.db_columns: 
+                    <th>${name}</th>
+                %endfor <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            %for elem in items:
+            <tr>
+                %for c in items[0].__class__.db_columns:
+                %if c == "enable": 
+                    <td>
+                        %if getattr(elem,c):
+                            <input type="checkbox" name="f_enable" checked>
+                        %else:
+                            <input type="checkbox" name="f_enable" >
+                        %endif
+                        </td>
+                %elif c == "backup": 
+                    <td>
+                        %if getattr(elem,c):
+                            <input type="checkbox" name="f_backup" checked>
+                        %else:
+                            <input type="checkbox" name="f_backup" >
+                        %endif
+                        </td>
+                %elif c == "update_time": 
+                    <td>${str(datetime.timedelta(seconds=int(getattr(elem,c))))}</td>
+                %elif c == "last_update": 
+                    <td>${time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(getattr(elem,c)))}</td>
+                %else: 
+                    <td> ${getattr(elem,c) if getattr(elem,c) != None else ''} </td>
+                %endif
+            %endfor 
+                <td><a href="/db/edit_feed/${getattr(elem,'id')}"><i class="edit icon-pencil"></i></a></td>
+                <td><i class="del icon-trash"></i></td>
+            </tr>
+            % endfor
+        </tbody>
+    </table>
+
+</div>
+<script type="text/javascript" src="/static/js/db_del.js"></script>
+<%include file="blocks/footer.html"/>

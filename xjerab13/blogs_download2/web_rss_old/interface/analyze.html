@@ -1,0 +1,62 @@
+<%include file="header.html"/>
+<div class="container">
+    <h1>Url analysis</h1>
+
+<%include file="menu.html"/>
+
+<style>
+        .main_loader {
+            height: 200px;
+        }
+        .main_loader img, .main_loader h2 {
+            padding-left: 50%;
+            padding-top: 100px;
+        }
+        #output_block, table {
+            visibility: hidden;
+        }
+
+</style>
+
+<div id="input_block">
+    <form name="input" class="well">
+        <label>Analyze page</label>
+        <input type="text" name="url" placeholder="Enter url:"/>
+        <input type="submit" value="Submit" class="btn"/>
+    </form>
+</div>
+<div id="output_block">
+    <div id="r1">
+        <h2> &lt;link&gt; tag</h2>
+        <div id = "l1"  class="main_loader"><img src="/static/img/loading-circle-.gif" /></div>
+        <table id="t_lnk" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Feed Name</th>
+                    <th>Content type</th>
+                    <th>URL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="r2">
+        <h2> &lt;a&gt; tag</h2>
+        <div id = "l2" class="main_loader"><img src="/static/img/loading-circle-.gif" /></div>
+        <table id="t_a" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>HTML content</th>
+                    <th>Content Type</th>
+                    <th>URL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="/static/js/analyze_comet.js" ></script>
+<%include file="footer.html"/>
