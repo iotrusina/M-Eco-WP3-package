@@ -1,4 +1,0 @@
-url,login,passwd
-http://webdemo.sail-labs.com/MediaMiningBasic/rss.jsp,jrc_meco,jens2010
-http://www.drfruehwein.de/epidemiologische-informationen/feed/rss.html
-http://feeds.feedburner.com/RsoeEdis-Ebhwm
