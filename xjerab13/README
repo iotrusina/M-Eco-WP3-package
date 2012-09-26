@@ -1,0 +1,19 @@
+Description of blogs_download2:
+
+cmd_blog_download - commandline tool for downloading data from rss feeds and implemented pages.
+
+Tool conaints two separate processes:
+board_downloader - for data mining from web pages
+rss_downloader - for RSS 
+
+
+
+OLDnetdoktor - testing project for webscraping forum on netdoctor.de
+
+
+web_rss - tool for downloading data from rss feeds and web pages with web GUI.
+
+For correct run, you need setup host IP address and port in settings.ini file, and user=password in users.ini
+program executable : WebRSS.py
+
+web_rss_old - old version of web_rss tool. 
