@@ -1,0 +1,36 @@
+#
+# Subor: README
+# Autor: Jakub Sznapka, xsznap01 
+#
+#################################################################
+
+fuzzy_geo_aut:
+
+Obecné:
+	Aplikace pro normalizování lokací v twitterových profilech autorů. Pro běh aplikace je potřeba dalších zdrojových souborů (nástroj NER pro vyhledávání lokací).
+
+Použití:
+	Aplikace se spouští příkazem				"./fuzzy_geo_aut" popř. "python fuzzy_geo_aut"
+
+Závislosti:
+	Pro chod je potřeba mít ve složce ENVR/ celý nástroj NER pro vyhledávání lokací. Nástroj je k nalezení na stroji athena3 (/mnt/minerva1/nlp/projects/fuzzy_geo/aut/). Ve složce FILES/ si pak skript vytváří dočasné soubory a ukládá zde statistiky a výstupy (ty zároveň propaguje do DB). 
+
+Popis chování:
+	Program při spuštění inicializuje nástroj NER. Poté v nekonečné smyčce kontroluje, zda-li se v DB neobjevila nová data (konkrétně tabulka authors.location). Pokud nalezne data, uloží je do zásobníku, který potom dávkově zpracuje nástrojem NER. Výstup nástroje NER je dále disambiguován (více na wiki: https://merlin.fit.vutbr.cz/nlp-wiki/index.php/BURGeoN#Disambiguace). Výstup je poté propagován do DB a do souboru.
+
+
+#################################################################
+
+fuzzy_geo_doc:
+
+Obecné:
+	Aplikace pro normalizování souřadnic ve zprávách z twitteru. Pro běh aplikace je potřeba dalších zdrojových souborů (seznam všech států a k nim přiřazených geonames_id).
+
+Použití:
+	Aplikace se spouští příkazem				"./fuzzy_geo_doc" popř. "python fuzzy_geo_doc"
+
+Závislosti:
+	Pro chod je potřeba mít ve složce ENVR/ seznam všech států a k nim přiřazených geonames_id. K nalezení na stroji athena3 (/mnt/minerva1/nlp/projects/fuzzy_geo/doc/ENVR/states). Ve složce FILES/ si pak skript vytváří dočasné soubory a ukládá zde statistiky a výstupy (ty zároveň propaguje do DB). Je také potřeba připojení ke geonames API, kterou nástroj používá pro vyhodnocování.
+
+Popis chování:
+	Program realtime kontroluje DB, zda-li obsahuje nějaká nenormalizovaná data. Pokud jsou taková data k dispozici používá geonames API (http://api.geonames.org/findNearbyPlaceName?lat=0&lng=0&username=sznap) k vyhodnocení. Tato data pak propaguje do DB a zároveň ukládá výsledky lokálně do složky FILES/.
