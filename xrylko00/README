@@ -1,0 +1,10 @@
+FOLDER ./db/
+Scripts in this folder analyze documents in database and write new informations back to the database. They fill termvector attribute, add instances of affected organism and others
+
+FOLDER ./master/
+Scripts in this folder make periodic tasks. For example they plot graphs, index new xml documents into database, create daily dumps and others
+
+FOLDER ./stahovak/
+Scripts in this folder are used for downloading data and filling database.
+
+
